@@ -8,38 +8,103 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        primary: {
-          DEFAULT: '#1E3A5F',
-          light: '#2563EB',
-          hover: '#1D4ED8',
-          50: '#EFF6FF',
-          100: '#DBEAFE',
-          200: '#BFDBFE',
-          300: '#93C5FD',
-          400: '#60A5FA',
-          500: '#1E3A5F',
-          600: '#182E4C',
-          700: '#122339',
-          800: '#0C1726',
-          900: '#060B13',
-        },
-        accent: {
-          positive: '#10B981',
-          warning: '#F59E0B',
-          negative: '#EF4444',
-        },
-        background: '#F8FAFC',
-        card: '#FFFFFF',
-        border: '#E2E8F0',
-        muted: '#64748B',
-      },
-      fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
-        mono: ['var(--font-jetbrains-mono)', 'monospace'],
-      },
-    },
+  	extend: {
+  		colors: {
+  			primary: {
+  				'50': '#EFF6FF',
+  				'100': '#DBEAFE',
+  				'200': '#BFDBFE',
+  				'300': '#93C5FD',
+  				'400': '#60A5FA',
+  				'500': '#1E3A5F',
+  				'600': '#182E4C',
+  				'700': '#122339',
+  				'800': '#0C1726',
+  				'900': '#060B13',
+  				DEFAULT: 'hsl(var(--primary))',
+  				light: '#2563EB',
+  				hover: '#1D4ED8',
+  				foreground: 'hsl(var(--primary-foreground))'
+  			},
+  			accent: {
+  				positive: '#10B981',
+  				warning: '#F59E0B',
+  				negative: '#EF4444',
+  				DEFAULT: 'hsl(var(--accent))',
+  				foreground: 'hsl(var(--accent-foreground))'
+  			},
+  			background: 'hsl(var(--background))',
+  			card: {
+  				DEFAULT: 'hsl(var(--card))',
+  				foreground: 'hsl(var(--card-foreground))'
+  			},
+  			border: 'hsl(var(--border))',
+  			muted: {
+  				DEFAULT: 'hsl(var(--muted))',
+  				foreground: 'hsl(var(--muted-foreground))'
+  			},
+  			foreground: 'hsl(var(--foreground))',
+  			popover: {
+  				DEFAULT: 'hsl(var(--popover))',
+  				foreground: 'hsl(var(--popover-foreground))'
+  			},
+  			secondary: {
+  				DEFAULT: 'hsl(var(--secondary))',
+  				foreground: 'hsl(var(--secondary-foreground))'
+  			},
+  			destructive: {
+  				DEFAULT: 'hsl(var(--destructive))',
+  				foreground: 'hsl(var(--destructive-foreground))'
+  			},
+  			input: 'hsl(var(--input))',
+  			ring: 'hsl(var(--ring))',
+  			chart: {
+  				'1': 'hsl(var(--chart-1))',
+  				'2': 'hsl(var(--chart-2))',
+  				'3': 'hsl(var(--chart-3))',
+  				'4': 'hsl(var(--chart-4))',
+  				'5': 'hsl(var(--chart-5))'
+  			}
+  		},
+  		fontFamily: {
+  			sans: [
+  				'var(--font-inter)',
+  				'system-ui',
+  				'sans-serif'
+  			],
+  			mono: [
+  				'var(--font-jetbrains-mono)',
+  				'monospace'
+  			]
+  		},
+  		borderRadius: {
+  			lg: 'var(--radius)',
+  			md: 'calc(var(--radius) - 2px)',
+  			sm: 'calc(var(--radius) - 4px)'
+  		},
+  		keyframes: {
+  			'accordion-down': {
+  				from: {
+  					height: '0'
+  				},
+  				to: {
+  					height: 'var(--radix-accordion-content-height)'
+  				}
+  			},
+  			'accordion-up': {
+  				from: {
+  					height: 'var(--radix-accordion-content-height)'
+  				},
+  				to: {
+  					height: '0'
+  				}
+  			}
+  		},
+  		animation: {
+  			'accordion-down': 'accordion-down 0.2s ease-out',
+  			'accordion-up': 'accordion-up 0.2s ease-out'
+  		}
+  	}
   },
   plugins: [require("tailwindcss-animate")],
 };
