@@ -27,6 +27,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${amount} € Brutto in Netto - Gehaltsrechner 2026 | gehaltly.de`,
     description: `${amount} Euro Brutto sind wieviel Netto? Berechnen Sie kostenlos, was von ${amount} € Bruttogehalt übrig bleibt. ✓ Alle Steuerklassen ✓ Aktuell 2026`,
+    alternates: {
+      canonical: `https://gehaltly.de/${amount}-brutto-in-netto`,
+    },
     openGraph: {
       title: `${amount} € Brutto in Netto - Gehaltsrechner 2026`,
       description: `Berechnen Sie kostenlos, was von ${amount} Euro Bruttogehalt nach Abzügen übrig bleibt.`,

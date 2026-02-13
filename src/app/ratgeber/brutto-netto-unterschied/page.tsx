@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Brutto Netto Unterschied - Der komplette Guide 2026 | gehaltly.de',
   description: 'Verstehen Sie den Unterschied zwischen Brutto und Netto. Ausführlicher Guide mit Beispielen, Berechnungen und allen wichtigen Informationen für 2026.',
   keywords: 'brutto netto unterschied, brutto vs netto, bruttogehalt nettogehalt, gehaltsabzüge',
+  alternates: {
+    canonical: 'https://gehaltly.de/ratgeber/brutto-netto-unterschied',
+  },
   openGraph: {
     title: 'Brutto Netto Unterschied - Der komplette Guide 2026',
     description: 'Verstehen Sie den Unterschied zwischen Brutto und Netto. Ausführlicher Guide mit Beispielen und Berechnungen.',

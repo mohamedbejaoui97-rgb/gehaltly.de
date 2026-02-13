@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Brutto Netto Rechnung - So berechnen Sie Ihr Nettogehalt | gehaltly.de',
   description: 'Schritt-für-Schritt Anleitung zur Brutto-Netto-Berechnung. Lernen Sie, wie Sie Ihr Nettogehalt selbst berechnen können - mit Formeln und Beispielen für 2026.',
   keywords: 'brutto netto rechnung, nettogehalt berechnen, gehaltsberechnung formel, lohnabrechnung',
+  alternates: {
+    canonical: 'https://gehaltly.de/ratgeber/brutto-netto-rechnung',
+  },
   openGraph: {
     title: 'Brutto Netto Rechnung - So berechnen Sie Ihr Nettogehalt',
     description: 'Lernen Sie Schritt für Schritt, wie Sie Ihr Nettogehalt aus dem Bruttogehalt berechnen.',

@@ -11,6 +11,9 @@ export const metadata: Metadata = {
   title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick | gehaltly.de',
   description: 'Sozialversicherungsbeiträge 2026 komplett erklärt: Rentenversicherung, Krankenversicherung, Pflegeversicherung und Arbeitslosenversicherung mit aktuellen Beitragssätzen.',
   keywords: 'sozialabgaben 2026, sozialversicherungsbeiträge, rentenversicherung, krankenversicherung, pflegeversicherung',
+  alternates: {
+    canonical: 'https://gehaltly.de/ratgeber/sozialabgaben',
+  },
   openGraph: {
     title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick',
     description: 'Alle Sozialversicherungsbeiträge 2026 mit aktuellen Beitragssätzen und Beitragsbemessungsgrenzen.',
