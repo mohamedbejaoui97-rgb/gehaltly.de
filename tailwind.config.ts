@@ -11,24 +11,24 @@ const config: Config = {
   	extend: {
   		colors: {
   			primary: {
-  				'50': '#EFF6FF',
-  				'100': '#DBEAFE',
-  				'200': '#BFDBFE',
-  				'300': '#93C5FD',
-  				'400': '#60A5FA',
-  				'500': '#1E3A5F',
-  				'600': '#182E4C',
-  				'700': '#122339',
-  				'800': '#0C1726',
-  				'900': '#060B13',
+  				'50': '#FFF5F5',
+  				'100': '#FED7D7',
+  				'200': '#FEB2B2',
+  				'300': '#FC8181',
+  				'400': '#F56565',
+  				'500': '#DD0000',
+  				'600': '#C40000',
+  				'700': '#9B0000',
+  				'800': '#720000',
+  				'900': '#1A1A1A',
   				DEFAULT: 'hsl(var(--primary))',
-  				light: '#2563EB',
-  				hover: '#1D4ED8',
+  				light: '#FF1A1A',
+  				hover: '#C40000',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			accent: {
-  				positive: '#10B981',
-  				warning: '#F59E0B',
+  				positive: '#DD0000',
+  				warning: '#FFCC00',
   				negative: '#EF4444',
   				DEFAULT: 'hsl(var(--accent))',
   				foreground: 'hsl(var(--accent-foreground))'

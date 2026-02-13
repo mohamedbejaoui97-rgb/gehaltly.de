@@ -24,6 +24,10 @@ export const ALV_RATE = TAX_2026.alvSatz / 2; // 1.3% (employee share)
 export const BBG_RV_ALV = TAX_2026.bbgRvAlv;
 export const BBG_KV_PV = TAX_2026.bbgKvPv;
 
+// Pflegeversicherung Kinder-Abschlag (0.25% per child from 2nd to 5th)
+export const PV_ABSCHLAG_KIND = TAX_2026.pvAbschlagKind;
+export const PV_MAX_ABSCHLAG_KINDER = TAX_2026.pvMaxAbschlag;
+
 // Minijob / Midijob
 export const MINIJOB_GRENZE = TAX_2026.minijobGrenze;
 export const MIDIJOB_OBERGRENZE = TAX_2026.midijobGrenze;

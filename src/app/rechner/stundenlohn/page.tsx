@@ -26,6 +26,7 @@ export default function StundenlohnPage() {
   const [calculationMode, setCalculationMode] = useState<"hourly-to-monthly" | "monthly-to-hourly">("hourly-to-monthly");
   const [hourlyRate, setHourlyRate] = useState(20);
   const [weeklyHours, setWeeklyHours] = useState(40);
+  const [weeklyHoursDisplay, setWeeklyHoursDisplay] = useState("40");
   const [monthlyGross, setMonthlyGross] = useState(3000);
   const [result, setResult] = useState<CalculatorResultType | null>(null);
 
@@ -54,7 +55,7 @@ export default function StundenlohnPage() {
       alter: 30,
       kinder: 0,
       krankenversicherung: "gesetzlich",
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
       abrechnungsjahr: 2026,
@@ -76,7 +77,7 @@ export default function StundenlohnPage() {
       alter: 30,
       kinder: 0,
       krankenversicherung: "gesetzlich",
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
       abrechnungsjahr: 2026,
@@ -248,8 +249,26 @@ export default function StundenlohnPage() {
                         type="number"
                         min={1}
                         max={60}
-                        value={weeklyHours}
-                        onChange={(e) => setWeeklyHours(parseFloat(e.target.value) || 40)}
+                        value={weeklyHoursDisplay}
+                        onChange={(e) => {
+                          const raw = e.target.value;
+                          setWeeklyHoursDisplay(raw);
+                          const num = parseFloat(raw);
+                          if (!isNaN(num)) {
+                            setWeeklyHours(num);
+                          }
+                        }}
+                        onBlur={() => {
+                          const num = parseFloat(weeklyHoursDisplay);
+                          if (isNaN(num) || weeklyHoursDisplay.trim() === "") {
+                            setWeeklyHours(40);
+                            setWeeklyHoursDisplay("40");
+                          } else {
+                            const clamped = Math.min(Math.max(num, 1), 60);
+                            setWeeklyHours(clamped);
+                            setWeeklyHoursDisplay(clamped.toString());
+                          }
+                        }}
                       />
                       <p className="text-sm text-muted-foreground">
                         Vollzeit = 40 Stunden, Teilzeit z.B. 20 Stunden

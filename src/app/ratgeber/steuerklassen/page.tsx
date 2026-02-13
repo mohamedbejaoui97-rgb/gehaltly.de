@@ -8,11 +8,11 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import SchemaMarkup from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Steuerklassen in Deutschland - Übersicht 2026 | gehaltly.de',
+  title: 'Steuerklassen in Deutschland - Übersicht 2026',
   description: 'Alle 6 Steuerklassen erklärt: Wer gehört in welche Steuerklasse? Unterschiede, Vor- und Nachteile sowie Wechselmöglichkeiten im Überblick 2026.',
   keywords: 'steuerklassen deutschland, steuerklasse 1 2 3 4 5 6, steuerklasse wechseln, beste steuerklasse',
   alternates: {
-    canonical: 'https://gehaltly.de/ratgeber/steuerklassen',
+    canonical: 'https://gehaltly.de/ratgeber/steuerklassen/',
   },
   openGraph: {
     title: 'Steuerklassen in Deutschland - Übersicht 2026',

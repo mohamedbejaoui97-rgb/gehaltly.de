@@ -5,12 +5,12 @@ export const metadata: Metadata = {
   title: "Netto Rechner 2026 - Ihr Nettogehalt berechnen",
   description: "Netto Rechner 2026: Berechnen Sie Ihr Nettogehalt aus dem Bruttogehalt. ✓ Präzise Netto-Berechnung ✓ Alle Abzüge ✓ Kostenlos. Jetzt Netto ermitteln!",
   alternates: {
-    canonical: 'https://gehaltly.de/netto-rechner',
+    canonical: 'https://gehaltly.de/netto-rechner/',
   },
   openGraph: {
     title: "Netto Rechner 2026 - Ihr Nettogehalt berechnen",
     description: "Berechnen Sie Ihr Nettogehalt mit unserem kostenlosen Netto Rechner 2026. Präzise und transparent.",
-    url: "https://gehaltly.de/netto-rechner",
+    url: "https://gehaltly.de/netto-rechner/",
   },
 };
 

@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Home, Calculator, Euro, BookOpen, MoreHorizontal } from 'lucide-react';
+import { Home, Calculator, Euro, BookOpen } from 'lucide-react';
 
 interface NavItem {
   label: string;
@@ -17,24 +17,19 @@ const NAV_ITEMS: NavItem[] = [
     icon: Home,
   },
   {
-    label: 'Rechner',
+    label: 'Gehalt',
     href: '/gehaltsrechner',
-    icon: Calculator,
+    icon: Euro,
   },
   {
-    label: 'Gehalt',
+    label: 'Netto',
     href: '/netto-brutto-rechner',
-    icon: Euro,
+    icon: Calculator,
   },
   {
     label: 'Ratgeber',
     href: '/ratgeber/steuerklassen',
     icon: BookOpen,
-  },
-  {
-    label: 'Mehr',
-    href: '/steuerklassen-rechner',
-    icon: MoreHorizontal,
   },
 ];
 
@@ -42,8 +37,8 @@ export default function MobileNav() {
   const pathname = usePathname();
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1E3A5F] border-t border-white/10 safe-area-pb">
-      <div className="grid grid-cols-5 h-16">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-[#1A1A1A] border-t border-gray-700 safe-area-pb">
+      <div className="grid grid-cols-4 h-14">
         {NAV_ITEMS.map((item) => {
           const Icon = item.icon;
           const isActive = pathname === item.href;
@@ -52,14 +47,14 @@ export default function MobileNav() {
             <Link
               key={item.href}
               href={item.href}
-              className={`flex flex-col items-center justify-center space-y-1 transition-colors ${
+              className={`flex flex-col items-center justify-center space-y-0.5 transition-colors ${
                 isActive
-                  ? 'text-[#10B981]'
-                  : 'text-white/70 hover:text-white'
+                  ? 'text-[#DD0000]'
+                  : 'text-gray-400 hover:text-white'
               }`}
             >
               <Icon className="h-5 w-5" />
-              <span className="text-xs font-medium">{item.label}</span>
+              <span className="text-[10px] font-medium">{item.label}</span>
             </Link>
           );
         })}

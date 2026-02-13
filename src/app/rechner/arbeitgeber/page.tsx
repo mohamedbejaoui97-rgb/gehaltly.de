@@ -67,7 +67,7 @@ export default function ArbeitgeberPage() {
       alter: 30,
       kinder: 0,
       krankenversicherung: "gesetzlich",
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
       abrechnungsjahr: 2026,

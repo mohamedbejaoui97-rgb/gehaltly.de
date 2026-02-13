@@ -8,11 +8,11 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import SchemaMarkup from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Elterngeld: Brutto oder Netto? - Berechnung 2026 | gehaltly.de',
+  title: 'Elterngeld: Brutto oder Netto? - Berechnung 2026',
   description: 'Wird Elterngeld vom Brutto oder Netto berechnet? Alle Informationen zur Elterngeld-Berechnung 2026 mit Beispielen und wichtigen Tipps zur Optimierung.',
   keywords: 'elterngeld brutto netto, elterngeld berechnung, elterngeld höhe 2026, basiselterngeld',
   alternates: {
-    canonical: 'https://gehaltly.de/ratgeber/elterngeld-brutto-netto',
+    canonical: 'https://gehaltly.de/ratgeber/elterngeld-brutto-netto/',
   },
   openGraph: {
     title: 'Elterngeld: Brutto oder Netto? - Berechnung 2026',

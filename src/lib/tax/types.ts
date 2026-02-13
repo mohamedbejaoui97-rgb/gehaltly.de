@@ -31,10 +31,15 @@ export interface CalculatorInput {
   alter: number;
   kinder: number;
   krankenversicherung: KrankenversicherungTyp;
-  kvZusatzbeitrag: number; // percentage, e.g. 1.7
+  kvZusatzbeitrag: number; // percentage, e.g. 2.9
   steuerfreibetrag: number;
   geldwerterVorteil: number;
   abrechnungsjahr: number;
+  // New fields for competitor parity
+  rentenversicherungPflicht?: boolean; // default true
+  arbeitslosenversicherungPflicht?: boolean; // default true
+  pvkBeitrag?: number; // monthly PKV premium (only when KV = privat)
+  pvkArbeitgeberzuschuss?: boolean; // AG pays half of PKV (default true)
 }
 
 export interface TaxBreakdown {
@@ -69,7 +74,7 @@ export const DEFAULT_INPUT: CalculatorInput = {
   alter: 30,
   kinder: 0,
   krankenversicherung: 'gesetzlich',
-  kvZusatzbeitrag: 1.7,
+  kvZusatzbeitrag: 2.9,
   steuerfreibetrag: 0,
   geldwerterVorteil: 0,
   abrechnungsjahr: 2026,

@@ -8,11 +8,11 @@ import Breadcrumbs from '@/components/layout/Breadcrumbs';
 import SchemaMarkup from '@/components/seo/SchemaMarkup';
 
 export const metadata: Metadata = {
-  title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick | gehaltly.de',
+  title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick',
   description: 'Sozialversicherungsbeiträge 2026 komplett erklärt: Rentenversicherung, Krankenversicherung, Pflegeversicherung und Arbeitslosenversicherung mit aktuellen Beitragssätzen.',
   keywords: 'sozialabgaben 2026, sozialversicherungsbeiträge, rentenversicherung, krankenversicherung, pflegeversicherung',
   alternates: {
-    canonical: 'https://gehaltly.de/ratgeber/sozialabgaben',
+    canonical: 'https://gehaltly.de/ratgeber/sozialabgaben/',
   },
   openGraph: {
     title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick',

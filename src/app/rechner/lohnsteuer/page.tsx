@@ -48,7 +48,7 @@ export default function LohnsteuerPage() {
       alter: 30,
       kinder: steuerklasse === 2 ? 1 : 0,
       krankenversicherung: "gesetzlich",
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
       abrechnungsjahr: 2026,

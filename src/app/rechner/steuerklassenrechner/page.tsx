@@ -42,7 +42,7 @@ export default function SteuerklassenrechnerPage() {
         alter: 30,
         kinder: steuerklasse === 2 ? 1 : 0, // Steuerklasse 2 has children
         krankenversicherung: "gesetzlich",
-        kvZusatzbeitrag: 1.7,
+        kvZusatzbeitrag: 2.9,
         steuerfreibetrag: 0,
         geldwerterVorteil: 0,
         abrechnungsjahr: 2026,

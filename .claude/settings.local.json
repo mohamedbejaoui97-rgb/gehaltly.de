@@ -10,7 +10,12 @@
       "Bash(pkill:*)",
       "Bash(wc:*)",
       "Bash(grep:*)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "Bash(lsof:*)",
+      "Bash(xargs:*)",
+      "Bash(npm run dev:*)",
+      "WebFetch(domain:localhost)",
+      "Bash(/usr/bin/curl -s -L http://localhost:3001)"
     ]
   }
 }

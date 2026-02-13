@@ -22,7 +22,7 @@ function calculateBruttoFromNetto(
   steuerklasse: Steuerklasse,
   bundesland: Bundesland,
   kirchensteuer: boolean,
-  kvZusatzbeitrag: number = 1.7,
+  kvZusatzbeitrag: number = 2.9,
   kinder: number = 0,
   alter: number = 30
 ): number {
@@ -97,7 +97,7 @@ export default function NettoBruttoRechnerClient() {
       steuerklasse: wunschSteuerklasse,
       bundesland: wunschBundesland,
       kirchensteuer: wunschKirchensteuer,
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       kinder: 0,
       alter: 30,
       abrechnungszeitraum: 'monat',

@@ -4,32 +4,31 @@ import { CALCULATOR_LINKS, RATGEBER_LINKS } from '@/lib/utils/internal-links';
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
-  // Select featured calculators for footer
   const featuredCalculators = CALCULATOR_LINKS.filter((link) =>
     [
       'Brutto-Netto-Rechner',
-      'Netto-Brutto-Rechner',
       'Gehaltsrechner',
-      'Arbeitslosengeld-Rechner',
-      'Rentenrechner',
-      'Minijob-Rechner',
+      'Lohnrechner',
+      'Netto-Brutto-Rechner',
+      'Stundenlohnrechner',
+      'Teilzeitrechner',
     ].includes(link.title)
   );
 
   return (
-    <footer className="bg-[#F8FAFC] border-t border-gray-200 mt-auto">
-      <div className="container mx-auto px-4 py-12">
+    <footer className="bg-[#1A1A1A] text-gray-300 mt-auto">
+      <div className="container mx-auto px-4 py-10">
         {/* Main Footer Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
           {/* Column 1: Rechner */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Rechner</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-white mb-3">Rechner</h3>
+            <ul className="space-y-1.5">
               {featuredCalculators.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
+                    className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors"
                   >
                     {link.title}
                   </Link>
@@ -38,15 +37,47 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 2: Ratgeber */}
+          {/* Column 2: Weitere Rechner */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Ratgeber</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-white mb-3">Weitere Rechner</h3>
+            <ul className="space-y-1.5">
+              <li>
+                <Link href="/rechner/firmenwagenrechner" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Firmenwagenrechner
+                </Link>
+              </li>
+              <li>
+                <Link href="/rechner/steuerklassenrechner" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Steuerklassenrechner
+                </Link>
+              </li>
+              <li>
+                <Link href="/rechner/arbeitgeber" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Arbeitgeberrechner
+                </Link>
+              </li>
+              <li>
+                <Link href="/rechner/lohnsteuer" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Lohnsteuerrechner
+                </Link>
+              </li>
+              <li>
+                <Link href="/netto-rechner" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Netto-Rechner
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          {/* Column 3: Ratgeber */}
+          <div>
+            <h3 className="font-semibold text-white mb-3">Ratgeber</h3>
+            <ul className="space-y-1.5">
               {RATGEBER_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
+                    className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors"
                   >
                     {link.title}
                   </Link>
@@ -55,78 +86,22 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Column 3: Sonstiges */}
+          {/* Column 4: Rechtliches */}
           <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Sonstiges</h3>
-            <ul className="space-y-2">
+            <h3 className="font-semibold text-white mb-3">Rechtliches</h3>
+            <ul className="space-y-1.5">
               <li>
-                <Link
-                  href="/steuerklassen-rechner"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
-                  Steuerklassen
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/firmenwagen-rechner"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
-                  Firmenwagen
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/kindergeld-rechner"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
-                  Kindergeld
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/elterngeld-rechner"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
-                  Elterngeld
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="/abfindungsrechner"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
-                  Abfindung
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Column 4: Über Uns */}
-          <div>
-            <h3 className="font-semibold text-gray-900 mb-4">Über Uns</h3>
-            <ul className="space-y-2">
-              <li>
-                <Link
-                  href="/impressum"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
+                <Link href="/impressum" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
                   Impressum
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/datenschutz"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
+                <Link href="/datenschutz" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
                   Datenschutz
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/kontakt"
-                  className="text-sm text-gray-600 hover:text-[#1E3A5F] transition-colors"
-                >
+                <Link href="/kontakt" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
                   Kontakt
                 </Link>
               </li>
@@ -135,13 +110,13 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-gray-200">
-          <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-            <p className="text-sm text-gray-600">
-              © {currentYear} gehaltly.de. Alle Rechte vorbehalten.
+        <div className="pt-6 border-t border-gray-700">
+          <div className="flex flex-col md:flex-row justify-between items-center space-y-3 md:space-y-0">
+            <p className="text-sm text-gray-400">
+              &copy; {currentYear} gehaltly.de. Alle Rechte vorbehalten.
             </p>
             <p className="text-xs text-gray-500">
-              Alle Angaben ohne Gewähr. Rechtsverbindliche Auskünfte erhalten Sie nur von Ihrem Steuerberater.
+              Alle Angaben ohne Gew&auml;hr. Rechtsverbindliche Ausk&uuml;nfte erhalten Sie nur von Ihrem Steuerberater.
             </p>
           </div>
         </div>

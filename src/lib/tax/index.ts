@@ -29,6 +29,7 @@ export function calculateGermanTax(input: CalculatorInput): CalculatorResult {
     steuerklasse: input.steuerklasse,
     bundesland: input.bundesland,
     kinder: input.kinder,
+    steuerfreibetrag: input.steuerfreibetrag,
   });
 
   // Calculate annual Solidaritätszuschlag
@@ -56,6 +57,11 @@ export function calculateGermanTax(input: CalculatorInput): CalculatorResult {
     kvZusatzbeitrag: input.kvZusatzbeitrag,
     kinder: input.kinder,
     alter: input.alter,
+    krankenversicherung: input.krankenversicherung,
+    rentenversicherungPflicht: input.rentenversicherungPflicht,
+    arbeitslosenversicherungPflicht: input.arbeitslosenversicherungPflicht,
+    pvkBeitrag: input.pvkBeitrag,
+    pvkArbeitgeberzuschuss: input.pvkArbeitgeberzuschuss,
   });
 
   // Calculate total deductions

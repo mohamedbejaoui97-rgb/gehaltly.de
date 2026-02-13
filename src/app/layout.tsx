@@ -33,11 +33,18 @@ export const metadata: Metadata = {
     siteName: "gehaltly.de",
     locale: "de_DE",
     type: "website",
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos",
     description: "Berechnen Sie kostenlos Ihr Nettogehalt. Alle Steuerklassen, alle Bundesländer.",
+    images: ['https://gehaltly.de/logo.png'],
   },
   robots: {
     index: true,
@@ -53,6 +60,8 @@ export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
   maximumScale: 5,
+  themeColor: '#1A1A1A',
+  viewportFit: 'cover',
 };
 
 export default function RootLayout({
@@ -63,6 +72,32 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased flex flex-col min-h-screen`}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "gehaltly.de",
+              "url": "https://gehaltly.de",
+              "description": "Kostenlose Gehaltsrechner für Deutschland",
+              "publisher": {
+                "@type": "Organization",
+                "name": "gehaltly.de",
+                "url": "https://gehaltly.de",
+                "logo": {
+                  "@type": "ImageObject",
+                  "url": "https://gehaltly.de/logo.png"
+                }
+              },
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://gehaltly.de/?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
         <Header />
         <main className="flex-1 pb-20 md:pb-0">{children}</main>
         <Footer />

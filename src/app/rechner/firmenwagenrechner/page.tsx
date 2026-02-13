@@ -26,6 +26,7 @@ export default function FirmenwagenrechnerPage() {
   const [bruttogehalt, setBruttogehalt] = useState(4000);
   const [listenpreis, setListenpreis] = useState(40000);
   const [entfernung, setEntfernung] = useState(20);
+  const [entfernungDisplay, setEntfernungDisplay] = useState("20");
   const [berechnungsmethode, setBerechnungsmethode] = useState<"1%" | "fahrtenbuch">("1%");
   const [result, setResult] = useState<CalculatorResultType | null>(null);
 
@@ -69,7 +70,7 @@ export default function FirmenwagenrechnerPage() {
       alter: 30,
       kinder: 0,
       krankenversicherung: "gesetzlich",
-      kvZusatzbeitrag: 1.7,
+      kvZusatzbeitrag: 2.9,
       steuerfreibetrag: 0,
       geldwerterVorteil: geldwerterVorteil, // Add company car benefit
       abrechnungsjahr: 2026,
@@ -93,7 +94,7 @@ export default function FirmenwagenrechnerPage() {
     alter: 30,
     kinder: 0,
     krankenversicherung: "gesetzlich",
-    kvZusatzbeitrag: 1.7,
+    kvZusatzbeitrag: 2.9,
     steuerfreibetrag: 0,
     geldwerterVorteil: 0,
     abrechnungsjahr: 2026,
@@ -229,10 +230,25 @@ export default function FirmenwagenrechnerPage() {
                         type="number"
                         min={0}
                         max={100}
-                        value={entfernung}
+                        value={entfernungDisplay}
                         onChange={(e) => {
-                          setEntfernung(parseInt(e.target.value) || 0);
-                          calculateWithCompanyCar();
+                          const raw = e.target.value;
+                          setEntfernungDisplay(raw);
+                          const num = parseInt(raw);
+                          if (!isNaN(num)) {
+                            setEntfernung(num);
+                          }
+                        }}
+                        onBlur={() => {
+                          const num = parseInt(entfernungDisplay);
+                          if (isNaN(num) || entfernungDisplay.trim() === "") {
+                            setEntfernung(20);
+                            setEntfernungDisplay("20");
+                          } else {
+                            const clamped = Math.min(Math.max(num, 0), 100);
+                            setEntfernung(clamped);
+                            setEntfernungDisplay(clamped.toString());
+                          }
                         }}
                       />
                       <p className="text-sm text-muted-foreground">

@@ -19,14 +19,14 @@ export function TaxBreakdownChart({ result }: TaxBreakdownChartProps) {
       {
         data: [netto, gesamtSteuern, gesamtSozialabgaben],
         backgroundColor: [
-          '#10B981', // green for Netto
-          '#F59E0B', // amber for Steuern
-          '#EF4444', // red for Sozialabgaben
+          '#1A1A1A', // black for Netto (Germany flag)
+          '#DD0000', // red for Steuern (Germany flag)
+          '#FFCC00', // gold for Sozialabgaben (Germany flag)
         ],
         borderColor: [
-          '#10B981',
-          '#F59E0B',
-          '#EF4444',
+          '#1A1A1A',
+          '#DD0000',
+          '#FFCC00',
         ],
         borderWidth: 2,
       },

@@ -1,8 +1,15 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
+  title: 'Steuerklassenrechner 2026 - Optimale Steuerklasse finden',
+  description: 'Steuerklassenrechner 2026: Finden Sie die optimale Steuerklassenkombination für Ehepaare. ✓ Alle 6 Klassen ✓ Netto-Vergleich ✓ Kostenlos',
   alternates: {
-    canonical: 'https://gehaltly.de/rechner/steuerklassenrechner',
+    canonical: 'https://gehaltly.de/rechner/steuerklassenrechner/',
+  },
+  openGraph: {
+    title: 'Steuerklassenrechner 2026 - Optimale Steuerklasse finden',
+    description: 'Steuerklassenrechner 2026: Finden Sie die optimale Steuerklassenkombination für Ehepaare. ✓ Alle 6 Klassen ✓ Netto-Vergleich ✓ Kostenlos',
+    url: 'https://gehaltly.de/rechner/steuerklassenrechner/',
   },
 };
 

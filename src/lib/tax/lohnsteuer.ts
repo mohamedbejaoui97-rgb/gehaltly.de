@@ -11,6 +11,7 @@ interface LohnsteuerInput {
   steuerklasse: Steuerklasse;
   bundesland: Bundesland;
   kinder: number;
+  steuerfreibetrag?: number;
 }
 
 /**
@@ -18,7 +19,7 @@ interface LohnsteuerInput {
  * Implements the EStG §32a progressive tax formula with 5 zones
  */
 export function calculateLohnsteuer(input: LohnsteuerInput): number {
-  const { jahresbrutto, steuerklasse, kinder } = input;
+  const { jahresbrutto, steuerklasse, kinder, steuerfreibetrag = 0 } = input;
 
   // Calculate taxable income (zu versteuerndes Einkommen)
   let zvE = jahresbrutto;
@@ -28,6 +29,11 @@ export function calculateLohnsteuer(input: LohnsteuerInput): number {
 
   // Subtract Sonderausgabenpauschbetrag
   zvE -= SONDERAUSGABENPAUSCHBETRAG;
+
+  // Subtract individual Steuerfreibetrag (annual)
+  if (steuerfreibetrag > 0) {
+    zvE -= steuerfreibetrag;
+  }
 
   // Apply Grundfreibetrag (tax-free basic allowance)
   if (steuerklasse === 1 || steuerklasse === 4) {

@@ -75,61 +75,44 @@ export default function HomePage() {
     ]
   };
 
-  // BreadcrumbList Schema (handled by Breadcrumbs component)
-
   return (
     <>
       {/* Schema Markup */}
       <SchemaMarkup schema={webAppSchema} />
 
-      {/* Breadcrumbs - Just "Startseite" for homepage */}
-      <div className="container mx-auto px-4 pt-6">
+      {/* Breadcrumbs */}
+      <div className="container mx-auto px-4 pt-3">
         <Breadcrumbs items={[]} />
       </div>
 
-      {/* Hero Section */}
+      {/* Compact Hero */}
       <PageHero
         title="Brutto Netto Rechner 2026"
         subtitle="Berechnen Sie kostenlos Ihr Nettogehalt"
-        description="Der präzise Gehaltsrechner für Deutschland mit allen Steuerklassen und Bundesländern. Inklusive detaillierter Aufschlüsselung aller Steuern und Sozialabgaben."
       />
 
-      {/* Introduction */}
-      <section className="py-8 md:py-12">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Unser Brutto-Netto-Rechner 2026 zeigt Ihnen präzise, wie viel von Ihrem Bruttogehalt nach Abzug von Steuern und Sozialversicherungsbeiträgen übrig bleibt. Geben Sie einfach Ihr Bruttogehalt ein und wählen Sie Ihre Steuerklasse sowie Ihr Bundesland aus. Der Rechner berücksichtigt automatisch alle relevanten Faktoren wie Lohnsteuer, Solidaritätszuschlag, Kirchensteuer sowie die Beiträge zur Renten-, Kranken-, Pflege- und Arbeitslosenversicherung.
-            </p>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Die Berechnungen basieren auf den aktuellen Steuertabellen und Sozialversicherungsbeiträgen für 2026 und berücksichtigen den erhöhten Grundfreibetrag von 12.348 EUR sowie die aktuellen Beitragsbemessungsgrenzen.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Calculator Section - Two Column Layout */}
-      <section className="py-8 md:py-12 bg-muted/30">
+      {/* Calculator Section - IMMEDIATELY after hero */}
+      <section className="py-4 md:py-6 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Left Column - Form */}
-              <div className="space-y-6">
-                <div className="bg-background rounded-lg border p-6 shadow-sm">
-                  <h2 className="text-2xl font-bold mb-6">Ihre Eingaben</h2>
+              <div>
+                <div className="bg-background rounded-lg border p-4 md:p-6 shadow-sm">
+                  <h2 className="text-xl font-bold mb-4">Ihre Eingaben</h2>
                   <BruttoNettoForm onResult={setResult} />
                 </div>
               </div>
 
               {/* Right Column - Result */}
-              <div className="space-y-6">
+              <div>
                 {result ? (
                   <CalculatorResult result={result} isMonthly={true} />
                 ) : (
                   <div className="bg-background rounded-lg border p-6 shadow-sm h-full flex items-center justify-center">
                     <div className="text-center text-muted-foreground">
-                      <CalcIcon className="w-16 h-16 mx-auto mb-4 opacity-20" />
-                      <p className="text-lg font-medium mb-2">Bereit zum Berechnen</p>
+                      <CalcIcon className="w-12 h-12 mx-auto mb-3 opacity-20" />
+                      <p className="text-base font-medium mb-1">Bereit zum Berechnen</p>
                       <p className="text-sm">
                         Geben Sie Ihre Daten ein, um Ihr Nettogehalt zu berechnen
                       </p>
@@ -142,16 +125,29 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Introduction - AFTER calculator */}
+      <section className="py-4 md:py-6">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <p className="text-base text-muted-foreground leading-relaxed mb-3">
+              Unser Brutto-Netto-Rechner 2026 zeigt Ihnen präzise, wie viel von Ihrem Bruttogehalt nach Abzug von Steuern und Sozialversicherungsbeiträgen übrig bleibt. Geben Sie einfach Ihr Bruttogehalt ein und wählen Sie Ihre Steuerklasse sowie Ihr Bundesland aus.
+            </p>
+            <p className="text-base text-muted-foreground leading-relaxed">
+              Die Berechnungen basieren auf den aktuellen Steuertabellen und Sozialversicherungsbeiträgen für 2026 und berücksichtigen den erhöhten Grundfreibetrag von 12.348 EUR sowie die aktuellen Beitragsbemessungsgrenzen.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* Related Calculators */}
       <RelatedLinks currentHref="/" count={6} title="Weitere Gehaltsrechner" />
 
       {/* Glossary Section */}
-      <section className="py-8 md:py-12">
+      <section className="py-4 md:py-6">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h2 className="text-3xl font-bold mb-8">Wichtige Begriffe erklärt</h2>
+          <div className="max-w-4xl mx-auto space-y-6">
+            <h2 className="text-2xl font-bold mb-6">Wichtige Begriffe erklärt</h2>
 
-            {/* Grundfreibetrag */}
             <ContentSection
               heading="Grundfreibetrag 2026"
               icon={<BookOpen className="w-5 h-5" />}
@@ -159,147 +155,90 @@ export default function HomePage() {
             >
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                 <p className="text-sm text-blue-900 dark:text-blue-100">
-                  <strong>Beispiel:</strong> Bei einem Jahreseinkommen von 30.000 EUR sind die ersten 12.348 EUR steuerfrei. Nur die verbleibenden 17.652 EUR unterliegen der Einkommensteuer. Für Ehepaare, die zusammen veranlagt werden, verdoppelt sich der Grundfreibetrag auf 24.696 EUR.
+                  <strong>Beispiel:</strong> Bei einem Jahreseinkommen von 30.000 EUR sind die ersten 12.348 EUR steuerfrei. Nur die verbleibenden 17.652 EUR unterliegen der Einkommensteuer. Für Ehepaare verdoppelt sich der Grundfreibetrag auf 24.696 EUR.
                 </p>
               </div>
             </ContentSection>
 
-            {/* Kinderfreibetrag */}
             <ContentSection
               heading="Kinderfreibetrag 2026"
               icon={<Users className="w-5 h-5" />}
-              body="Der Kinderfreibetrag beträgt 2026 insgesamt 9.756 EUR pro Kind (4.878 EUR je Elternteil). Dieser Freibetrag setzt sich aus zwei Komponenten zusammen: dem Kinderfreibetrag von 6.612 EUR für das sächliche Existenzminimum des Kindes und dem Freibetrag für Betreuung, Erziehung und Ausbildung (BEA-Freibetrag) von 3.144 EUR."
+              body="Der Kinderfreibetrag beträgt 2026 insgesamt 9.756 EUR pro Kind (4.878 EUR je Elternteil). Dieser setzt sich aus dem Kinderfreibetrag von 6.612 EUR und dem BEA-Freibetrag von 3.144 EUR zusammen."
             >
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
                 <p className="text-sm text-green-900 dark:text-green-100">
-                  <strong>Wichtig:</strong> Das Finanzamt prüft automatisch im Rahmen der Einkommensteuererklärung, ob der Kinderfreibetrag oder das ausgezahlte Kindergeld für Sie günstiger ist (Günstigerprüfung). Der Kinderfreibetrag wirkt sich besonders bei höheren Einkommen steuermindernd aus. Während des Jahres erhalten Eltern zunächst das Kindergeld (2026: 250 EUR pro Kind monatlich).
+                  <strong>Wichtig:</strong> Das Finanzamt prüft automatisch, ob der Kinderfreibetrag oder das Kindergeld (2026: 250 EUR pro Kind monatlich) günstiger ist.
                 </p>
               </div>
             </ContentSection>
 
-            {/* Sozialversicherungsbeiträge */}
             <ContentSection
               heading="Sozialversicherungsbeiträge 2026"
               icon={<PiggyBank className="w-5 h-5" />}
               body="Die Sozialversicherung in Deutschland umfasst vier Säulen: Rentenversicherung, Krankenversicherung, Pflegeversicherung und Arbeitslosenversicherung. Arbeitnehmer und Arbeitgeber teilen sich die Beiträge grundsätzlich je zur Hälfte."
             >
-              <div className="space-y-4">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div className="bg-muted rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Rentenversicherung</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Gesamtbeitrag: <strong>18,6%</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Ihr Anteil: <strong>9,3%</strong>
-                    </p>
-                  </div>
-                  <div className="bg-muted rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Krankenversicherung</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Gesamtbeitrag: <strong>14,6% + Zusatzbeitrag</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Ihr Anteil: <strong>ca. 8,15%</strong>
-                    </p>
-                  </div>
-                  <div className="bg-muted rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Pflegeversicherung</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Gesamtbeitrag: <strong>3,4%</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Ihr Anteil: <strong>1,7%</strong> (+ 0,6% Zuschlag für Kinderlose ab 23)
-                    </p>
-                  </div>
-                  <div className="bg-muted rounded-lg p-4">
-                    <h4 className="font-semibold mb-2">Arbeitslosenversicherung</h4>
-                    <p className="text-sm text-muted-foreground mb-2">
-                      Gesamtbeitrag: <strong>2,6%</strong>
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      Ihr Anteil: <strong>1,3%</strong>
-                    </p>
-                  </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="bg-muted rounded-lg p-3">
+                  <h4 className="font-semibold text-sm mb-1">Rentenversicherung</h4>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>18,6%</strong> | Ihr Anteil: <strong>9,3%</strong></p>
+                </div>
+                <div className="bg-muted rounded-lg p-3">
+                  <h4 className="font-semibold text-sm mb-1">Krankenversicherung</h4>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>14,6% + Zusatz</strong> | Ihr Anteil: <strong>~8,15%</strong></p>
+                </div>
+                <div className="bg-muted rounded-lg p-3">
+                  <h4 className="font-semibold text-sm mb-1">Pflegeversicherung</h4>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>3,4%</strong> | Ihr Anteil: <strong>1,7%</strong></p>
+                </div>
+                <div className="bg-muted rounded-lg p-3">
+                  <h4 className="font-semibold text-sm mb-1">Arbeitslosenversicherung</h4>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>2,6%</strong> | Ihr Anteil: <strong>1,3%</strong></p>
                 </div>
               </div>
             </ContentSection>
 
-            {/* Steuerklassen */}
             <ContentSection
               heading="Steuerklassen in Deutschland"
               icon={<Info className="w-5 h-5" />}
-              body="In Deutschland gibt es sechs Steuerklassen, die sich nach Familienstand und Anzahl der Arbeitsverhältnisse richten. Die Steuerklasse bestimmt, wie viel Lohnsteuer monatlich vom Gehalt einbehalten wird."
+              body="In Deutschland gibt es sechs Steuerklassen, die sich nach Familienstand und Anzahl der Arbeitsverhältnisse richten."
             >
-              <div className="space-y-3">
-                <div className="border-l-4 border-blue-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 1</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Ledige, geschiedene oder verwitwete Arbeitnehmer ohne Kinder
-                  </p>
+              <div className="space-y-2">
+                <div className="border-l-4 border-blue-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 1</h4>
+                  <p className="text-xs text-muted-foreground">Ledige, geschiedene oder verwitwete Arbeitnehmer</p>
                 </div>
-                <div className="border-l-4 border-green-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 2</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Alleinerziehende mit Entlastungsbetrag (mindestens ein Kind im Haushalt)
-                  </p>
+                <div className="border-l-4 border-green-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 2</h4>
+                  <p className="text-xs text-muted-foreground">Alleinerziehende mit Entlastungsbetrag</p>
                 </div>
-                <div className="border-l-4 border-purple-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 3</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Verheiratete/Verpartnerte, wenn Partner Steuerklasse 5 hat oder nicht arbeitet
-                  </p>
+                <div className="border-l-4 border-purple-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 3</h4>
+                  <p className="text-xs text-muted-foreground">Verheiratete, wenn Partner Steuerklasse 5 hat</p>
                 </div>
-                <div className="border-l-4 border-orange-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 4</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Verheiratete/Verpartnerte mit ähnlichem Einkommen (Standard seit 2023)
-                  </p>
+                <div className="border-l-4 border-orange-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 4</h4>
+                  <p className="text-xs text-muted-foreground">Verheiratete mit ähnlichem Einkommen</p>
                 </div>
-                <div className="border-l-4 border-red-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 5</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Verheiratete/Verpartnerte, wenn Partner Steuerklasse 3 hat (höhere Abzüge)
-                  </p>
+                <div className="border-l-4 border-red-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 5</h4>
+                  <p className="text-xs text-muted-foreground">Verheiratete, wenn Partner Steuerklasse 3 hat</p>
                 </div>
-                <div className="border-l-4 border-gray-500 pl-4 py-2">
-                  <h4 className="font-semibold">Steuerklasse 6</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Für ein zweites oder weiteres Arbeitsverhältnis (höchste Abzüge)
-                  </p>
+                <div className="border-l-4 border-gray-500 pl-3 py-1">
+                  <h4 className="font-semibold text-sm">Steuerklasse 6</h4>
+                  <p className="text-xs text-muted-foreground">Zweites oder weiteres Arbeitsverhältnis</p>
                 </div>
               </div>
             </ContentSection>
 
-            {/* Beitragsbemessungsgrenze */}
             <ContentSection
               heading="Beitragsbemessungsgrenze 2026"
               icon={<TrendingUp className="w-5 h-5" />}
-              body="Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. Für 2026 liegt sie bei 8.050 EUR monatlich (96.600 EUR jährlich) in den alten Bundesländern und 7.900 EUR monatlich (94.800 EUR jährlich) in den neuen Bundesländern."
+              body="Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. 2026: 8.050 EUR/Monat (West) bzw. 7.900 EUR/Monat (Ost)."
             >
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
                 <p className="text-sm text-amber-900 dark:text-amber-100">
-                  <strong>Was bedeutet das?</strong> Wenn Ihr monatliches Bruttogehalt über der Beitragsbemessungsgrenze liegt, zahlen Sie Sozialversicherungsbeiträge nur bis zu dieser Grenze. Der darüber liegende Teil Ihres Gehalts ist beitragsfrei. Dies gilt für Renten-, Arbeitslosen- und Pflegeversicherung. Für die Krankenversicherung gilt eine separate, höhere Grenze (2026: 5.175 EUR monatlich).
+                  <strong>Was bedeutet das?</strong> Einkommen über der Grenze ist beitragsfrei. Für die Krankenversicherung gilt eine separate Grenze (2026: 5.175 EUR/Monat).
                 </p>
-              </div>
-            </ContentSection>
-
-            {/* Pflegeversicherung */}
-            <ContentSection
-              heading="Pflegeversicherung"
-              icon={<Users className="w-5 h-5" />}
-              body="Der Beitragssatz zur Pflegeversicherung beträgt 2026 insgesamt 3,4%. Arbeitnehmer zahlen grundsätzlich 1,7% ihres Bruttogehalts. Kinderlose Arbeitnehmer ab 23 Jahren zahlen zusätzlich einen Zuschlag von 0,6%, insgesamt also 2,3%."
-            >
-              <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4 space-y-3">
-                <p className="text-sm text-purple-900 dark:text-purple-100">
-                  <strong>Wichtig zu wissen:</strong>
-                </p>
-                <ul className="text-sm text-purple-900 dark:text-purple-100 space-y-2 list-disc list-inside">
-                  <li>Der Zuschlag für Kinderlose wurde 2022 erhöht und beträgt nun 0,6% (zuvor 0,25%)</li>
-                  <li>Als kinderlos gilt, wer keine eigenen Kinder hat - unabhängig davon, ob Stiefkinder im Haushalt leben</li>
-                  <li>In Sachsen tragen Arbeitnehmer einen höheren Anteil (2,2% statt 1,7%), dafür ist dort der Buß- und Bettag ein gesetzlicher Feiertag</li>
-                  <li>Die Pflegeversicherung wird bis zur Beitragsbemessungsgrenze berechnet</li>
-                </ul>
               </div>
             </ContentSection>
           </div>
@@ -308,20 +247,6 @@ export default function HomePage() {
 
       {/* FAQ Section */}
       <FAQSection faqs={faqs} title="Häufig gestellte Fragen zum Brutto-Netto-Rechner" />
-
-      {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="max-w-3xl mx-auto text-center space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold">
-              Berechnen Sie jetzt Ihr Nettogehalt
-            </h2>
-            <p className="text-lg text-muted-foreground">
-              Nutzen Sie unseren kostenlosen Brutto-Netto-Rechner 2026 für eine präzise Berechnung Ihres Nettogehalts. Alle Steuerklassen, alle Bundesländer, alle Optionen.
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   );
 }

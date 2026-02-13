@@ -1,6 +1,6 @@
 /**
  * Internal link mappings for navigation and SEO
- * Provides structured data for calculator pages, guide pages, and related links
+ * Only includes pages that actually exist in the app
  */
 
 export interface InternalLink {
@@ -10,23 +10,13 @@ export interface InternalLink {
 }
 
 /**
- * List of 26 calculator pages for navigation and internal linking
+ * Calculator pages that exist in the app
  */
 export const CALCULATOR_LINKS: InternalLink[] = [
   {
     title: 'Brutto-Netto-Rechner',
     href: '/',
     description: 'Berechnen Sie Ihr Nettogehalt aus dem Bruttogehalt',
-  },
-  {
-    title: 'Netto-Brutto-Rechner',
-    href: '/netto-brutto-rechner',
-    description: 'Berechnen Sie Ihr Bruttogehalt aus dem Nettogehalt',
-  },
-  {
-    title: 'Stundenlohnrechner',
-    href: '/stundenlohn-rechner',
-    description: 'Berechnen Sie Ihren Stundenlohn aus Monats- oder Jahresgehalt',
   },
   {
     title: 'Gehaltsrechner',
@@ -39,140 +29,75 @@ export const CALCULATOR_LINKS: InternalLink[] = [
     description: 'Berechnen Sie Lohnsteuer und Sozialabgaben',
   },
   {
+    title: 'Netto-Brutto-Rechner',
+    href: '/netto-brutto-rechner',
+    description: 'Berechnen Sie Ihr Bruttogehalt aus dem Nettogehalt',
+  },
+  {
+    title: 'Netto-Rechner',
+    href: '/netto-rechner',
+    description: 'Schnelle Netto-Berechnung aus Ihrem Bruttolohn',
+  },
+  {
+    title: 'Stundenlohnrechner',
+    href: '/rechner/stundenlohn',
+    description: 'Berechnen Sie Ihren Stundenlohn aus Monats- oder Jahresgehalt',
+  },
+  {
     title: 'Teilzeitrechner',
-    href: '/teilzeitrechner',
+    href: '/rechner/teilzeit',
     description: 'Berechnen Sie Ihr Gehalt bei Teilzeitarbeit',
   },
   {
-    title: 'Midijob-Rechner',
-    href: '/midijob-rechner',
-    description: 'Berechnen Sie Abgaben für Midijobs (520-2000 Euro)',
-  },
-  {
-    title: 'Minijob-Rechner',
-    href: '/minijob-rechner',
-    description: 'Berechnen Sie Abgaben für Minijobs (bis 520 Euro)',
-  },
-  {
-    title: 'Kurzarbeitergeld-Rechner',
-    href: '/kurzarbeitergeld-rechner',
-    description: 'Berechnen Sie Ihr Kurzarbeitergeld',
-  },
-  {
-    title: 'Arbeitslosengeld-Rechner',
-    href: '/arbeitslosengeld-rechner',
-    description: 'Berechnen Sie Ihr Arbeitslosengeld',
-  },
-  {
-    title: 'Elterngeld-Rechner',
-    href: '/elterngeld-rechner',
-    description: 'Berechnen Sie Ihr Elterngeld',
-  },
-  {
-    title: 'Krankengeld-Rechner',
-    href: '/krankengeld-rechner',
-    description: 'Berechnen Sie Ihr Krankengeld',
-  },
-  {
-    title: 'Rentenrechner',
-    href: '/rentenrechner',
-    description: 'Berechnen Sie Ihre Nettorente',
-  },
-  {
-    title: 'Abfindungsrechner',
-    href: '/abfindungsrechner',
-    description: 'Berechnen Sie die Steuer auf Ihre Abfindung',
-  },
-  {
-    title: 'Firmenwagen-Rechner',
-    href: '/firmenwagen-rechner',
+    title: 'Firmenwagenrechner',
+    href: '/rechner/firmenwagenrechner',
     description: 'Berechnen Sie den geldwerten Vorteil Ihres Firmenwagens',
   },
   {
-    title: 'Pendlerpauschale-Rechner',
-    href: '/pendlerpauschale-rechner',
-    description: 'Berechnen Sie Ihre Pendlerpauschale',
-  },
-  {
-    title: 'Lohnsteuerermäßigung',
-    href: '/lohnsteuerermassigung',
-    description: 'Berechnen Sie mögliche Lohnsteuerermäßigungen',
-  },
-  {
-    title: 'Steuerklassen-Rechner',
-    href: '/steuerklassen-rechner',
+    title: 'Steuerklassenrechner',
+    href: '/rechner/steuerklassenrechner',
     description: 'Finden Sie die optimale Steuerklassenkombination',
   },
   {
-    title: 'Kirchensteuer-Rechner',
-    href: '/kirchensteuer-rechner',
-    description: 'Berechnen Sie Ihre Kirchensteuer',
+    title: 'Arbeitgeberrechner',
+    href: '/rechner/arbeitgeber',
+    description: 'Berechnen Sie die Arbeitgeber-Gesamtkosten',
   },
   {
-    title: 'Solidaritätszuschlag-Rechner',
-    href: '/solidaritatszuschlag-rechner',
-    description: 'Berechnen Sie den Solidaritätszuschlag',
-  },
-  {
-    title: 'Ehegattensplitting-Rechner',
-    href: '/ehegattensplitting-rechner',
-    description: 'Berechnen Sie Vorteile des Ehegattensplittings',
-  },
-  {
-    title: 'Witwenrenten-Rechner',
-    href: '/witwenrenten-rechner',
-    description: 'Berechnen Sie Ihre Witwenrente',
-  },
-  {
-    title: 'Waisenrenten-Rechner',
-    href: '/waisenrenten-rechner',
-    description: 'Berechnen Sie die Waisenrente',
-  },
-  {
-    title: 'Kindergeld-Rechner',
-    href: '/kindergeld-rechner',
-    description: 'Berechnen Sie Ihr Kindergeld',
-  },
-  {
-    title: 'Kinderfreibetrag-Rechner',
-    href: '/kinderfreibetrag-rechner',
-    description: 'Vergleichen Sie Kindergeld und Kinderfreibetrag',
-  },
-  {
-    title: 'Unterhaltsrechner',
-    href: '/unterhaltsrechner',
-    description: 'Berechnen Sie Unterhaltszahlungen',
+    title: 'Lohnsteuerrechner',
+    href: '/rechner/lohnsteuer',
+    description: 'Berechnen Sie Ihre monatliche Lohnsteuer',
   },
 ];
 
 /**
- * List of 5 guide/ratgeber pages for navigation and internal linking
+ * Ratgeber (guide) pages that exist in the app
  */
 export const RATGEBER_LINKS: InternalLink[] = [
   {
+    title: 'Brutto-Netto Unterschied',
+    href: '/ratgeber/brutto-netto-unterschied',
+    description: 'Was ist der Unterschied zwischen Brutto und Netto?',
+  },
+  {
     title: 'Steuerklassen',
     href: '/ratgeber/steuerklassen',
-    description: 'Alles über deutsche Steuerklassen',
+    description: 'Alles über die 6 deutschen Steuerklassen',
   },
   {
-    title: 'Sozialversicherung',
-    href: '/ratgeber/sozialversicherung',
-    description: 'Übersicht der Sozialversicherungsbeiträge',
+    title: 'Sozialabgaben',
+    href: '/ratgeber/sozialabgaben',
+    description: 'Übersicht der Sozialversicherungsbeiträge 2026',
   },
   {
-    title: 'Freibeträge',
-    href: '/ratgeber/freibetrage',
-    description: 'Steuerliche Freibeträge im Überblick',
+    title: 'Brutto-Netto Rechnung',
+    href: '/ratgeber/brutto-netto-rechnung',
+    description: 'So funktioniert die Brutto-Netto-Berechnung',
   },
   {
-    title: 'Gehaltsverhandlung',
-    href: '/ratgeber/gehaltsverhandlung',
-    description: 'Tipps für erfolgreiche Gehaltsverhandlungen',
-  },
-  {
-    title: 'Nettolohn optimieren',
-    href: '/ratgeber/nettolohn-optimieren',
-    description: 'So optimieren Sie Ihren Nettolohn',
+    title: 'Elterngeld',
+    href: '/ratgeber/elterngeld-brutto-netto',
+    description: 'Elterngeld und Brutto-Netto erklärt',
   },
 ];
 

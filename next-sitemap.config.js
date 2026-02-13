@@ -5,16 +5,23 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ['/api/*', '/_next/*', '/static/*'],
+  exclude: ['/api/*', '/_next/*', '/static/*', '/robots.txt', '/kontakt'],
   robotsTxtOptions: {
     policies: [
       {
         userAgent: '*',
         allow: '/',
+        disallow: [
+          '/api/',
+          '/_next/',
+          '/static/',
+          '/*.json$',
+          '/*_buildManifest.js$',
+          '/*_middlewareManifest.js$',
+          '/*_ssgManifest.js$',
+          '/*.js.map$',
+        ],
       },
-    ],
-    additionalSitemaps: [
-      'https://gehaltly.de/sitemap.xml',
     ],
   },
   transform: async (config, path) => {
@@ -29,14 +36,20 @@ module.exports = {
     }
 
     // Main calculator pages - high priority
-    else if (path.match(/^\/steuerklasse-[1-6]$/)) {
+    else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner'].includes(path)) {
       priority = 0.9;
       changefreq = 'weekly';
     }
 
-    // Amount pages - high priority
-    else if (path.match(/^\/\d+-(euro|eur)$/)) {
+    // Rechner sub-pages - high priority
+    else if (path.startsWith('/rechner/')) {
       priority = 0.85;
+      changefreq = 'weekly';
+    }
+
+    // Amount pages (e.g. /3000-brutto-in-netto) - high priority
+    else if (path.match(/^\/\d+-brutto-in-netto$/)) {
+      priority = 0.8;
       changefreq = 'monthly';
     }
 
