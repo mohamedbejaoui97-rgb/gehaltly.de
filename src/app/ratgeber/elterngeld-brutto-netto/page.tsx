@@ -81,7 +81,7 @@ export default function ElterngeldBruttoNettoPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Eine der häufigsten Fragen werdender Eltern ist: Wird Elterngeld vom Brutto oder vom Netto berechnet? Die Antwort ist nicht ganz einfach, denn das Elterngeld orientiert sich an einem speziell berechneten "Elterngeld-Netto", das sich vom tatsächlichen Nettoeinkommen auf Ihrer Gehaltsabrechnung unterscheidet.
+              Eine der häufigsten Fragen werdender Eltern ist: Wird Elterngeld vom Brutto oder vom Netto berechnet? Die Antwort ist nicht ganz einfach, denn das Elterngeld orientiert sich an einem speziell berechneten &quot;Elterngeld-Netto&quot;, das sich vom tatsächlichen Nettoeinkommen auf Ihrer Gehaltsabrechnung unterscheidet.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In diesem Guide erklären wir Ihnen ausführlich, wie das Elterngeld 2026 berechnet wird, welche Faktoren eine Rolle spielen und wie Sie Ihr Elterngeld optimieren können.
@@ -93,7 +93,7 @@ export default function ElterngeldBruttoNettoPage() {
       <ContentSection
         heading="Die Elterngeld-Berechnung: Grundlagen"
         icon={<Baby className="w-5 h-5" />}
-        body="Das Elterngeld beträgt in der Regel 65-67% des durchschnittlichen monatlichen Nettoeinkommens der letzten 12 Monate vor der Geburt. Doch dieses 'Netto' wird speziell für das Elterngeld berechnet."
+        body="Das Elterngeld beträgt in der Regel 65-67% des durchschnittlichen monatlichen Nettoeinkommens der letzten 12 Monate vor der Geburt. Doch dieses &apos;Netto&apos; wird speziell für das Elterngeld berechnet."
       >
         <div className="space-y-4">
           <div className="bg-blue-50 dark:bg-blue-950/20 border-l-4 border-blue-500 p-4">
@@ -102,7 +102,7 @@ export default function ElterngeldBruttoNettoPage() {
               <li><strong>Ausgangspunkt:</strong> Ihr durchschnittliches Bruttogehalt der letzten 12 Monate (vor der Geburt)</li>
               <li><strong>Abzug Sozialversicherung:</strong> Pauschal 21% für Sozialversicherungsbeiträge</li>
               <li><strong>Abzug Lohnsteuer:</strong> Individuelle Lohnsteuer nach Ihrer Steuerklasse</li>
-              <li><strong>Ergebnis:</strong> Ihr "Elterngeld-Netto"</li>
+              <li><strong>Ergebnis:</strong> Ihr &quot;Elterngeld-Netto&quot;</li>
               <li><strong>Elterngeld:</strong> 65-67% vom Elterngeld-Netto</li>
             </ol>
           </div>

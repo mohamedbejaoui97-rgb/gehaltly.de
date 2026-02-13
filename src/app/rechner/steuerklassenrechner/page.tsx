@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Calculator as CalcIcon, Users, TrendingUp, Info, BookOpen, CheckCircle2 } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Users, Info, BookOpen, CheckCircle2 } from "lucide-react";
 import { calculateGermanTax, type CalculatorResult as CalculatorResultType, type Steuerklasse } from "@/lib/tax";
 import { SliderInput } from "@/components/calculator/SliderInput";
 import PageHero from "@/components/content/PageHero";
@@ -45,6 +45,7 @@ export default function SteuerklassenrechnerPage() {
         kvZusatzbeitrag: 1.7,
         steuerfreibetrag: 0,
         geldwerterVorteil: 0,
+        abrechnungsjahr: 2026,
       });
     }
 
@@ -52,9 +53,9 @@ export default function SteuerklassenrechnerPage() {
   };
 
   // Calculate on mount and when bruttogehalt changes
-  useState(() => {
+  useEffect(() => {
     calculateAllClasses();
-  });
+  }, [bruttogehalt]);
 
   // Find the tax class with highest netto
   const bestTaxClass = Object.entries(results).reduce((best, [key, result]) => {

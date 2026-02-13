@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { Receipt, Calculator as CalcIcon, TrendingUp, Info, BookOpen, PieChart } from "lucide-react";
-import { calculateGermanTax, type CalculatorResult as CalculatorResultType, type Steuerklasse } from "@/lib/tax";
+import { useState, useEffect } from "react";
+import { Receipt, TrendingUp, Info, BookOpen, PieChart } from "lucide-react";
+import { calculateGermanTax, type Steuerklasse } from "@/lib/tax";
 import { SliderInput } from "@/components/calculator/SliderInput";
 import PageHero from "@/components/content/PageHero";
 import ContentSection from "@/components/content/ContentSection";
@@ -24,7 +24,6 @@ export default function LohnsteuerPage() {
   const [bruttogehalt, setBruttogehalt] = useState(4000);
   const [steuerklasse, setSteuerklasse] = useState<Steuerklasse>(1);
   const [kirchensteuer, setKirchensteuer] = useState(false);
-  const [result, setResult] = useState<CalculatorResultType | null>(null);
 
   // Format currency in German format
   const formatCurrency = (value: number): string => {
@@ -52,17 +51,19 @@ export default function LohnsteuerPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
-    setResult(taxResult);
     return taxResult;
   };
 
-  // Calculate on mount and when inputs change
-  useState(() => {
-    calculateTax();
-  });
+  // State for calculated result
+  const [taxResult, setTaxResult] = useState(calculateTax());
 
-  const taxResult = calculateTax();
+  // Calculate on mount and when inputs change
+  useEffect(() => {
+    const result = calculateTax();
+    setTaxResult(result);
+  }, [bruttogehalt, steuerklasse, kirchensteuer]);
 
   // Calculate effective tax rate
   const gesamtSteuern = taxResult.gesamtSteuern;

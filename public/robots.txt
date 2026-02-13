@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://gehaltly.de
+
+# Sitemaps
+Sitemap: https://gehaltly.de/sitemap.xml

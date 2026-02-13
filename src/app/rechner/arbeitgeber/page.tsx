@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Building2, Calculator as CalcIcon, TrendingUp, Info, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Building2, TrendingUp, Info, BookOpen } from "lucide-react";
 import { calculateGermanTax, type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import { SliderInput } from "@/components/calculator/SliderInput";
@@ -70,17 +70,16 @@ export default function ArbeitgeberPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
     setResult(taxResult);
     return taxResult;
   };
 
   // Calculate on mount and when bruttogehalt changes
-  useState(() => {
+  useEffect(() => {
     calculateEmployee();
-  });
-
-  const employeeResult = calculateEmployee();
+  }, [bruttogehalt]);
 
   // FAQ data specific to Arbeitgeber
   const faqs = [

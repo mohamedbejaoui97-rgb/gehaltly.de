@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import { Users, Heart, Briefcase, FileText, AlertCircle } from 'lucide-react';
+import { Users, Heart, Briefcase, FileText } from 'lucide-react';
 import PageHero from '@/components/content/PageHero';
 import ContentSection from '@/components/content/ContentSection';
 import FAQSection from '@/components/content/FAQSection';
@@ -309,7 +309,7 @@ export default function SteuerklassenPage() {
           <div className="bg-muted rounded-lg p-4">
             <h4 className="font-semibold mb-3">So beantragen Sie einen Steuerklassenwechsel:</h4>
             <ol className="text-sm space-y-2 list-decimal list-inside">
-              <li>Formular "Antrag auf Steuerklassenwechsel bei Ehegatten/Lebenspartnern" beim Finanzamt holen oder online ausfüllen</li>
+              <li>Formular &quot;Antrag auf Steuerklassenwechsel bei Ehegatten/Lebenspartnern&quot; beim Finanzamt holen oder online ausfüllen</li>
               <li>Beide Partner müssen den Antrag unterschreiben</li>
               <li>Antrag beim zuständigen Finanzamt einreichen</li>
               <li>Änderung gilt ab dem Folgemonat nach Antragstellung</li>

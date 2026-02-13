@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Car, Calculator as CalcIcon, TrendingUp, Info, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Car, TrendingUp, Info, BookOpen } from "lucide-react";
 import { calculateGermanTax, type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import { SliderInput } from "@/components/calculator/SliderInput";
@@ -72,20 +72,19 @@ export default function FirmenwagenrechnerPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: geldwerterVorteil, // Add company car benefit
+      abrechnungsjahr: 2026,
     });
     setResult(taxResult);
     return taxResult;
   };
 
   // Calculate on mount and when inputs change
-  useState(() => {
+  useEffect(() => {
     calculateWithCompanyCar();
-  });
+  }, [bruttogehalt, listenpreis, entfernung, berechnungsmethode]);
 
-  const resultWithCar = calculateWithCompanyCar();
-
-  // Calculate result without company car for comparison
-  const resultWithoutCar = calculateGermanTax({
+  // Calculate result without company car for comparison (only for display)
+  const resultWithoutCar = result ? calculateGermanTax({
     bruttoeinkommen: bruttogehalt,
     abrechnungszeitraum: "monat",
     steuerklasse: 1,
@@ -97,9 +96,10 @@ export default function FirmenwagenrechnerPage() {
     kvZusatzbeitrag: 1.7,
     steuerfreibetrag: 0,
     geldwerterVorteil: 0,
-  });
+    abrechnungsjahr: 2026,
+  }) : null;
 
-  const nettoReduction = resultWithoutCar.netto - resultWithCar.netto;
+  const nettoReduction = resultWithoutCar && result ? resultWithoutCar.netto - result.netto : 0;
 
   // FAQ data specific to Firmenwagen
   const faqs = [
@@ -244,7 +244,7 @@ export default function FirmenwagenrechnerPage() {
                       <Label htmlFor="methode">Berechnungsmethode</Label>
                       <Select
                         value={berechnungsmethode}
-                        onValueChange={(value: any) => {
+                        onValueChange={(value: "1%" | "fahrtenbuch") => {
                           setBerechnungsmethode(value);
                           calculateWithCompanyCar();
                         }}
@@ -301,20 +301,22 @@ export default function FirmenwagenrechnerPage() {
                       <p className="text-sm text-amber-900 dark:text-amber-100 mb-2">
                         <strong>Steuerliche Auswirkung:</strong>
                       </p>
-                      <div className="space-y-1 text-sm text-amber-900 dark:text-amber-100">
-                        <div className="flex justify-between">
-                          <span>Netto ohne Firmenwagen:</span>
-                          <span className="font-medium">{formatCurrency(resultWithoutCar.netto)} €</span>
+                      {resultWithoutCar && result && (
+                        <div className="space-y-1 text-sm text-amber-900 dark:text-amber-100">
+                          <div className="flex justify-between">
+                            <span>Netto ohne Firmenwagen:</span>
+                            <span className="font-medium">{formatCurrency(resultWithoutCar.netto)} €</span>
+                          </div>
+                          <div className="flex justify-between">
+                            <span>Netto mit Firmenwagen:</span>
+                            <span className="font-medium">{formatCurrency(result.netto)} €</span>
+                          </div>
+                          <div className="flex justify-between border-t border-amber-200 dark:border-amber-700 pt-1 mt-1">
+                            <span>Netto-Reduktion:</span>
+                            <span className="font-bold">- {formatCurrency(nettoReduction)} €</span>
+                          </div>
                         </div>
-                        <div className="flex justify-between">
-                          <span>Netto mit Firmenwagen:</span>
-                          <span className="font-medium">{formatCurrency(resultWithCar.netto)} €</span>
-                        </div>
-                        <div className="flex justify-between border-t border-amber-200 dark:border-amber-700 pt-1 mt-1">
-                          <span>Netto-Reduktion:</span>
-                          <span className="font-bold">- {formatCurrency(nettoReduction)} €</span>
-                        </div>
-                      </div>
+                      )}
                     </div>
 
                     <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">

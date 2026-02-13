@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Calculator as CalcIcon, Users, TrendingUp, Info, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Users, TrendingUp, Info, BookOpen } from "lucide-react";
 import { calculateGermanTax, type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import { SliderInput } from "@/components/calculator/SliderInput";
@@ -54,6 +54,7 @@ export default function TeilzeitPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
     setFullTimeResult(fullTime);
 
@@ -71,23 +72,19 @@ export default function TeilzeitPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
     setPartTimeResult(partTime);
   };
 
   // Calculate on mount and whenever inputs change
-  useState(() => {
+  useEffect(() => {
     calculateResults();
-  });
+  }, [fullTimeGross, teilzeitFaktor]);
 
   const partTimeGross = fullTimeGross * teilzeitFaktor;
   const fullTimeHours = 40;
   const partTimeHours = fullTimeHours * teilzeitFaktor;
-
-  // Re-calculate when inputs change
-  useState(() => {
-    calculateResults();
-  });
 
   // FAQ data specific to Teilzeit
   const faqs = [

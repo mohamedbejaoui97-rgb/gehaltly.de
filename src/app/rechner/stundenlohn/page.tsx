@@ -1,7 +1,7 @@
 "use client";
 
-import { useState } from "react";
-import { Calculator as CalcIcon, Clock, TrendingUp, Info, BookOpen } from "lucide-react";
+import { useState, useEffect } from "react";
+import { Clock, TrendingUp, Info, BookOpen } from "lucide-react";
 import { calculateGermanTax, type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import { SliderInput } from "@/components/calculator/SliderInput";
@@ -26,7 +26,6 @@ export default function StundenlohnPage() {
   const [calculationMode, setCalculationMode] = useState<"hourly-to-monthly" | "monthly-to-hourly">("hourly-to-monthly");
   const [hourlyRate, setHourlyRate] = useState(20);
   const [weeklyHours, setWeeklyHours] = useState(40);
-  const [workdaysPerMonth, setWorkdaysPerMonth] = useState(21);
   const [monthlyGross, setMonthlyGross] = useState(3000);
   const [result, setResult] = useState<CalculatorResultType | null>(null);
 
@@ -58,6 +57,7 @@ export default function StundenlohnPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
     setResult(taxResult);
     return calculated;
@@ -79,17 +79,27 @@ export default function StundenlohnPage() {
       kvZusatzbeitrag: 1.7,
       steuerfreibetrag: 0,
       geldwerterVorteil: 0,
+      abrechnungsjahr: 2026,
     });
     setResult(taxResult);
     return calculated;
   };
 
+  // Calculate on mount and input changes
+  useEffect(() => {
+    if (calculationMode === "hourly-to-monthly") {
+      calculateMonthlyFromHourly();
+    } else {
+      calculateHourlyFromMonthly();
+    }
+  }, [calculationMode, hourlyRate, weeklyHours, monthlyGross]);
+
   const calculatedMonthly = calculationMode === "hourly-to-monthly"
-    ? calculateMonthlyFromHourly()
+    ? hourlyRate * weeklyHours * 4.33
     : monthlyGross;
 
   const calculatedHourly = calculationMode === "monthly-to-hourly"
-    ? calculateHourlyFromMonthly()
+    ? monthlyGross / (weeklyHours * 4.33)
     : hourlyRate;
 
   const hoursPerMonth = weeklyHours * 4.33;
@@ -191,7 +201,7 @@ export default function StundenlohnPage() {
                       <Label htmlFor="mode">Berechnung</Label>
                       <Select
                         value={calculationMode}
-                        onValueChange={(value: any) => setCalculationMode(value)}
+                        onValueChange={(value: "hourly-to-monthly" | "monthly-to-hourly") => setCalculationMode(value)}
                       >
                         <SelectTrigger id="mode">
                           <SelectValue />
