@@ -1,6 +1,9 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import MobileNav from "@/components/layout/MobileNav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,6 +20,12 @@ export const metadata: Metadata = {
   description: "Kostenloser Brutto-Netto-Rechner für Deutschland 2026. Berechnen Sie Ihr Nettogehalt, Steuern und Sozialabgaben.",
 };
 
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -24,8 +33,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="de">
-      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased`}>
-        {children}
+      <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased flex flex-col min-h-screen`}>
+        <Header />
+        <main className="flex-1 pb-20 md:pb-0">{children}</main>
+        <Footer />
+        <MobileNav />
       </body>
     </html>
   );
