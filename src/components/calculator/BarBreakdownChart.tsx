@@ -55,12 +55,12 @@ export function BarBreakdownChart({ result }: BarBreakdownChartProps) {
           display: false,
         },
         ticks: {
-          callback: function(value: any) {
+          callback: function(value: string | number) {
             return new Intl.NumberFormat('de-DE', {
               style: 'currency',
               currency: 'EUR',
               maximumFractionDigits: 0,
-            }).format(value)
+            }).format(Number(value))
           },
         },
       },
@@ -77,7 +77,7 @@ export function BarBreakdownChart({ result }: BarBreakdownChartProps) {
       },
       tooltip: {
         callbacks: {
-          label: function(context: any) {
+          label: function(context: { dataset: { label?: string }, parsed: { x: number | null } }) {
             const label = context.dataset.label || ''
             const value = context.parsed.x || 0
             const percentage = label === 'Netto'

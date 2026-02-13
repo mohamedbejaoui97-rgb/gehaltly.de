@@ -16,8 +16,34 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "gehaltly.de - Gehaltsrechner 2026",
-  description: "Kostenloser Brutto-Netto-Rechner für Deutschland 2026. Berechnen Sie Ihr Nettogehalt, Steuern und Sozialabgaben.",
+  title: {
+    default: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos | gehaltly.de",
+    template: "%s | gehaltly.de"
+  },
+  description: "Brutto Netto Rechner 2026: Berechnen Sie kostenlos Ihr Nettogehalt. ✓ Alle Steuerklassen ✓ Alle Bundesländer ✓ Mit Diagrammen. Jetzt Nettolohn berechnen!",
+  keywords: ["Brutto Netto Rechner", "Gehaltsrechner", "Nettolohn", "Lohnrechner", "Steuerrechner", "Brutto Netto", "Nettogehalt berechnen", "Lohnsteuer", "Sozialabgaben"],
+  authors: [{ name: "gehaltly.de" }],
+  openGraph: {
+    title: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos",
+    description: "Berechnen Sie kostenlos Ihr Nettogehalt mit unserem präzisen Brutto-Netto-Rechner 2026. Alle Steuerklassen und Bundesländer.",
+    url: "https://gehaltly.de",
+    siteName: "gehaltly.de",
+    locale: "de_DE",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos",
+    description: "Berechnen Sie kostenlos Ihr Nettogehalt. Alle Steuerklassen, alle Bundesländer.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
 };
 
 export const viewport: Viewport = {
