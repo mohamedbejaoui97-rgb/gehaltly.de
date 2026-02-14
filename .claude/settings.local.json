@@ -15,7 +15,9 @@
       "Bash(xargs:*)",
       "Bash(npm run dev:*)",
       "WebFetch(domain:localhost)",
-      "Bash(/usr/bin/curl -s -L http://localhost:3001)"
+      "Bash(/usr/bin/curl -s -L http://localhost:3001)",
+      "Bash(vercel:*)",
+      "Bash(git push:*)"
     ]
   }
 }

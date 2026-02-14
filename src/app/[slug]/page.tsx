@@ -1,12 +1,24 @@
 import { Metadata } from "next";
+import { notFound } from "next/navigation";
 import { AMOUNT_PAGES, getNeighborAmounts } from "@/lib/utils/amount-pages";
 import { calculateGermanTax, DEFAULT_INPUT } from "@/lib/tax";
 import AmountPageClient from "./AmountPageClient";
 
 interface Props {
   params: {
-    amount: string;
+    slug: string;
   };
+}
+
+/**
+ * Parse amount from slug like "3000-brutto-in-netto" → 3000
+ */
+function parseAmountFromSlug(slug: string): number | null {
+  const match = slug.match(/^(\d+)-brutto-in-netto$/);
+  if (!match) return null;
+  const amount = parseInt(match[1]);
+  if (AMOUNT_PAGES.some((p) => p.amount === amount)) return amount;
+  return null;
 }
 
 /**
@@ -14,7 +26,7 @@ interface Props {
  */
 export async function generateStaticParams() {
   return AMOUNT_PAGES.map((page) => ({
-    amount: page.amount.toString(),
+    slug: `${page.amount}-brutto-in-netto`,
   }));
 }
 
@@ -22,7 +34,8 @@ export async function generateStaticParams() {
  * Generate metadata for each amount page
  */
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const amount = parseInt(params.amount);
+  const amount = parseAmountFromSlug(params.slug);
+  if (!amount) return {};
 
   return {
     title: `${amount} € Brutto in Netto - Gehaltsrechner 2026`,
@@ -52,7 +65,9 @@ function getPreCalculatedResult(amount: number) {
  * Server Component - handles static generation and data preparation
  */
 export default function AmountPage({ params }: Props) {
-  const amount = parseInt(params.amount);
+  const amount = parseAmountFromSlug(params.slug);
+  if (!amount) notFound();
+
   const neighbors = getNeighborAmounts(amount);
   const preCalculatedResult = getPreCalculatedResult(amount);
 
