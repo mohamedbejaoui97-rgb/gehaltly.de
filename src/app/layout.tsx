@@ -17,6 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  manifest: '/manifest.json',
   verification: {
     google: 'j9u4a5ciRe9ygH0A0_h6knVUSMacNpVusWLDjb9rnm0',
   },
