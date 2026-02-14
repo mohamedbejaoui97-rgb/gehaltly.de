@@ -5,7 +5,7 @@ export default function Logo() {
     <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="/logo.svg"
+        src="/logo.png"
         alt="gehaltly.de"
         className="h-14 md:h-20 w-auto"
       />
