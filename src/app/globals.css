@@ -68,8 +68,13 @@
   * {
     @apply border-border;
   }
+  html {
+    overflow-x: hidden;
+  }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
@@ -77,4 +82,17 @@
   .safe-area-pb {
     padding-bottom: env(safe-area-inset-bottom, 0px);
   }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(221, 0, 0, 0.4);
+  }
+  50% {
+    box-shadow: 0 0 0 8px rgba(221, 0, 0, 0);
+  }
+}
+
+.slider-thumb-pulse {
+  animation: pulse-glow 2s ease-in-out 3;
 }
