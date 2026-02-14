@@ -66,25 +66,81 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
-      <div className="container mx-auto px-4">
-        <div className="relative flex h-24 md:h-32 items-center justify-between">
-          {/* Logo - centered on mobile, left on desktop */}
-          <div className="absolute left-1/2 -translate-x-1/2 md:relative md:left-auto md:translate-x-0">
+    <header className="sticky top-0 z-50 w-full bg-white shadow-sm">
+      {/* Row 1: Logo centered (desktop) / Logo + hamburger (mobile) */}
+      <div className="border-b border-gray-200">
+        <div className="container mx-auto px-4">
+          <div className="relative flex h-24 items-center justify-center">
+            {/* Logo - always centered */}
             <Logo />
-          </div>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6 ml-auto">
+            {/* Mobile Menu Button - absolute right */}
+            <div className="absolute right-0 md:hidden">
+              <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
+                <SheetTrigger asChild>
+                  <button
+                    className="p-2 hover:bg-gray-100 rounded-md transition-colors"
+                    aria-label="Menü öffnen"
+                  >
+                    <Menu className="h-6 w-6 text-gray-700" />
+                  </button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[280px] sm:w-[340px]">
+                  <SheetHeader>
+                    <SheetTitle>Navigation</SheetTitle>
+                  </SheetHeader>
+
+                  <div className="mt-4 space-y-5">
+                    {NAV_CATEGORIES.map((category) => (
+                      <div key={category.label}>
+                        <div className="flex items-center space-x-2 mb-2 text-sm font-semibold text-gray-900">
+                          <category.icon className="h-4 w-4" />
+                          <span>{category.label}</span>
+                        </div>
+                        <div className="space-y-1 ml-6">
+                          {category.items.map((item) => (
+                            <Link
+                              key={item.href}
+                              href={item.href}
+                              onClick={() => setMobileOpen(false)}
+                              className="block text-sm text-gray-600 hover:text-[#DD0000] transition-colors py-1"
+                            >
+                              {item.title}
+                            </Link>
+                          ))}
+                        </div>
+                      </div>
+                    ))}
+
+                    {/* Legal links in mobile */}
+                    <div className="pt-4 border-t border-gray-200">
+                      <div className="space-y-1">
+                        <Link href="/impressum" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Impressum</Link>
+                        <Link href="/datenschutz" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Datenschutz</Link>
+                        <Link href="/kontakt" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Kontakt</Link>
+                      </div>
+                    </div>
+                  </div>
+                </SheetContent>
+              </Sheet>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Row 2: Navigation bar centered (desktop only) */}
+      <nav className="hidden md:block border-b border-gray-100 bg-gray-50">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-center space-x-8">
             {NAV_CATEGORIES.map((category, index) => (
               <div key={category.label} className="group relative">
-                <button className="flex items-center space-x-1 text-sm font-medium text-gray-700 hover:text-[#DD0000] transition-colors py-4">
+                <button className="flex items-center space-x-1.5 text-sm font-medium text-gray-700 hover:text-[#DD0000] transition-colors py-3">
                   <category.icon className="h-4 w-4" />
                   <span>{category.label}</span>
                 </button>
 
-                {/* Dropdown - last items align right to stay on screen */}
-                <div className={`absolute top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ${index > 0 ? 'right-0' : 'left-0'}`}>
+                {/* Dropdown */}
+                <div className={`absolute top-full pt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 ${index >= NAV_CATEGORIES.length - 1 ? 'right-0' : 'left-0'}`}>
                   <div className="bg-white text-gray-900 rounded-lg shadow-xl border border-gray-200 min-w-[260px] py-1">
                     {category.items.map((item) => (
                       <Link
@@ -102,58 +158,9 @@ export default function Header() {
                 </div>
               </div>
             ))}
-          </nav>
-
-          {/* Mobile Menu Button */}
-          <Sheet open={mobileOpen} onOpenChange={setMobileOpen}>
-            <SheetTrigger asChild>
-              <button
-                className="md:hidden p-2 hover:bg-gray-100 rounded-md transition-colors"
-                aria-label="Menü öffnen"
-              >
-                <Menu className="h-6 w-6 text-gray-700" />
-              </button>
-            </SheetTrigger>
-            <SheetContent side="right" className="w-[280px] sm:w-[340px]">
-              <SheetHeader>
-                <SheetTitle>Navigation</SheetTitle>
-              </SheetHeader>
-
-              <div className="mt-4 space-y-5">
-                {NAV_CATEGORIES.map((category) => (
-                  <div key={category.label}>
-                    <div className="flex items-center space-x-2 mb-2 text-sm font-semibold text-gray-900">
-                      <category.icon className="h-4 w-4" />
-                      <span>{category.label}</span>
-                    </div>
-                    <div className="space-y-1 ml-6">
-                      {category.items.map((item) => (
-                        <Link
-                          key={item.href}
-                          href={item.href}
-                          onClick={() => setMobileOpen(false)}
-                          className="block text-sm text-gray-600 hover:text-[#DD0000] transition-colors py-1"
-                        >
-                          {item.title}
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                ))}
-
-                {/* Legal links in mobile */}
-                <div className="pt-4 border-t border-gray-200">
-                  <div className="space-y-1">
-                    <Link href="/impressum" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Impressum</Link>
-                    <Link href="/datenschutz" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Datenschutz</Link>
-                    <Link href="/kontakt" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Kontakt</Link>
-                  </div>
-                </div>
-              </div>
-            </SheetContent>
-          </Sheet>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
   );
 }
