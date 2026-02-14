@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/arbeitslosenversicherung/",
   },
+  openGraph: {
+    title: "Arbeitslosenversicherung - Beitrag & Arbeitslosengeld 2026",
+    description:
+      "Alles zur Arbeitslosenversicherung 2026: Beitragssatz 2,6%, Berechnung des Arbeitslosengelds, Ausnahmen für Beamte und Minijobber.",
+    url: "https://gehaltly.de/lexikon/arbeitslosenversicherung/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function ArbeitslosenversicherungPage() {

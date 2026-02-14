@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/kinderfreibetrag/",
   },
+  openGraph: {
+    title: "Kinderfreibetrag 2026 - Höhe, Berechnung & Kindergeld",
+    description:
+      "Was ist der Kinderfreibetrag? Wie hoch ist er 2026 und was ist günstiger - Kindergeld oder Kinderfreibetrag? Alle Informationen zur Günstigerprüfung.",
+    url: "https://gehaltly.de/lexikon/kinderfreibetrag/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function KinderfreibetragPage() {

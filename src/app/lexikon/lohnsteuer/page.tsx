@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/lohnsteuer/",
   },
+  openGraph: {
+    title: "Lohnsteuer - Berechnung, Steuerprogression & Tarif 2026",
+    description:
+      "Alles zur Lohnsteuer 2026: Berechnung vom zu versteuernden Einkommen, progressive Steuersätze, Lohnsteuertabelle, Unterschied zur Einkommensteuer.",
+    url: "https://gehaltly.de/lexikon/lohnsteuer/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function LohnsteuerPage() {

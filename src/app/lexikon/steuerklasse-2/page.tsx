@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-2/",
   },
+  openGraph: {
+    title: "Steuerklasse 2 - Alleinerziehende: Entlastungsbetrag & Vorteile 2026",
+    description:
+      "Steuerklasse 2 für Alleinerziehende mit Entlastungsbetrag. Voraussetzungen, Freibeträge, Beispielrechnungen und wie Sie die Steuerklasse 2 beantragen.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-2/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function Steuerklasse2Page() {

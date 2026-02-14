@@ -68,7 +68,7 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 w-full bg-white border-b border-gray-200 shadow-sm">
       <div className="container mx-auto px-4">
-        <div className="relative flex h-24 md:h-24 items-center justify-between">
+        <div className="relative flex h-16 md:h-24 items-center justify-between">
           {/* Logo - centered on mobile, left on desktop */}
           <div className="absolute left-1/2 -translate-x-1/2 md:relative md:left-auto md:translate-x-0">
             <Logo />
@@ -144,9 +144,9 @@ export default function Header() {
                 {/* Legal links in mobile */}
                 <div className="pt-4 border-t border-gray-200">
                   <div className="space-y-1">
-                    <Link href="/impressum" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-[#DD0000] py-1">Impressum</Link>
-                    <Link href="/datenschutz" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-[#DD0000] py-1">Datenschutz</Link>
-                    <Link href="/kontakt" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-400 hover:text-[#DD0000] py-1">Kontakt</Link>
+                    <Link href="/impressum" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Impressum</Link>
+                    <Link href="/datenschutz" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Datenschutz</Link>
+                    <Link href="/kontakt" onClick={() => setMobileOpen(false)} className="block text-sm text-gray-500 hover:text-[#DD0000] py-1">Kontakt</Link>
                   </div>
                 </div>
               </div>

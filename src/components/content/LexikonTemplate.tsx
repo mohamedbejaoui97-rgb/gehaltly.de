@@ -24,6 +24,29 @@ export default function LexikonTemplate({
 }: LexikonTemplateProps) {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            headline: title,
+            description: description,
+            author: {
+              "@type": "Organization",
+              name: "gehaltly.de",
+            },
+            publisher: {
+              "@type": "Organization",
+              name: "gehaltly.de",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://gehaltly.de/logo.png",
+              },
+            },
+          }),
+        }}
+      />
       <div className="container mx-auto px-4 pt-6">
         <Breadcrumbs items={[{ label: 'Lexikon', href: '/lexikon' }, { label: title }]} />
       </div>

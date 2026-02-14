@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/minijob/",
   },
+  openGraph: {
+    title: "Minijob - 556€ Grenze, Steuern & Sozialabgaben 2026",
+    description:
+      "Alles zum Minijob 2026: 556€ Verdienstgrenze, Pauschalbeiträge für Arbeitgeber, Steuerfreiheit für Arbeitnehmer, Rentenversicherungspflicht mit Opt-out.",
+    url: "https://gehaltly.de/lexikon/minijob/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function MinijobPage() {

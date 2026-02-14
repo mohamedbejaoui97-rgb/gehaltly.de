@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerfreibetrag/",
   },
+  openGraph: {
+    title: "Steuerfreibetrag - Arten, Höhe & Beantragung 2026",
+    description:
+      "Was ist ein Steuerfreibetrag? Welche Arten gibt es und wie beantragen Sie ihn? Alle Informationen zu Steuerfreibeträgen und dem ELStAM-System 2026.",
+    url: "https://gehaltly.de/lexikon/steuerfreibetrag/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function SteuerfreibetragPage() {

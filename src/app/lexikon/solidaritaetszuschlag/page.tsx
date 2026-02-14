@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/solidaritaetszuschlag/",
   },
+  openGraph: {
+    title: "Solidaritätszuschlag - Berechnung & Regelungen 2026",
+    description:
+      "Was ist der Solidaritätszuschlag? Wer muss ihn 2026 noch zahlen und wie wird er berechnet? Alle Informationen zum Soli 2026 in Deutschland.",
+    url: "https://gehaltly.de/lexikon/solidaritaetszuschlag/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function SolidaritaetszuschlagPage() {

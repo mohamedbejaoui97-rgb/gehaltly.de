@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/pflegeversicherung/",
   },
+  openGraph: {
+    title: "Pflegeversicherung - Beitragssatz & Kinderrabatt 2026",
+    description:
+      "Alles zur Pflegeversicherung 2026: Beitragssatz 3,4%, Zuschlag für Kinderlose, Kinderrabatt bis zu 1,25% und Sonderregelung in Sachsen.",
+    url: "https://gehaltly.de/lexikon/pflegeversicherung/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function PflegeversicherungPage() {

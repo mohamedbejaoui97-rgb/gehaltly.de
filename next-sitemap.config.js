@@ -14,7 +14,7 @@ module.exports = {
   changefreq: 'weekly',
   priority: 0.7,
   sitemapSize: 5000,
-  exclude: ['/api/*', '/_next/*', '/static/*', '/robots.txt', '/kontakt'],
+  exclude: ['/api/*', '/_next/*', '/static/*', '/robots.txt', '/kontakt', '/icon.svg', '/impressum', '/datenschutz'],
   additionalPaths: async (config) => {
     return AMOUNT_PAGES.map((amount) => ({
       loc: `/${amount}-brutto-in-netto`,

@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/krankenversicherung/",
   },
+  openGraph: {
+    title: "Krankenversicherung - GKV & PKV Beiträge 2026",
+    description:
+      "Alles zur gesetzlichen und privaten Krankenversicherung: Beitragssätze 2026 (14,6% + Zusatzbeitrag), Beitragsbemessungsgrenze und Arbeitgeberanteil.",
+    url: "https://gehaltly.de/lexikon/krankenversicherung/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function KrankenversicherungPage() {

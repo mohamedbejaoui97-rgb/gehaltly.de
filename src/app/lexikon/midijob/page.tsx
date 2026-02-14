@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/midijob/",
   },
+  openGraph: {
+    title: "Midijob - Gleitzone 556-2.000€ & reduzierte Abgaben 2026",
+    description:
+      "Alles zum Midijob 2026: Verdienstbereich 556-2.000€, Gleitzonenregelung mit reduzierten Sozialabgaben, Übergang zur regulären Beschäftigung.",
+    url: "https://gehaltly.de/lexikon/midijob/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function MidijobPage() {

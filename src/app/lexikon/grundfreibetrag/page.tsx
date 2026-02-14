@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/grundfreibetrag/",
   },
+  openGraph: {
+    title: "Grundfreibetrag 2026 - Höhe & Bedeutung erklärt",
+    description:
+      "Was ist der Grundfreibetrag? Wie hoch ist er 2026 und wie funktioniert er? Alle Informationen zum steuerlichen Grundfreibetrag in Deutschland.",
+    url: "https://gehaltly.de/lexikon/grundfreibetrag/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function GrundfreibetragPage() {

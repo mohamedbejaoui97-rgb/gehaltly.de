@@ -3,11 +3,19 @@ import { Metadata } from "next";
 import LexikonTemplate from "@/components/content/LexikonTemplate";
 
 export const metadata: Metadata = {
-  title: "Steuerklasse 6 - Zweitjob & Nebenjob: Abzüge und Freibeträge 2026",
+  title: "Steuerklasse 6: Zweitjob & Nebenjob Abzüge 2026",
   description:
     "Steuerklasse 6 gilt für den Zweitjob und Nebenjob. Hohe Steuerabzüge, keine Freibeträge - alle Infos zu Abzügen, Beispielrechnungen und Steuererklärung 2026.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-6/",
+  },
+  openGraph: {
+    title: "Steuerklasse 6: Zweitjob & Nebenjob Abzüge 2026",
+    description:
+      "Steuerklasse 6 gilt für den Zweitjob und Nebenjob. Hohe Steuerabzüge, keine Freibeträge - alle Infos zu Abzügen, Beispielrechnungen und Steuererklärung 2026.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-6/",
+    siteName: "gehaltly.de",
+    type: "article",
   },
 };
 

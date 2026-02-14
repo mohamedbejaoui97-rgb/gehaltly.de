@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/beitragsbemessungsgrenze/",
   },
+  openGraph: {
+    title: "Beitragsbemessungsgrenze 2026 - KV, RV & West/Ost",
+    description:
+      "Alle Beitragsbemessungsgrenzen 2026: Krankenversicherung (66.150€), Rentenversicherung West (96.600€) und Ost (94.800€), Auswirkungen auf Sozialabgaben.",
+    url: "https://gehaltly.de/lexikon/beitragsbemessungsgrenze/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function BeitragsbemessungsgrenzePage() {

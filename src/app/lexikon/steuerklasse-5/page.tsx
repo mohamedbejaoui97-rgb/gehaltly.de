@@ -3,11 +3,19 @@ import { Metadata } from "next";
 import LexikonTemplate from "@/components/content/LexikonTemplate";
 
 export const metadata: Metadata = {
-  title: "Steuerklasse 5 - Geringverdiener in Kombination 3/5: Lohnt sich das? 2026",
+  title: "Steuerklasse 5: Abzüge in Kombination 3/5 2026",
   description:
     "Steuerklasse 5 für den Geringverdiener in der Kombination 3/5. Hohe Abzüge, Vor- und Nachteile, Alternativen und Beispielrechnungen 2026.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-5/",
+  },
+  openGraph: {
+    title: "Steuerklasse 5: Abzüge in Kombination 3/5 2026",
+    description:
+      "Steuerklasse 5 für den Geringverdiener in der Kombination 3/5. Hohe Abzüge, Vor- und Nachteile, Alternativen und Beispielrechnungen 2026.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-5/",
+    siteName: "gehaltly.de",
+    type: "article",
   },
 };
 

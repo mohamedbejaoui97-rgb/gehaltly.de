@@ -3,11 +3,19 @@ import { Metadata } from "next";
 import LexikonTemplate from "@/components/content/LexikonTemplate";
 
 export const metadata: Metadata = {
-  title: "Steuerklasse 1 - Für wen gilt sie? Abzüge & Freibeträge 2026",
+  title: "Steuerklasse 1: Abzüge & Freibeträge 2026",
   description:
     "Steuerklasse 1 gilt für ledige, geschiedene und verwitwete Arbeitnehmer. Alle Infos zu Freibeträgen, Abzügen und Beispielrechnungen für 2026.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-1/",
+  },
+  openGraph: {
+    title: "Steuerklasse 1: Abzüge & Freibeträge 2026",
+    description:
+      "Steuerklasse 1 gilt für ledige, geschiedene und verwitwete Arbeitnehmer. Alle Infos zu Freibeträgen, Abzügen und Beispielrechnungen für 2026.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-1/",
+    siteName: "gehaltly.de",
+    type: "article",
   },
 };
 

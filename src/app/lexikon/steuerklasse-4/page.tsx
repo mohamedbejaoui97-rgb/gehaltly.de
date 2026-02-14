@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-4/",
   },
+  openGraph: {
+    title: "Steuerklasse 4 - Für Verheiratete: Faktorverfahren & Vorteile 2026",
+    description:
+      "Steuerklasse 4 für verheiratete Paare mit ähnlichem Einkommen. Infos zu Steuerklasse 4 mit Faktor, Freibeträgen und Beispielrechnungen 2026.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-4/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function Steuerklasse4Page() {

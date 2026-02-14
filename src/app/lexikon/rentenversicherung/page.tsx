@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/rentenversicherung/",
   },
+  openGraph: {
+    title: "Rentenversicherung - Beitrag & Rentenpunkte 2026",
+    description:
+      "Alles zur gesetzlichen Rentenversicherung 2026: Beitragssatz 18,6%, Beitragsbemessungsgrenzen West (96.600€) und Ost (94.800€) sowie Rentenpunkte.",
+    url: "https://gehaltly.de/lexikon/rentenversicherung/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function RentenversicherungPage() {

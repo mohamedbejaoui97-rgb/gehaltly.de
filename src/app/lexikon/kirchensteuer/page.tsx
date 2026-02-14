@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/kirchensteuer/",
   },
+  openGraph: {
+    title: "Kirchensteuer - Definition & Berechnung 2026",
+    description:
+      "Was ist die Kirchensteuer? Wer muss sie zahlen und wie wird sie berechnet? Alle Informationen zur Kirchensteuer 2026 in Deutschland.",
+    url: "https://gehaltly.de/lexikon/kirchensteuer/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function KirchensteuerPage() {

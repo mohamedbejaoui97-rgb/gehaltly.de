@@ -54,7 +54,7 @@ export default function MobileNav() {
               }`}
             >
               <Icon className="h-5 w-5" />
-              <span className="text-[10px] font-medium">{item.label}</span>
+              <span className="text-[11px] font-medium">{item.label}</span>
             </Link>
           );
         })}

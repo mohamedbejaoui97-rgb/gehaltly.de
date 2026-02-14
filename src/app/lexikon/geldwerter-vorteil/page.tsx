@@ -9,6 +9,14 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://gehaltly.de/lexikon/geldwerter-vorteil/",
   },
+  openGraph: {
+    title: "Geldwerter Vorteil - Firmenwagen, 1%-Regel & Versteuerung 2026",
+    description:
+      "Alles zum geldwerten Vorteil 2026: Firmenwagen-Versteuerung, 1%-Regel, Fahrtenbuch-Methode, Sachbezüge wie Dienstwohnung und Essensmarken.",
+    url: "https://gehaltly.de/lexikon/geldwerter-vorteil/",
+    siteName: "gehaltly.de",
+    type: "article",
+  },
 };
 
 export default function GeldwerterVorteilPage() {

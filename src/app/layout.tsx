@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     google: 'j9u4a5ciRe9ygH0A0_h6knVUSMacNpVusWLDjb9rnm0',
   },
   title: {
-    default: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos | gehaltly.de",
+    default: "Brutto Netto Rechner 2026 - Kostenlos berechnen",
     template: "%s | gehaltly.de"
   },
   description: "Brutto Netto Rechner 2026: Berechnen Sie kostenlos Ihr Nettogehalt. ✓ Alle Steuerklassen ✓ Alle Bundesländer ✓ Mit Diagrammen. Jetzt Nettolohn berechnen!",
@@ -101,11 +101,6 @@ gtag('config', 'G-E1BKJVFXZL');`}
                   "@type": "ImageObject",
                   "url": "https://gehaltly.de/logo.png"
                 }
-              },
-              "potentialAction": {
-                "@type": "SearchAction",
-                "target": "https://gehaltly.de/?q={search_term_string}",
-                "query-input": "required name=search_term_string"
               }
             })
           }}

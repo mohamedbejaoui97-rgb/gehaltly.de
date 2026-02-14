@@ -3,11 +3,19 @@ import { Metadata } from "next";
 import LexikonTemplate from "@/components/content/LexikonTemplate";
 
 export const metadata: Metadata = {
-  title: "Steuerklasse 3 - Für Verheiratete: Vorteile & Kombination 3/5 2026",
+  title: "Steuerklasse 3: Vorteile der Kombination 3/5 2026",
   description:
     "Steuerklasse 3 für verheiratete Besserverdiener in Kombination mit Steuerklasse 5. Alle Vorteile, Nachteile und Beispielrechnungen für 2026.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/steuerklasse-3/",
+  },
+  openGraph: {
+    title: "Steuerklasse 3: Vorteile der Kombination 3/5 2026",
+    description:
+      "Steuerklasse 3 für verheiratete Besserverdiener in Kombination mit Steuerklasse 5. Alle Vorteile, Nachteile und Beispielrechnungen für 2026.",
+    url: "https://gehaltly.de/lexikon/steuerklasse-3/",
+    siteName: "gehaltly.de",
+    type: "article",
   },
 };
 
