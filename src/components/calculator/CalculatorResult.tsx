@@ -440,15 +440,15 @@ export function CalculatorResult({ result, isMonthly = true }: CalculatorResultP
             {/* Legend for Bar Chart */}
             <div className="flex flex-wrap justify-center gap-4 text-sm">
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-sm bg-green-600" />
+                <div className="w-4 h-4 rounded-sm bg-[#1A1A1A]" />
                 <span>Netto</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-sm bg-amber-500" />
+                <div className="w-4 h-4 rounded-sm bg-[#DD0000]" />
                 <span>Steuern</span>
               </div>
               <div className="flex items-center gap-2">
-                <div className="w-4 h-4 rounded-sm bg-red-500" />
+                <div className="w-4 h-4 rounded-sm bg-[#FFCC00]" />
                 <span>Sozialabgaben</span>
               </div>
             </div>
