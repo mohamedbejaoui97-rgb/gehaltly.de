@@ -43,8 +43,7 @@ export default function DatenschutzPage() {
         <h3 className="text-lg font-medium mt-6 mb-2">Hinweis zur verantwortlichen Stelle</h3>
         <p className="text-muted-foreground">
           Die verantwortliche Stelle für die Datenverarbeitung auf dieser Website ist:<br /><br />
-          [Name / Firma einfügen]<br />
-          [Adresse einfügen]<br /><br />
+          gehaltly.de<br />
           E-Mail: kontakt@gehaltly.de
         </p>
 

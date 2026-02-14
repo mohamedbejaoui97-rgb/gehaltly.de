@@ -20,21 +20,12 @@ export default function ImpressumPage() {
         <h2 className="text-xl font-semibold mt-8 mb-3">Angaben gemäß § 5 TMG</h2>
         <p className="text-muted-foreground">
           gehaltly.de<br />
-          [Name / Firma einfügen]<br />
-          [Straße und Hausnummer]<br />
-          [PLZ und Ort]<br />
           Deutschland
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-3">Kontakt</h2>
         <p className="text-muted-foreground">
           E-Mail: kontakt@gehaltly.de
-        </p>
-
-        <h2 className="text-xl font-semibold mt-8 mb-3">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
-        <p className="text-muted-foreground">
-          [Name einfügen]<br />
-          [Adresse einfügen]
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-3">Haftungsausschluss</h2>
