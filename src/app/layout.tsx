@@ -16,6 +16,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  verification: {
+    google: 'j9u4a5ciRe9ygH0A0_h6knVUSMacNpVusWLDjb9rnm0',
+  },
   title: {
     default: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos | gehaltly.de",
     template: "%s | gehaltly.de"
