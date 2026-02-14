@@ -73,6 +73,14 @@ export default function Footer() {
           <div>
             <h3 className="font-semibold text-white mb-3">Ratgeber</h3>
             <ul className="space-y-1.5">
+              <li>
+                <Link
+                  href="/lexikon"
+                  className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors"
+                >
+                  Steuer-Lexikon
+                </Link>
+              </li>
               {RATGEBER_LINKS.map((link) => (
                 <li key={link.href}>
                   <Link

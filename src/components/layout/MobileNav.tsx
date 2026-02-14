@@ -27,8 +27,8 @@ const NAV_ITEMS: NavItem[] = [
     icon: Calculator,
   },
   {
-    label: 'Ratgeber',
-    href: '/ratgeber/steuerklassen',
+    label: 'Lexikon',
+    href: '/lexikon',
     icon: BookOpen,
   },
 ];

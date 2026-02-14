@@ -43,6 +43,7 @@ const NAV_CATEGORIES: NavCategory[] = [
     label: 'Ratgeber',
     icon: BookOpen,
     items: [
+      { title: 'Steuer-Lexikon', href: '/lexikon', description: 'Alle Begriffe erklärt' },
       { title: 'Brutto-Netto Unterschied', href: '/ratgeber/brutto-netto-unterschied', description: 'Brutto vs. Netto erklärt' },
       { title: 'Steuerklassen', href: '/ratgeber/steuerklassen', description: 'Alle 6 Steuerklassen' },
       { title: 'Sozialabgaben', href: '/ratgeber/sozialabgaben', description: 'Beiträge 2026' },
