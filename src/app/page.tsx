@@ -8,7 +8,6 @@ import PageHero from "@/components/content/PageHero";
 import ContentSection from "@/components/content/ContentSection";
 import FAQSection from "@/components/content/FAQSection";
 import RelatedLinks from "@/components/content/RelatedLinks";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import SchemaMarkup from "@/components/seo/SchemaMarkup";
 import { type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 
@@ -79,11 +78,6 @@ export default function HomePage() {
     <>
       {/* Schema Markup */}
       <SchemaMarkup schema={webAppSchema} />
-
-      {/* Breadcrumbs */}
-      <div className="container mx-auto px-4 pt-3">
-        <Breadcrumbs items={[]} />
-      </div>
 
       {/* Compact Hero */}
       <PageHero
