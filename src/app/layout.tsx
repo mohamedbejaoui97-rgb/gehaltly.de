@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Inter, JetBrains_Mono } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -75,6 +76,13 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body className={`${inter.variable} ${jetbrainsMono.variable} antialiased flex flex-col min-h-screen`}>
+        <Script async src="https://www.googletagmanager.com/gtag/js?id=G-E1BKJVFXZL" strategy="afterInteractive" />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-E1BKJVFXZL');`}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

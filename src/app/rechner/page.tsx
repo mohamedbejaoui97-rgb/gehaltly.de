@@ -32,8 +32,31 @@ export default function RechnerHubPage() {
     link.href.startsWith('/rechner/')
   );
 
+  const allCalcs = [...mainCalculators, ...rechnerCalculators];
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Online Rechner 2026 - Alle Gehaltsrechner",
+            "description": "Alle kostenlosen Online-Rechner 2026 auf gehaltly.de: Brutto-Netto, Stundenlohn, Teilzeit, Firmenwagen, Steuerklassen und mehr.",
+            "url": "https://gehaltly.de/rechner/",
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": allCalcs.map((link, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": link.title,
+                "url": `https://gehaltly.de${link.href}${link.href.endsWith('/') ? '' : '/'}`,
+              })),
+            },
+          }),
+        }}
+      />
       <div className="container mx-auto px-4 pt-6">
         <Breadcrumbs items={[{ label: 'Rechner' }]} />
       </div>

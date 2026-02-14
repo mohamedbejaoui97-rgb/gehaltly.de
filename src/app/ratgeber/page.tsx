@@ -21,6 +21,27 @@ export const metadata: Metadata = {
 export default function RatgeberHubPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Ratgeber 2026 - Gehalt, Steuern & Sozialabgaben",
+            "description": "Ratgeber zu Gehalt, Steuern und Sozialabgaben in Deutschland 2026.",
+            "url": "https://gehaltly.de/ratgeber/",
+            "mainEntity": {
+              "@type": "ItemList",
+              "itemListElement": RATGEBER_LINKS.map((link, i) => ({
+                "@type": "ListItem",
+                "position": i + 1,
+                "name": link.title,
+                "url": `https://gehaltly.de${link.href}/`,
+              })),
+            },
+          }),
+        }}
+      />
       <div className="container mx-auto px-4 pt-6">
         <Breadcrumbs items={[{ label: 'Ratgeber' }]} />
       </div>
