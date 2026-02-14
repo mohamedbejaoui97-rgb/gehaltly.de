@@ -741,7 +741,7 @@ function WhatsAppShareButton({
       onClick={handleWhatsApp}
       onMouseEnter={() => setShowLabel(true)}
       onMouseLeave={() => setShowLabel(false)}
-      className="fixed bottom-6 right-6 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-lg transition-all hover:bg-[#1EBE57] hover:shadow-xl hover:scale-105 active:scale-95"
+      className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-2 rounded-full bg-[#25D366] px-4 py-3 text-white shadow-lg transition-all hover:bg-[#1EBE57] hover:shadow-xl hover:scale-105 active:scale-95"
       aria-label="Ergebnisse per WhatsApp teilen"
     >
       <svg viewBox="0 0 24 24" className="h-6 w-6 flex-shrink-0 fill-current">
