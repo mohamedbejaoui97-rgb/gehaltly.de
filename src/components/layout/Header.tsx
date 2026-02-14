@@ -70,7 +70,7 @@ export default function Header() {
       {/* Row 1: Logo centered (desktop) / Logo + hamburger (mobile) */}
       <div className="border-b border-gray-200">
         <div className="container mx-auto px-4">
-          <div className="relative flex h-[200px] md:h-[272px] items-center justify-center">
+          <div className="relative flex h-[142px] md:h-[196px] items-center justify-center">
             {/* Logo - always centered */}
             <Logo />
 

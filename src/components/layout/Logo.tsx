@@ -7,7 +7,7 @@ export default function Logo() {
       <img
         src="/logo.png"
         alt="gehaltly.de"
-        className="h-[168px] md:h-[240px] w-auto"
+        className="h-[126px] md:h-[180px] w-auto"
       />
     </Link>
   );
