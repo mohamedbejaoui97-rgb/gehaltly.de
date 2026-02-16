@@ -36,3 +36,29 @@ Never assume a change is live without verifying the rendered HTML.
 - Guides: `/src/app/ratgeber/` (5 pages)
 - Legal: `/src/app/impressum/`, `/datenschutz/`, `/kontakt/`
 - Link registry: `/src/lib/utils/internal-links.ts` - single source of truth for all nav links
+
+## SEO: Calculator Page Differentiation (Anti-Cannibalization)
+
+The 4 main calculator pages use the same `BruttoNettoForm` component but MUST have unique content to avoid keyword cannibalization. Each page targets a different keyword and user intent:
+
+| Page | Keyword | Focus | Target audience |
+|------|---------|-------|-----------------|
+| `/` (homepage) | "Brutto Netto Rechner 2026" | Pillar page, universal | All workers |
+| `/gehaltsrechner/` | "Gehaltsrechner 2026" | Fixed salary, annual income | Angestellte & Beamte |
+| `/lohnrechner/` | "Lohnrechner 2026" | Hourly wage, Mindestlohn | Stundenlöhner, Teilzeit |
+| `/netto-rechner/` | "Netto Rechner 2026" | Understanding deductions, optimization | Anyone optimizing net |
+| `/netto-brutto-rechner/` | "Netto Brutto Rechner" | Reverse calculation (Wunschnetto) | Salary negotiation |
+
+**Rules to maintain differentiation:**
+- Each page MUST have a unique `<title>`, `<meta description>`, `<h1>`, intro text, and FAQ set
+- The homepage `layout.tsx` keywords must NOT include "Gehaltsrechner" or "Lohnrechner" (those belong to subpages)
+- Subpages link back to homepage as pillar ("Zum allgemeinen Brutto-Netto-Rechner →")
+- Homepage has a "Welchen Rechner benötigen Sie?" section linking to all 4 subpages
+- `internal-links.ts` descriptions must reflect each page's unique focus
+- Never copy-paste metadata, H1, or intro text between these pages
+
+## Deploy
+
+- Hosted on **Vercel** via GitHub integration
+- Auto-deploys on push to `main`
+- Vercel CLI not linked locally — use `git push` to deploy
