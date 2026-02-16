@@ -20,22 +20,45 @@ Never assume a change is live without verifying the rendered HTML.
 - **Secondary accent**: Gold (#FFCC00) - German flag
 - **Text**: Black/dark gray
 - **Backgrounds**: White + light gray alternating sections
-- **Logo**: `public/logo.png` - rendered as `<img>` tag (NOT next/image), 80px height
+- **Logo**: `public/logo.png` - rendered as `<img>` tag (NOT next/image), responsive height `h-[60px] md:h-[80px]` via `/src/components/layout/Logo.tsx`
 
 ## Tech Stack
 
-- Next.js 14 with `output: 'export'` (static site)
-- Tailwind CSS with shadcn/ui components
-- Chart.js for calculator visualizations
+- Next.js 14 with `output: 'export'` (static site, `next.config.mjs`)
+- Tailwind CSS with shadcn/ui components (`@radix-ui/*`, `class-variance-authority`)
+- Chart.js + react-chartjs-2 for calculator visualizations
+- Lucide React for icons
 - All calculations client-side (no server)
+- Testing: vitest + @testing-library/react (`npm test`)
+- Sitemap: next-sitemap (runs automatically via `postbuild` script)
+- PWA: `public/manifest.json` with icons (`icon-192.png`, `icon-512.png`)
 
 ## File Structure
 
-- Calculator pages: `/src/app/` (gehaltsrechner, lohnrechner, netto-brutto-rechner, netto-rechner)
-- Specialty calculators: `/src/app/rechner/` (stundenlohn, teilzeit, firmenwagenrechner, steuerklassenrechner, arbeitgeber, lohnsteuer)
-- Guides: `/src/app/ratgeber/` (5 pages)
-- Legal: `/src/app/impressum/`, `/datenschutz/`, `/kontakt/`
-- Link registry: `/src/lib/utils/internal-links.ts` - single source of truth for all nav links
+### Pages (`/src/app/`)
+- **Homepage**: `/src/app/page.tsx` (client component, pillar page)
+- **Calculator pages**: gehaltsrechner, lohnrechner, netto-brutto-rechner, netto-rechner (each has `page.tsx` + `*Client.tsx`)
+- **Specialty calculators**: `/src/app/rechner/` (stundenlohn, teilzeit, firmenwagenrechner, steuerklassenrechner, arbeitgeber, lohnsteuer)
+- **Dynamic amount pages**: `/src/app/[slug]/page.tsx` — generates 38 static pages for amounts (1500-200000 EUR) in format `/{amount}-brutto-in-netto/` via `generateStaticParams()`
+- **Lexikon (glossary)**: `/src/app/lexikon/` — 22 pages covering German tax/employment terms (steuerklasse-1 to 6, kirchensteuer, minijob, midijob, grundfreibetrag, etc.) using `LexikonTemplate.tsx`
+- **Guides**: `/src/app/ratgeber/` (5 pages + index)
+- **Hub pages**: `/src/app/rechner/page.tsx`, `/src/app/ratgeber/page.tsx`, `/src/app/lexikon/page.tsx`
+- **Legal**: `/src/app/impressum/`, `/datenschutz/`, `/kontakt/`
+
+### Components (`/src/components/`)
+- **`calculator/`**: BruttoNettoForm, CalculatorResult, BarBreakdownChart, TaxBreakdownChart, SliderInput, KrankenkassenTable
+- **`content/`**: PageHero, ContentSection, FAQSection, RelatedLinks, LexikonTemplate
+- **`layout/`**: Header, Footer, MobileNav, Logo, Breadcrumbs
+- **`seo/`**: SchemaMarkup
+- **`ui/`**: shadcn/ui primitives (Button, Input, Select, Label, etc.)
+
+### Utilities (`/src/lib/`)
+- **`/src/lib/tax.ts`** (or similar): Core tax calculation logic
+- **`/src/lib/utils/internal-links.ts`**: Single source of truth for all nav links (CALCULATOR_LINKS, RATGEBER_LINKS, getRelatedLinks())
+
+### Config
+- **`next.config.mjs`**: `output: 'export'`, `trailingSlash: true`, `images.unoptimized: true`
+- **`next-sitemap.config.js`**: Generates sitemap with priority levels (home 1.0, calculators 0.9, specialty 0.85, amounts 0.8, guides 0.8, legal 0.3)
 
 ## SEO: Calculator Page Differentiation (Anti-Cannibalization)
 
