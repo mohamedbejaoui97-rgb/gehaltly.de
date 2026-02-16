@@ -31,8 +31,8 @@ export default function ContentSection({
                 {icon}
               </div>
             )}
-            <div className="flex-1">
-              <h2 className="text-2xl md:text-3xl font-bold mb-4">{heading}</h2>
+            <div className="flex-1 min-w-0">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">{heading}</h2>
               {body && (
                 <p className="text-base md:text-lg text-muted-foreground leading-relaxed">
                   {body}

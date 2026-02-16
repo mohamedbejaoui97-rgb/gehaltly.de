@@ -103,7 +103,7 @@ export default function SozialabgabenPage() {
       <section className="py-8 md:py-12 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl font-bold mb-6">Sozialabgaben 2026 auf einen Blick</h2>
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-6">Sozialabgaben 2026 auf einen Blick</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-background rounded-lg border p-6 shadow-sm">
                 <div className="flex items-center gap-3 mb-4">

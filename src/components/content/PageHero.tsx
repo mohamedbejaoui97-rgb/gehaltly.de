@@ -33,7 +33,7 @@ export default function PageHero({
     >
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center space-y-1">
-          <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          <h1 className="text-xl sm:text-2xl md:text-3xl font-bold tracking-tight">
             {title}
           </h1>
           {subtitle && (

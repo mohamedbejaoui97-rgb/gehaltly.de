@@ -170,7 +170,7 @@ export default function AmountPageClient({
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
             <div className="mb-8">
-              <h2 className="text-3xl font-bold mb-4">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4">
                 Personalisierte Berechnung für {amount} € Brutto
               </h2>
               <p className="text-lg text-muted-foreground">

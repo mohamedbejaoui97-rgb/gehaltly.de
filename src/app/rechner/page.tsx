@@ -70,7 +70,7 @@ export default function RechnerHubPage() {
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-bold mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">
               Alle Rechner im Überblick
             </h1>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">

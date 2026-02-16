@@ -76,6 +76,16 @@
     overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
+  /* German compound words (Beitragsbemessungsgrenze, Sozialversicherungsbeiträge, etc.)
+     need word-breaking on mobile to prevent overflow */
+  h1, h2, h3, h4, p, li, td, th, span, a {
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+  h1, h2, h3 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+  }
 }
 
 @layer utilities {
