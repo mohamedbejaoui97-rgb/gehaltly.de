@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     template: "%s | gehaltly.de"
   },
   description: "Brutto Netto Rechner 2026: Berechnen Sie kostenlos Ihr Nettogehalt. ✓ Alle Steuerklassen ✓ Alle Bundesländer ✓ Mit Diagrammen. Jetzt Nettolohn berechnen!",
-  keywords: ["Brutto Netto Rechner", "Gehaltsrechner", "Nettolohn", "Lohnrechner", "Steuerrechner", "Brutto Netto", "Nettogehalt berechnen", "Lohnsteuer", "Sozialabgaben"],
+  keywords: ["Brutto Netto Rechner", "Brutto Netto", "Nettogehalt berechnen", "Nettolohn berechnen", "Steuerrechner", "Lohnsteuer", "Sozialabgaben"],
   authors: [{ name: "gehaltly.de" }],
   alternates: {
     canonical: 'https://gehaltly.de',

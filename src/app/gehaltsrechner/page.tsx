@@ -2,14 +2,14 @@ import { Metadata } from 'next'
 import GehaltsrechnerClient from './GehaltsrechnerClient'
 
 export const metadata: Metadata = {
-  title: "Gehaltsrechner 2026 - Nettogehalt kostenlos berechnen",
-  description: "Gehaltsrechner 2026: Berechnen Sie Ihr Nettogehalt aus dem Bruttogehalt. ✓ Präzise Berechnung ✓ Alle Steuerklassen ✓ Kostenlos. Jetzt Gehalt berechnen!",
+  title: "Gehaltsrechner 2026 - Nettogehalt für Angestellte berechnen",
+  description: "Gehaltsrechner 2026 für Angestellte & Beamte: Berechnen Sie Ihr Nettogehalt aus dem Monats- oder Jahresgehalt. ✓ Gehaltsvergleich ✓ Alle Steuerklassen ✓ Kostenlos.",
   alternates: {
     canonical: 'https://gehaltly.de/gehaltsrechner/',
   },
   openGraph: {
-    title: "Gehaltsrechner 2026 - Nettogehalt kostenlos berechnen",
-    description: "Berechnen Sie Ihr Nettogehalt mit unserem kostenlosen Gehaltsrechner 2026. Präzise und einfach.",
+    title: "Gehaltsrechner 2026 - Nettogehalt für Angestellte berechnen",
+    description: "Gehaltsrechner 2026 für Angestellte & Beamte: Berechnen Sie Ihr Nettogehalt aus dem Monats- oder Jahresgehalt.",
     url: "https://gehaltly.de/gehaltsrechner/",
   },
 };

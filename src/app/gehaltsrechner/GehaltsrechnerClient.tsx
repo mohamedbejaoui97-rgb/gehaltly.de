@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Calculator as CalcIcon, BookOpen, Info, TrendingUp } from "lucide-react";
+import Link from "next/link";
 import { BruttoNettoForm } from "@/components/calculator/BruttoNettoForm";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import PageHero from "@/components/content/PageHero";
@@ -15,27 +16,27 @@ import { type CalculatorResult as CalculatorResultType } from "@/lib/tax";
 export default function GehaltsrechnerClient() {
   const [result, setResult] = useState<CalculatorResultType | null>(null);
 
-  // FAQ data specific to Gehaltsrechner
+  // FAQ data specific to Gehaltsrechner - focused on Angestellte & Gehalt
   const faqs = [
     {
-      question: "Wie berechne ich mein Nettogehalt?",
-      answer: "Um Ihr Nettogehalt zu berechnen, geben Sie Ihr monatliches oder jährliches Bruttogehalt in den Gehaltsrechner ein. Wählen Sie dann Ihre Steuerklasse (1-6) und Ihr Bundesland aus. Der Rechner zieht automatisch alle gesetzlichen Abzüge ab: Lohnsteuer, Solidaritätszuschlag, gegebenenfalls Kirchensteuer sowie die Sozialversicherungsbeiträge für Renten-, Kranken-, Pflege- und Arbeitslosenversicherung. Das Ergebnis zeigt Ihr tatsächliches Nettogehalt, das auf Ihrem Konto landet."
+      question: "Wie berechne ich mein Nettogehalt als Angestellter?",
+      answer: "Um Ihr Nettogehalt als Angestellter zu berechnen, geben Sie Ihr monatliches oder jährliches Bruttogehalt in den Gehaltsrechner ein. Wählen Sie dann Ihre Steuerklasse (1-6) und Ihr Bundesland aus. Der Rechner zieht automatisch alle gesetzlichen Abzüge ab: Lohnsteuer, Solidaritätszuschlag, gegebenenfalls Kirchensteuer sowie die Sozialversicherungsbeiträge für Renten-, Kranken-, Pflege- und Arbeitslosenversicherung. Das Ergebnis zeigt Ihr tatsächliches Nettogehalt, das auf Ihrem Konto landet."
     },
     {
-      question: "Was ist der Unterschied zwischen Gehalt und Lohn?",
-      answer: "Gehalt ist eine feste monatliche Vergütung, die unabhängig von den tatsächlich geleisteten Arbeitsstunden gleichbleibt - typisch für Angestellte und Beamte. Lohn hingegen wird variabel berechnet, meist auf Stunden- oder Stückbasis, und kann je nach geleisteter Arbeit schwanken - üblich bei gewerblichen Arbeitnehmern. In der Steuerberechnung gibt es jedoch keinen Unterschied: Beide unterliegen der Lohnsteuer und den Sozialversicherungsbeiträgen. Unser Gehaltsrechner funktioniert für beide Vergütungsformen."
+      question: "Wie wirkt sich eine Gehaltserhöhung auf mein Netto aus?",
+      answer: "Eine Gehaltserhöhung führt nicht 1:1 zu mehr Netto. Durch den progressiven Steuersatz in Deutschland wird jeder zusätzliche Euro stärker besteuert. Bei einer Erhöhung von 500 EUR brutto bleiben in Steuerklasse 1 je nach Gehaltshöhe nur etwa 250-300 EUR netto übrig. Je höher Ihr Gehalt, desto geringer der prozentuale Netto-Zuwachs. Nutzen Sie unseren Gehaltsrechner, um verschiedene Gehaltsszenarien durchzuspielen und die tatsächliche Netto-Auswirkung einer Gehaltserhöhung zu berechnen."
     },
     {
       question: "Wie hoch ist mein Nettogehalt bei 3000 Euro brutto?",
       answer: "Bei einem Bruttogehalt von 3.000 EUR monatlich bleibt je nach Steuerklasse unterschiedlich viel netto übrig. In Steuerklasse 1 (ledig, kinderlos) sind es etwa 2.050 EUR netto. In Steuerklasse 3 (verheiratet, Partner verdient weniger) circa 2.280 EUR. In Steuerklasse 5 (verheiratet, Partner verdient mehr) nur etwa 1.700 EUR. Diese Werte gelten für 2026 ohne Kirchensteuer und können je nach Bundesland und Krankenkasse leicht variieren. Nutzen Sie unseren Gehaltsrechner für eine exakte Berechnung Ihrer individuellen Situation."
     },
     {
-      question: "Welche Abzüge habe ich vom Bruttogehalt?",
-      answer: "Vom Bruttogehalt werden zwei Arten von Abzügen vorgenommen: Erstens Steuern - die Lohnsteuer (abhängig von Ihrer Steuerklasse und Gehaltshöhe), der Solidaritätszuschlag (5,5% der Lohnsteuer, für die meisten Arbeitnehmer jedoch durch Freibetrag entfallend) und optional die Kirchensteuer (8-9% der Lohnsteuer). Zweitens Sozialversicherungsbeiträge - Rentenversicherung (9,3%), Krankenversicherung (ca. 8,15%), Pflegeversicherung (1,7% bzw. 2,3% für Kinderlose) und Arbeitslosenversicherung (1,3%). Insgesamt werden etwa 30-50% des Bruttogehalts abgezogen."
+      question: "Wird das 13. Gehalt oder Weihnachtsgeld anders besteuert?",
+      answer: "Ja, Sonderzahlungen wie das 13. Gehalt, Weihnachtsgeld oder Urlaubsgeld werden steuerlich als sonstige Bezüge behandelt und nach der Jahrestabelle versteuert. Das bedeutet: Der Arbeitgeber berechnet die Jahressteuer mit und ohne Sonderzahlung und zieht die Differenz als Lohnsteuer ab. Dadurch kann der Steuersatz auf Sonderzahlungen höher ausfallen als auf das reguläre Monatsgehalt. Sozialversicherungsbeiträge fallen ebenfalls an, solange die Beitragsbemessungsgrenze nicht überschritten ist."
     },
     {
-      question: "Kann ich mein Nettogehalt erhöhen?",
-      answer: "Ja, es gibt mehrere legale Möglichkeiten: Steuerklassenwechsel bei Verheirateten (Kombination 3/5 oder 4/4 mit Faktor), Freibeträge eintragen lassen (z.B. für Werbungskosten, Kinderbetreuung, außergewöhnliche Belastungen), steueroptimierte Gehaltsbestandteile nutzen (Jobticket, Dienstwagen, Essenszuschüsse, betriebliche Altersvorsorge), Umzug in ein anderes Bundesland mit niedrigerer Kirchensteuer oder Austritt aus der Kirche (spart 8-9% der Lohnsteuer). Bei höherem Bruttogehalt kann auch eine private Krankenversicherung in Betracht kommen. Sprechen Sie mit Ihrem Arbeitgeber über steueroptimierte Vergütungsmodelle."
+      question: "Wie vergleiche ich Gehaltsangebote bei einem Jobwechsel?",
+      answer: "Um Gehaltsangebote zu vergleichen, sollten Sie nicht nur das Bruttogehalt betrachten. Berechnen Sie zunächst das Nettogehalt beider Angebote mit unserem Gehaltsrechner. Berücksichtigen Sie dann zusätzliche Leistungen: Dienstwagen, Jobticket, betriebliche Altersvorsorge, Bonuszahlungen oder Aktienoptionen. Achten Sie auch auf den Arbeitgeberstandort (Kirchensteuer variiert nach Bundesland) und ob sich durch den Jobwechsel Ihre Steuerklasse oder Versicherungssituation ändert. Ein höheres Bruttogehalt bedeutet nicht automatisch mehr Netto."
     }
   ];
 
@@ -75,9 +76,9 @@ export default function GehaltsrechnerClient() {
 
       {/* Hero Section */}
       <PageHero
-        title="Gehaltsrechner 2026"
-        subtitle="Berechnen Sie Ihr Nettogehalt kostenlos"
-        description="Präziser Gehaltsrechner für Deutschland mit allen Steuerklassen. Erfahren Sie, wie viel von Ihrem Bruttogehalt netto übrig bleibt."
+        title="Gehaltsrechner 2026 — Für Angestellte & Beamte"
+        subtitle="Berechnen Sie Ihr Nettogehalt als Angestellter"
+        description="Speziell für Festgehalt: Vergleichen Sie Gehaltsangebote, planen Sie Gehaltsverhandlungen und berechnen Sie Ihr Jahresnettogehalt."
       />
 
       {/* Introduction */}
@@ -85,10 +86,10 @@ export default function GehaltsrechnerClient() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Mit unserem Gehaltsrechner 2026 ermitteln Sie schnell und präzise Ihr Nettogehalt. Der Rechner berücksichtigt alle relevanten Faktoren wie Ihre Steuerklasse, Ihr Bundesland, Kirchensteuerpflicht und die aktuellen Sozialversicherungsbeiträge. So erhalten Sie eine realistische Einschätzung Ihres tatsächlichen Einkommens.
+              Unser Gehaltsrechner 2026 ist speziell auf Angestellte und Beamte mit festem Monatsgehalt zugeschnitten. Berechnen Sie präzise Ihr Nettogehalt aus Ihrem Jahres- oder Monatsbrutto unter Berücksichtigung aller Steuerklassen, Ihres Bundeslands und der aktuellen Sozialversicherungsbeiträge.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Besonders nützlich ist der Gehaltsrechner bei Gehaltsverhandlungen, Jobwechsel oder wenn Sie verschiedene Gehaltsangebote miteinander vergleichen möchten. Die Berechnungen basieren auf den aktuellen Steuertabellen und Beitragssätzen für 2026.
+              Ideal für Gehaltsverhandlungen, den Vergleich von Jobangeboten oder die Planung einer Gehaltserhöhung. Ermitteln Sie, wie sich Ihr 13. Gehalt, Weihnachtsgeld oder eine Beförderung auf Ihr Netto auswirken. Die Berechnungen basieren auf den aktuellen Steuertabellen und Beitragssätzen für 2026.
             </p>
           </div>
         </div>
@@ -182,8 +183,8 @@ export default function GehaltsrechnerClient() {
       {/* FAQ Section */}
       <FAQSection faqs={faqs} title="Häufig gestellte Fragen zum Gehaltsrechner" />
 
-      {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
+      {/* Link to pillar page */}
+      <section className="py-8 md:py-12 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -192,6 +193,9 @@ export default function GehaltsrechnerClient() {
             <p className="text-lg text-muted-foreground">
               Nutzen Sie unseren kostenlosen Gehaltsrechner 2026 für eine präzise Berechnung. Einfach, schnell und zuverlässig.
             </p>
+            <Link href="/" className="inline-block text-[#DD0000] hover:underline font-medium mt-2">
+              Zum allgemeinen Brutto-Netto-Rechner &rarr;
+            </Link>
           </div>
         </div>
       </section>

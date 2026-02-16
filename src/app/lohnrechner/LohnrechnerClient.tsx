@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Calculator as CalcIcon, BookOpen, Clock, TrendingUp } from "lucide-react";
+import Link from "next/link";
 import { BruttoNettoForm } from "@/components/calculator/BruttoNettoForm";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import PageHero from "@/components/content/PageHero";
@@ -75,9 +76,9 @@ export default function LohnrechnerClient() {
 
       {/* Hero Section */}
       <PageHero
-        title="Lohnrechner 2026"
-        subtitle="Berechnen Sie Ihren Nettolohn kostenlos"
-        description="Präziser Lohnrechner für Deutschland. Ermitteln Sie, wie viel von Ihrem Bruttolohn nach allen Abzügen übrig bleibt."
+        title="Lohnrechner 2026 — Stundenlohn & Nettolohn"
+        subtitle="Berechnen Sie Ihren Nettolohn aus Stundenlohn oder Bruttolohn"
+        description="Ideal für Stundenlöhner, Teilzeitkräfte und Minijobber: Rechnen Sie Stundenlohn in Monatslohn um und ermitteln Sie Ihr Netto."
       />
 
       {/* Introduction */}
@@ -85,10 +86,10 @@ export default function LohnrechnerClient() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Mit unserem Lohnrechner 2026 berechnen Sie schnell und präzise Ihren Nettolohn aus dem Bruttolohn. Besonders praktisch für Arbeitnehmer mit Stundenlohn, gewerbliche Mitarbeiter oder bei schwankenden Arbeitszeiten. Der Rechner berücksichtigt alle relevanten Faktoren wie Steuerklasse, Bundesland, Kirchensteuer und die aktuellen Sozialversicherungsbeiträge.
+              Unser Lohnrechner 2026 ist die richtige Wahl für Arbeitnehmer mit Stundenlohn, variablen Arbeitszeiten oder Mindestlohn. Berechnen Sie Ihren Nettolohn aus dem Bruttostundenlohn oder Monatsbrutto und erfahren Sie, welche Abzüge bei Schichtarbeit, Überstundenzuschlägen und Wochenendarbeit anfallen.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Egal ob Sie Ihren monatlichen Lohn, Stundenlohn oder Jahreslohn berechnen möchten - unser Lohnrechner zeigt Ihnen transparent alle Abzüge und wie viel netto von Ihrem Bruttolohn übrig bleibt. Die Berechnungen basieren auf den aktuellen Lohntabellen und Beitragssätzen für 2026.
+              Besonders nützlich für Teilzeitkräfte, gewerbliche Arbeitnehmer und Minijobber: Vergleichen Sie verschiedene Stundenmodelle und erfahren Sie, wie sich der Mindestlohn 2026 auf Ihr Netto auswirkt. Die Berechnungen basieren auf den aktuellen Lohntabellen und Beitragssätzen für 2026.
             </p>
           </div>
         </div>
@@ -182,8 +183,8 @@ export default function LohnrechnerClient() {
       {/* FAQ Section */}
       <FAQSection faqs={faqs} title="Häufig gestellte Fragen zum Lohnrechner" />
 
-      {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
+      {/* Link to pillar page */}
+      <section className="py-8 md:py-12 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -192,6 +193,9 @@ export default function LohnrechnerClient() {
             <p className="text-lg text-muted-foreground">
               Nutzen Sie unseren kostenlosen Lohnrechner 2026 für eine präzise Berechnung. Für Stundenlohn und Monatslohn.
             </p>
+            <Link href="/" className="inline-block text-[#DD0000] hover:underline font-medium mt-2">
+              Zum allgemeinen Brutto-Netto-Rechner &rarr;
+            </Link>
           </div>
         </div>
       </section>

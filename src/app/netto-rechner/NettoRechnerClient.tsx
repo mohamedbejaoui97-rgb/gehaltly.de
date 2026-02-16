@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Calculator as CalcIcon, BookOpen, Percent, TrendingDown } from "lucide-react";
+import Link from "next/link";
 import { BruttoNettoForm } from "@/components/calculator/BruttoNettoForm";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import PageHero from "@/components/content/PageHero";
@@ -75,9 +76,9 @@ export default function NettoRechnerClient() {
 
       {/* Hero Section */}
       <PageHero
-        title="Netto Rechner 2026"
-        subtitle="Berechnen Sie Ihr Nettogehalt kostenlos"
-        description="Präziser Netto Rechner für Deutschland. Erfahren Sie, wie viel von Ihrem Bruttogehalt netto übrig bleibt."
+        title="Netto Rechner 2026 — Abzüge verstehen & optimieren"
+        subtitle="Alle Abzüge im Detail und Tipps zur Nettolohnoptimierung"
+        description="Erfahren Sie genau, welche Steuern und Sozialabgaben von Ihrem Brutto abgezogen werden — und wie Sie mehr Netto herausholen."
       />
 
       {/* Introduction */}
@@ -85,10 +86,10 @@ export default function NettoRechnerClient() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Mit unserem Netto Rechner 2026 ermitteln Sie schnell und präzise, wie viel von Ihrem Bruttogehalt nach Abzug aller Steuern und Sozialabgaben übrig bleibt. Der Rechner berücksichtigt alle relevanten Faktoren wie Ihre Steuerklasse, Ihr Bundesland, Kirchensteuerpflicht und die aktuellen Sozialversicherungsbeiträge, um Ihnen ein genaues Netto zu berechnen.
+              Unser Netto Rechner 2026 zeigt Ihnen transparent, welche Steuern und Sozialabgaben von Ihrem Bruttogehalt abgezogen werden. Verstehen Sie im Detail, warum Ihr Netto so hoch oder niedrig ausfällt und welche Faktoren die größten Auswirkungen haben: Steuerklasse, Kirchensteuer, Krankenkassen-Zusatzbeitrag und Pflegeversicherungszuschlag.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Egal ob bei Gehaltsverhandlungen, Jobwechsel oder zur Finanzplanung - unser Netto Rechner zeigt Ihnen transparent, welche Abzüge anfallen und wie hoch Ihr tatsächliches verfügbares Einkommen ist. Die Berechnungen basieren auf den aktuellen Steuertabellen und Beitragssätzen für 2026.
+              Nutzen Sie die detaillierte Abzugsübersicht, um Optimierungspotenzial zu erkennen. Erfahren Sie, wie Sie durch Steuerklassenwechsel, Freibeträge, steuerfreie Sachbezüge oder den Wechsel der Krankenkasse mehr Netto vom Brutto erhalten. Die Berechnungen basieren auf den aktuellen Steuertabellen und Beitragssätzen für 2026.
             </p>
           </div>
         </div>
@@ -182,8 +183,8 @@ export default function NettoRechnerClient() {
       {/* FAQ Section */}
       <FAQSection faqs={faqs} title="Häufig gestellte Fragen zum Netto Rechner" />
 
-      {/* Final CTA */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
+      {/* Link to pillar page */}
+      <section className="py-8 md:py-12 bg-gradient-to-br from-primary/10 via-primary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center space-y-4">
             <h2 className="text-2xl md:text-3xl font-bold">
@@ -192,6 +193,9 @@ export default function NettoRechnerClient() {
             <p className="text-lg text-muted-foreground">
               Nutzen Sie unseren kostenlosen Netto Rechner 2026 für eine präzise Berechnung Ihres Nettogehalts.
             </p>
+            <Link href="/" className="inline-block text-[#DD0000] hover:underline font-medium mt-2">
+              Zum allgemeinen Brutto-Netto-Rechner &rarr;
+            </Link>
           </div>
         </div>
       </section>

@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import { BookOpen, Users, Calculator as CalcIcon, TrendingUp, Info, PiggyBank } from "lucide-react";
+import { BookOpen, Users, Calculator as CalcIcon, TrendingUp, Info, PiggyBank, Briefcase, Clock, Search, ArrowLeftRight } from "lucide-react";
+import Link from "next/link";
 import { BruttoNettoForm } from "@/components/calculator/BruttoNettoForm";
 import { CalculatorResult } from "@/components/calculator/CalculatorResult";
 import PageHero from "@/components/content/PageHero";
@@ -129,6 +130,61 @@ export default function HomePage() {
             <p className="text-base text-muted-foreground leading-relaxed">
               Die Berechnungen basieren auf den aktuellen Steuertabellen und Sozialversicherungsbeiträgen für 2026 und berücksichtigen den erhöhten Grundfreibetrag von 12.348 EUR sowie die aktuellen Beitragsbemessungsgrenzen.
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Calculator Navigation - "Welchen Rechner benötigen Sie?" */}
+      <section className="py-6 md:py-8">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-2xl font-bold mb-6 text-center">Welchen Rechner benötigen Sie?</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <Link href="/gehaltsrechner" className="group block bg-background rounded-lg border p-5 shadow-sm hover:shadow-md hover:border-[#DD0000]/30 transition-all">
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-blue-100 dark:bg-blue-950/30 p-2 shrink-0">
+                    <Briefcase className="w-5 h-5 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold group-hover:text-[#DD0000] transition-colors">Gehaltsrechner</h3>
+                    <p className="text-sm text-muted-foreground mt-1">Für Angestellte & Beamte mit festem Monatsgehalt</p>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/lohnrechner" className="group block bg-background rounded-lg border p-5 shadow-sm hover:shadow-md hover:border-[#DD0000]/30 transition-all">
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-green-100 dark:bg-green-950/30 p-2 shrink-0">
+                    <Clock className="w-5 h-5 text-green-600 dark:text-green-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold group-hover:text-[#DD0000] transition-colors">Lohnrechner</h3>
+                    <p className="text-sm text-muted-foreground mt-1">Für Stundenlohn, Mindestlohn & variable Vergütung</p>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/netto-rechner" className="group block bg-background rounded-lg border p-5 shadow-sm hover:shadow-md hover:border-[#DD0000]/30 transition-all">
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-purple-100 dark:bg-purple-950/30 p-2 shrink-0">
+                    <Search className="w-5 h-5 text-purple-600 dark:text-purple-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold group-hover:text-[#DD0000] transition-colors">Netto-Rechner</h3>
+                    <p className="text-sm text-muted-foreground mt-1">Alle Abzüge verstehen & Netto optimieren</p>
+                  </div>
+                </div>
+              </Link>
+              <Link href="/netto-brutto-rechner" className="group block bg-background rounded-lg border p-5 shadow-sm hover:shadow-md hover:border-[#DD0000]/30 transition-all">
+                <div className="flex items-start gap-3">
+                  <div className="rounded-full bg-amber-100 dark:bg-amber-950/30 p-2 shrink-0">
+                    <ArrowLeftRight className="w-5 h-5 text-amber-600 dark:text-amber-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold group-hover:text-[#DD0000] transition-colors">Netto-Brutto-Rechner</h3>
+                    <p className="text-sm text-muted-foreground mt-1">Wunschnetto: Wie viel Brutto brauche ich?</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
           </div>
         </div>
       </section>

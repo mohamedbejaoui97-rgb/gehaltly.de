@@ -16,27 +16,27 @@ export const CALCULATOR_LINKS: InternalLink[] = [
   {
     title: 'Brutto-Netto-Rechner',
     href: '/',
-    description: 'Berechnen Sie Ihr Nettogehalt aus dem Bruttogehalt',
+    description: 'Der universelle Brutto-Netto-Rechner für alle Arbeitnehmer',
   },
   {
     title: 'Gehaltsrechner',
     href: '/gehaltsrechner',
-    description: 'Umfassender Gehaltsrechner mit allen Steuerklassen',
+    description: 'Nettogehalt für Angestellte & Beamte berechnen',
   },
   {
     title: 'Lohnrechner',
     href: '/lohnrechner',
-    description: 'Berechnen Sie Lohnsteuer und Sozialabgaben',
+    description: 'Stundenlohn & Nettolohn für Lohnempfänger berechnen',
   },
   {
     title: 'Netto-Brutto-Rechner',
     href: '/netto-brutto-rechner',
-    description: 'Berechnen Sie Ihr Bruttogehalt aus dem Nettogehalt',
+    description: 'Wunschnetto eingeben und benötigtes Bruttogehalt berechnen',
   },
   {
     title: 'Netto-Rechner',
     href: '/netto-rechner',
-    description: 'Schnelle Netto-Berechnung aus Ihrem Bruttolohn',
+    description: 'Alle Abzüge verstehen und Netto optimieren',
   },
   {
     title: 'Stundenlohnrechner',
