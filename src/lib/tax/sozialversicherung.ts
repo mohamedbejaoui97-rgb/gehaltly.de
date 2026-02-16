@@ -84,8 +84,8 @@ export function calculateSozialversicherung(
   if (krankenversicherung === 'privat') {
     // PKV: Employee pays their premium, minus AG-Zuschuss if applicable
     if (pvkArbeitgeberzuschuss) {
-      // AG pays up to 50% of the GKV max contribution
-      const gkvMax = Math.round(kvBasis * KV_RATE) + Math.round(kvBasis * (kvZusatzbeitrag / 100));
+      // AG pays up to 50% of the GKV max contribution (AN share: base + half Zusatzbeitrag)
+      const gkvMax = Math.round(kvBasis * KV_RATE) + Math.round(kvBasis * (kvZusatzbeitrag / 100 / 2));
       const agZuschuss = Math.min(Math.round(gkvMax), Math.round(pvkBeitrag / 2));
       kv = Math.max(0, pvkBeitrag - agZuschuss);
     } else {
@@ -94,7 +94,8 @@ export function calculateSozialversicherung(
   } else {
     // GKV (gesetzlich or freiwillig)
     const kvBase = Math.round(kvBasis * KV_RATE);
-    const kvZusatz = Math.round(kvBasis * (kvZusatzbeitrag / 100));
+    // Zusatzbeitrag is split 50/50 between AG and AN since 01.01.2019
+    const kvZusatz = Math.round(kvBasis * (kvZusatzbeitrag / 100 / 2));
     kv = kvBase + kvZusatz;
   }
 
