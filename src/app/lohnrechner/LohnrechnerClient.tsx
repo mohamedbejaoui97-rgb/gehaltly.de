@@ -32,7 +32,7 @@ export default function LohnrechnerClient() {
     },
     {
       question: "Welche Abzüge habe ich vom Bruttolohn?",
-      answer: "Vom Bruttolohn werden folgende Abzüge vorgenommen: Lohnsteuer (abhängig von Steuerklasse und Lohnhöhe, zwischen 0% und 45%), Solidaritätszuschlag (5,5% der Lohnsteuer, für die meisten durch Freibetrag entfallend), Kirchensteuer (8% in Bayern/Baden-Württemberg, 9% in anderen Bundesländern der Lohnsteuer, nur bei Kirchenmitgliedschaft). Dazu kommen Sozialversicherungsbeiträge: Rentenversicherung 9,3%, Krankenversicherung ca. 8,15%, Pflegeversicherung 1,7% (Kinderlose ab 23: 2,3%), Arbeitslosenversicherung 1,3%. Insgesamt werden etwa 30-50% abgezogen."
+      answer: "Vom Bruttolohn werden folgende Abzüge vorgenommen: Lohnsteuer (abhängig von Steuerklasse und Lohnhöhe, zwischen 0% und 45%), Solidaritätszuschlag (5,5% der Lohnsteuer, für die meisten durch Freibetrag entfallend), Kirchensteuer (8% in Bayern/Baden-Württemberg, 9% in anderen Bundesländern der Lohnsteuer, nur bei Kirchenmitgliedschaft). Dazu kommen Sozialversicherungsbeiträge: Rentenversicherung 9,3%, Krankenversicherung ca. 8,75%, Pflegeversicherung 1,8% (Kinderlose ab 23: 2,4%), Arbeitslosenversicherung 1,3%. Insgesamt werden etwa 30-50% abgezogen."
     },
     {
       question: "Wie viel Nettolohn bleibt bei Mindestlohn?",

@@ -5,14 +5,14 @@ import LexikonTemplate from "@/components/content/LexikonTemplate";
 export const metadata: Metadata = {
   title: "Rentenversicherung - Beitrag & Rentenpunkte 2026",
   description:
-    "Alles zur gesetzlichen Rentenversicherung 2026: Beitragssatz 18,6%, Beitragsbemessungsgrenzen West (96.600€) und Ost (94.800€) sowie Rentenpunkte.",
+    "Alles zur gesetzlichen Rentenversicherung 2026: Beitragssatz 18,6%, einheitliche Beitragsbemessungsgrenze (101.400€) sowie Rentenpunkte.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/rentenversicherung/",
   },
   openGraph: {
     title: "Rentenversicherung - Beitrag & Rentenpunkte 2026",
     description:
-      "Alles zur gesetzlichen Rentenversicherung 2026: Beitragssatz 18,6%, Beitragsbemessungsgrenzen West (96.600€) und Ost (94.800€) sowie Rentenpunkte.",
+      "Alles zur gesetzlichen Rentenversicherung 2026: Beitragssatz 18,6%, einheitliche Beitragsbemessungsgrenze (101.400€) sowie Rentenpunkte.",
     url: "https://gehaltly.de/lexikon/rentenversicherung/",
     siteName: "gehaltly.de",
     type: "article",
@@ -37,16 +37,14 @@ export default function RentenversicherungPage() {
         <li>Der Beitrag wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt</li>
       </ul>
 
-      <h2>Beitragsbemessungsgrenzen 2026</h2>
+      <h2>Beitragsbemessungsgrenze 2026</h2>
       <p>
-        Die Beitragsbemessungsgrenzen unterscheiden sich zwischen West- und Ostdeutschland:
+        Seit 2025 gilt eine einheitliche Beitragsbemessungsgrenze für ganz Deutschland:
       </p>
       <ul>
-        <li><strong>West: 96.600 € pro Jahr</strong> (8.050 € pro Monat)</li>
-        <li><strong>Ost: 94.800 € pro Jahr</strong> (7.900 € pro Monat)</li>
-        <li>Einkommen oberhalb dieser Grenzen wird nicht mehr für die Beitragsberechnung herangezogen</li>
-        <li>Maximaler monatlicher Beitrag West: 8.050 € × 18,6% = 1.497,30 € (je 748,65 € pro Partei)</li>
-        <li>Maximaler monatlicher Beitrag Ost: 7.900 € × 18,6% = 1.469,40 € (je 734,70 € pro Partei)</li>
+        <li><strong>101.400 € pro Jahr</strong> (8.450 € pro Monat) - bundesweit einheitlich</li>
+        <li>Einkommen oberhalb dieser Grenze wird nicht mehr für die Beitragsberechnung herangezogen</li>
+        <li>Maximaler monatlicher Beitrag: 8.450 € × 18,6% = 1.571,70 € (je 785,85 € pro Partei)</li>
       </ul>
 
       <h2>Rentenpunkte - So funktioniert das System</h2>
@@ -121,12 +119,12 @@ export default function RentenversicherungPage() {
     {
       question: "Was passiert mit meinem Einkommen über der Beitragsbemessungsgrenze?",
       answer:
-        "Einkommen oberhalb der Beitragsbemessungsgrenze (96.600 € West, 94.800 € Ost) wird nicht mehr für die Beitragsberechnung herangezogen. Sie zahlen also maximal den Beitrag bis zu dieser Grenze, erwerben aber auch keine zusätzlichen Rentenpunkte für das darüber liegende Einkommen.",
+        "Einkommen oberhalb der Beitragsbemessungsgrenze (101.400 €) wird nicht mehr für die Beitragsberechnung herangezogen. Sie zahlen also maximal den Beitrag bis zu dieser Grenze, erwerben aber auch keine zusätzlichen Rentenpunkte für das darüber liegende Einkommen.",
     },
     {
-      question: "Warum gibt es unterschiedliche Beitragsbemessungsgrenzen in Ost und West?",
+      question: "Gibt es noch unterschiedliche Beitragsbemessungsgrenzen in Ost und West?",
       answer:
-        "Die Unterscheidung zwischen Ost und West besteht noch aus historischen Gründen. Das Lohnniveau in Ostdeutschland ist im Durchschnitt noch niedriger, daher ist auch die Beitragsbemessungsgrenze etwas geringer. Die Angleichung ist aber in vollem Gange.",
+        "Nein, seit 2025 gilt eine einheitliche Beitragsbemessungsgrenze von 101.400 € pro Jahr für ganz Deutschland. Die historische Unterscheidung zwischen Ost und West wurde abgeschafft.",
     },
     {
       question: "Kann ich freiwillig mehr in die Rentenversicherung einzahlen?",

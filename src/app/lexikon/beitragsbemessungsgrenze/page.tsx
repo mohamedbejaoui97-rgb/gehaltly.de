@@ -3,16 +3,16 @@ import { Metadata } from "next";
 import LexikonTemplate from "@/components/content/LexikonTemplate";
 
 export const metadata: Metadata = {
-  title: "Beitragsbemessungsgrenze 2026 - KV, RV & West/Ost",
+  title: "Beitragsbemessungsgrenze 2026 - KV & RV",
   description:
-    "Alle Beitragsbemessungsgrenzen 2026: Krankenversicherung (66.150€), Rentenversicherung West (96.600€) und Ost (94.800€), Auswirkungen auf Sozialabgaben.",
+    "Alle Beitragsbemessungsgrenzen 2026: Krankenversicherung (69.750€), Rentenversicherung (101.400€ einheitlich), Auswirkungen auf Sozialabgaben.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/beitragsbemessungsgrenze/",
   },
   openGraph: {
-    title: "Beitragsbemessungsgrenze 2026 - KV, RV & West/Ost",
+    title: "Beitragsbemessungsgrenze 2026 - KV & RV",
     description:
-      "Alle Beitragsbemessungsgrenzen 2026: Krankenversicherung (66.150€), Rentenversicherung West (96.600€) und Ost (94.800€), Auswirkungen auf Sozialabgaben.",
+      "Alle Beitragsbemessungsgrenzen 2026: Krankenversicherung (69.750€), Rentenversicherung (101.400€ einheitlich), Auswirkungen auf Sozialabgaben.",
     url: "https://gehaltly.de/lexikon/beitragsbemessungsgrenze/",
     siteName: "gehaltly.de",
     type: "article",
@@ -24,7 +24,7 @@ export default function BeitragsbemessungsgrenzePage() {
     <>
       <h2>Was ist die Beitragsbemessungsgrenze?</h2>
       <p>
-        Die Beitragsbemessungsgrenze (BBG) ist die Einkommensgrenze, bis zu der Beiträge zur Sozialversicherung berechnet werden. Einkommen oberhalb dieser Grenze bleibt bei der Beitragsberechnung unberücksichtigt. Es gibt unterschiedliche Beitragsbemessungsgrenzen für verschiedene Versicherungszweige und für West- und Ostdeutschland.
+        Die Beitragsbemessungsgrenze (BBG) ist die Einkommensgrenze, bis zu der Beiträge zur Sozialversicherung berechnet werden. Einkommen oberhalb dieser Grenze bleibt bei der Beitragsberechnung unberücksichtigt. Es gibt unterschiedliche Beitragsbemessungsgrenzen für verschiedene Versicherungszweige. Seit 2025 gilt für die Renten- und Arbeitslosenversicherung eine einheitliche BBG für ganz Deutschland.
       </p>
 
       <h2>Beitragsbemessungsgrenzen 2026 im Überblick</h2>
@@ -35,37 +35,28 @@ export default function BeitragsbemessungsgrenzePage() {
         <li>
           <strong>Kranken- und Pflegeversicherung (bundesweit):</strong>
           <ul>
-            <li>66.150 € pro Jahr (5.512,50 € pro Monat)</li>
+            <li>69.750 € pro Jahr (5.812,50 € pro Monat)</li>
             <li>Gilt einheitlich für ganz Deutschland</li>
           </ul>
         </li>
         <li>
-          <strong>Renten- und Arbeitslosenversicherung West:</strong>
+          <strong>Renten- und Arbeitslosenversicherung (bundesweit einheitlich):</strong>
           <ul>
-            <li>96.600 € pro Jahr (8.050 € pro Monat)</li>
-            <li>Gilt für die alten Bundesländer</li>
-          </ul>
-        </li>
-        <li>
-          <strong>Renten- und Arbeitslosenversicherung Ost:</strong>
-          <ul>
-            <li>94.800 € pro Jahr (7.900 € pro Monat)</li>
-            <li>Gilt für die neuen Bundesländer</li>
+            <li>101.400 € pro Jahr (8.450 € pro Monat)</li>
+            <li>Seit 2025 einheitlich für ganz Deutschland (keine Ost/West-Unterscheidung mehr)</li>
           </ul>
         </li>
       </ul>
 
-      <h2>Unterschied West und Ost</h2>
+      <h2>Vereinheitlichung der BBG Ost und West</h2>
       <p>
-        Die Unterscheidung zwischen West und Ost besteht aus historischen Gründen:
+        Seit 2025 gibt es keine Unterscheidung mehr zwischen West und Ost bei der Beitragsbemessungsgrenze für die Renten- und Arbeitslosenversicherung:
       </p>
       <ul>
-        <li>Nach der Wiedervereinigung gab es unterschiedliche Lohnniveaus</li>
-        <li>Die Beitragsbemessungsgrenzen wurden an die durchschnittlichen Einkommen angepasst</li>
-        <li>Im Osten ist das durchschnittliche Lohnniveau noch etwas niedriger</li>
-        <li>Die Angleichung der Grenzen schreitet voran, Unterschiede werden kleiner</li>
-        <li><strong>West:</strong> Baden-Württemberg, Bayern, Berlin-West, Bremen, Hamburg, Hessen, Niedersachsen, Nordrhein-Westfalen, Rheinland-Pfalz, Saarland, Schleswig-Holstein</li>
-        <li><strong>Ost:</strong> Berlin-Ost, Brandenburg, Mecklenburg-Vorpommern, Sachsen, Sachsen-Anhalt, Thüringen</li>
+        <li>Nach der Wiedervereinigung gab es historisch unterschiedliche Lohnniveaus und daher unterschiedliche BBGs</li>
+        <li>Die Angleichung wurde schrittweise vollzogen und ist seit 2025 abgeschlossen</li>
+        <li>Seit 2025 gilt eine einheitliche BBG von 101.400 € pro Jahr (8.450 € pro Monat) für ganz Deutschland</li>
+        <li>Die BBG für die Kranken- und Pflegeversicherung war bereits zuvor bundesweit einheitlich</li>
       </ul>
 
       <h2>Auswirkungen der Beitragsbemessungsgrenze</h2>
@@ -84,55 +75,55 @@ export default function BeitragsbemessungsgrenzePage() {
         Bei Erreichen der Beitragsbemessungsgrenze zahlen Sie folgende maximale Beiträge:
       </p>
       <p>
-        <strong>Krankenversicherung (66.150 € / Jahr):</strong>
+        <strong>Krankenversicherung (69.750 € / Jahr):</strong>
       </p>
       <ul>
-        <li>Beitragssatz: 14,6% + durchschnittlich 1,7% Zusatzbeitrag = 16,3%</li>
-        <li>Maximaler Gesamtbeitrag: 5.512,50 € × 16,3% = 898,54 € pro Monat</li>
-        <li>Arbeitgeberanteil: ca. 449 € pro Monat</li>
-        <li>Arbeitnehmeranteil: ca. 449 € pro Monat</li>
+        <li>Beitragssatz: 14,6% + durchschnittlich 2,9% Zusatzbeitrag = 17,5%</li>
+        <li>Maximaler Gesamtbeitrag: 5.812,50 € × 17,5% = 1.017,19 € pro Monat</li>
+        <li>Arbeitgeberanteil: ca. 509 € pro Monat</li>
+        <li>Arbeitnehmeranteil: ca. 509 € pro Monat</li>
       </ul>
 
       <p>
-        <strong>Pflegeversicherung (66.150 € / Jahr):</strong>
+        <strong>Pflegeversicherung (69.750 € / Jahr):</strong>
       </p>
       <ul>
-        <li>Beitragssatz: 3,4% (zzgl. 0,6% für Kinderlose)</li>
-        <li>Maximaler Beitrag kinderlos: 5.512,50 € × 4,0% = 220,50 € pro Monat</li>
-        <li>Maximaler Beitrag mit Kindern: 5.512,50 € × 3,4% = 187,43 € pro Monat (abzgl. Kinderrabatt)</li>
+        <li>Beitragssatz: 3,6% (zzgl. 0,6% für Kinderlose)</li>
+        <li>Maximaler Beitrag kinderlos: 5.812,50 € × 4,2% = 244,13 € pro Monat</li>
+        <li>Maximaler Beitrag mit Kindern: 5.812,50 € × 3,6% = 209,25 € pro Monat (abzgl. Kinderrabatt)</li>
       </ul>
 
       <p>
-        <strong>Rentenversicherung West (96.600 € / Jahr):</strong>
+        <strong>Rentenversicherung (101.400 € / Jahr):</strong>
       </p>
       <ul>
         <li>Beitragssatz: 18,6%</li>
-        <li>Maximaler Gesamtbeitrag: 8.050 € × 18,6% = 1.497,30 € pro Monat</li>
-        <li>Arbeitgeberanteil: 748,65 € pro Monat</li>
-        <li>Arbeitnehmeranteil: 748,65 € pro Monat</li>
+        <li>Maximaler Gesamtbeitrag: 8.450 € × 18,6% = 1.571,70 € pro Monat</li>
+        <li>Arbeitgeberanteil: 785,85 € pro Monat</li>
+        <li>Arbeitnehmeranteil: 785,85 € pro Monat</li>
       </ul>
 
       <p>
-        <strong>Arbeitslosenversicherung West (96.600 € / Jahr):</strong>
+        <strong>Arbeitslosenversicherung (101.400 € / Jahr):</strong>
       </p>
       <ul>
         <li>Beitragssatz: 2,6%</li>
-        <li>Maximaler Gesamtbeitrag: 8.050 € × 2,6% = 209,30 € pro Monat</li>
-        <li>Arbeitgeberanteil: 104,65 € pro Monat</li>
-        <li>Arbeitnehmeranteil: 104,65 € pro Monat</li>
+        <li>Maximaler Gesamtbeitrag: 8.450 € × 2,6% = 219,70 € pro Monat</li>
+        <li>Arbeitgeberanteil: 109,85 € pro Monat</li>
+        <li>Arbeitnehmeranteil: 109,85 € pro Monat</li>
       </ul>
 
       <h2>Beispielrechnung: Einkommen über der BBG</h2>
       <p>
-        <strong>Beispiel: Bruttojahresgehalt 120.000 € in West-Deutschland</strong>
+        <strong>Beispiel: Bruttojahresgehalt 120.000 €</strong>
       </p>
       <ul>
-        <li>Krankenversicherung: Berechnet nur bis 66.150 € (max. 898,54 €/Monat)</li>
-        <li>Pflegeversicherung: Berechnet nur bis 66.150 € (max. 220,50 €/Monat kinderlos)</li>
-        <li>Rentenversicherung: Berechnet nur bis 96.600 € (max. 1.497,30 €/Monat)</li>
-        <li>Arbeitslosenversicherung: Berechnet nur bis 96.600 € (max. 209,30 €/Monat)</li>
-        <li><strong>Gesamt max. Sozialabgaben: ca. 2.826 € pro Monat</strong></li>
-        <li>Zusätzliches Einkommen (120.000 - 96.600 = 23.400 €): Keine Sozialabgaben mehr</li>
+        <li>Krankenversicherung: Berechnet nur bis 69.750 € (max. 1.017,19 €/Monat)</li>
+        <li>Pflegeversicherung: Berechnet nur bis 69.750 € (max. 244,13 €/Monat kinderlos)</li>
+        <li>Rentenversicherung: Berechnet nur bis 101.400 € (max. 1.571,70 €/Monat)</li>
+        <li>Arbeitslosenversicherung: Berechnet nur bis 101.400 € (max. 219,70 €/Monat)</li>
+        <li><strong>Gesamt max. Sozialabgaben: ca. 3.053 € pro Monat</strong></li>
+        <li>Zusätzliches Einkommen (120.000 - 101.400 = 18.600 €): Keine Sozialabgaben mehr</li>
       </ul>
 
       <h2>Versicherungspflichtgrenze vs. Beitragsbemessungsgrenze</h2>
@@ -141,14 +132,14 @@ export default function BeitragsbemessungsgrenzePage() {
       </p>
       <ul>
         <li>
-          <strong>Beitragsbemessungsgrenze (66.150 € / 96.600 €):</strong>
+          <strong>Beitragsbemessungsgrenze (69.750 € / 101.400 €):</strong>
           <ul>
             <li>Obergrenze für die Berechnung der Sozialversicherungsbeiträge</li>
             <li>Gilt für alle gesetzlich Versicherten</li>
           </ul>
         </li>
         <li>
-          <strong>Versicherungspflichtgrenze (69.300 € in 2026):</strong>
+          <strong>Versicherungspflichtgrenze (77.400 € in 2026):</strong>
           <ul>
             <li>Auch Jahresarbeitsentgeltgrenze (JAEG) genannt</li>
             <li>Ab diesem Einkommen können Sie von der GKV in die PKV wechseln</li>
@@ -195,9 +186,9 @@ export default function BeitragsbemessungsgrenzePage() {
         "Einkommen über der Beitragsbemessungsgrenze wird nicht mehr für die Berechnung der Sozialversicherungsbeiträge herangezogen. Sie zahlen also keine zusätzlichen Sozialabgaben, profitieren aber auch nicht von höheren Leistungen (z.B. Rente). Lohnsteuer wird weiterhin auf das gesamte Einkommen fällig.",
     },
     {
-      question: "Warum gibt es unterschiedliche BBG für West und Ost?",
+      question: "Gibt es noch unterschiedliche BBG für West und Ost?",
       answer:
-        "Die Unterscheidung besteht aus historischen Gründen nach der Wiedervereinigung. Das durchschnittliche Lohnniveau ist in Ostdeutschland noch etwas niedriger, daher sind auch die Beitragsbemessungsgrenzen für Renten- und Arbeitslosenversicherung geringer. Die Angleichung schreitet aber voran.",
+        "Nein, seit 2025 gibt es keine Unterscheidung mehr zwischen West und Ost bei der Beitragsbemessungsgrenze für die Renten- und Arbeitslosenversicherung. Es gilt eine einheitliche BBG von 101.400 € pro Jahr. Die BBG für die Kranken- und Pflegeversicherung war bereits zuvor bundesweit einheitlich.",
     },
     {
       question: "Kann ich freiwillig mehr in die Rentenversicherung einzahlen?",
@@ -212,12 +203,12 @@ export default function BeitragsbemessungsgrenzePage() {
     {
       question: "Ab welchem Gehalt lohnt sich die private Krankenversicherung?",
       answer:
-        "Ab der Versicherungspflichtgrenze von 69.300 € (2026) können Sie in die PKV wechseln. Ob es sich lohnt, hängt von vielen Faktoren ab: Alter, Gesundheitszustand, Familienplanung. Die BBG (66.150 €) begrenzt nur die GKV-Beiträge, ist aber nicht die Wechselgrenze.",
+        "Ab der Versicherungspflichtgrenze von 77.400 € (2026) können Sie in die PKV wechseln. Ob es sich lohnt, hängt von vielen Faktoren ab: Alter, Gesundheitszustand, Familienplanung. Die BBG (69.750 €) begrenzt nur die GKV-Beiträge, ist aber nicht die Wechselgrenze.",
     },
     {
       question: "Wie wirkt sich die BBG auf meine spätere Rente aus?",
       answer:
-        "Sie erwerben maximal so viele Rentenpunkte, wie der Beitragsbemessungsgrenze entsprechen. Bei Einkommen über der BBG steigt die Rente nicht weiter. Für 2026: Maximal ca. 2,13 Rentenpunkte pro Jahr bei BBG West (96.600 € ÷ ca. 45.358 € Durchschnittseinkommen).",
+        "Sie erwerben maximal so viele Rentenpunkte, wie der Beitragsbemessungsgrenze entsprechen. Bei Einkommen über der BBG steigt die Rente nicht weiter. Für 2026: Maximal ca. 2,24 Rentenpunkte pro Jahr bei BBG (101.400 € ÷ ca. 45.358 € Durchschnittseinkommen).",
     },
   ];
 

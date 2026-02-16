@@ -5,14 +5,14 @@ import LexikonTemplate from "@/components/content/LexikonTemplate";
 export const metadata: Metadata = {
   title: "Pflegeversicherung - Beitragssatz & Kinderrabatt 2026",
   description:
-    "Alles zur Pflegeversicherung 2026: Beitragssatz 3,4%, Zuschlag für Kinderlose, Kinderrabatt bis zu 1,25% und Sonderregelung in Sachsen.",
+    "Alles zur Pflegeversicherung 2026: Beitragssatz 3,6%, Zuschlag für Kinderlose, Kinderrabatt bis zu 1,25% und Sonderregelung in Sachsen.",
   alternates: {
     canonical: "https://gehaltly.de/lexikon/pflegeversicherung/",
   },
   openGraph: {
     title: "Pflegeversicherung - Beitragssatz & Kinderrabatt 2026",
     description:
-      "Alles zur Pflegeversicherung 2026: Beitragssatz 3,4%, Zuschlag für Kinderlose, Kinderrabatt bis zu 1,25% und Sonderregelung in Sachsen.",
+      "Alles zur Pflegeversicherung 2026: Beitragssatz 3,6%, Zuschlag für Kinderlose, Kinderrabatt bis zu 1,25% und Sonderregelung in Sachsen.",
     url: "https://gehaltly.de/lexikon/pflegeversicherung/",
     siteName: "gehaltly.de",
     type: "article",
@@ -32,10 +32,10 @@ export default function PflegeversicherungPage() {
         Der Beitragssatz zur Pflegeversicherung setzt sich 2026 aus mehreren Komponenten zusammen:
       </p>
       <ul>
-        <li><strong>3,4%</strong> allgemeiner Beitragssatz (wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt)</li>
+        <li><strong>3,6%</strong> allgemeiner Beitragssatz (wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt)</li>
         <li><strong>+ 0,6%</strong> Zuschlag für Kinderlose ab 23 Jahren (trägt allein der Arbeitnehmer)</li>
-        <li>Kinderlose ab 23: <strong>4,0%</strong> gesamt</li>
-        <li>Mit Kindern: <strong>3,4%</strong> minus Kinderrabatt</li>
+        <li>Kinderlose ab 23: <strong>4,2%</strong> gesamt</li>
+        <li>Mit Kindern: <strong>3,6%</strong> minus Kinderrabatt</li>
       </ul>
 
       <h2>Kinderrabatt in der Pflegeversicherung</h2>
@@ -58,8 +58,8 @@ export default function PflegeversicherungPage() {
         In Sachsen gibt es eine Besonderheit bei der Aufteilung der Pflegeversicherungsbeiträge:
       </p>
       <ul>
-        <li>Arbeitnehmer zahlen: <strong>2,2%</strong> (statt 1,7%)</li>
-        <li>Arbeitgeber zahlen: <strong>1,2%</strong> (statt 1,7%)</li>
+        <li>Arbeitnehmer zahlen: <strong>2,3%</strong> (statt 1,8%)</li>
+        <li>Arbeitgeber zahlen: <strong>1,3%</strong> (statt 1,8%)</li>
         <li>Grund: In Sachsen ist der Buß- und Bettag weiterhin ein gesetzlicher Feiertag</li>
         <li>Als Ausgleich zahlen Arbeitnehmer einen höheren Pflegeversicherungsanteil</li>
       </ul>
@@ -69,30 +69,30 @@ export default function PflegeversicherungPage() {
         <strong>Beispiel 1: Kinderloser Arbeitnehmer (28 Jahre), 4.000 € Brutto</strong>
       </p>
       <ul>
-        <li>Beitragssatz: 4,0% (3,4% + 0,6% Zuschlag)</li>
-        <li>Gesamtbeitrag: 4.000 € × 4,0% = 160 €</li>
-        <li>Arbeitgeber: 4.000 € × 1,7% = <strong>68 €</strong></li>
-        <li>Arbeitnehmer: 4.000 € × 2,3% = <strong>92 €</strong></li>
+        <li>Beitragssatz: 4,2% (3,6% + 0,6% Zuschlag)</li>
+        <li>Gesamtbeitrag: 4.000 € × 4,2% = 168 €</li>
+        <li>Arbeitgeber: 4.000 € × 1,8% = <strong>72 €</strong></li>
+        <li>Arbeitnehmer: 4.000 € × 2,4% = <strong>96 €</strong></li>
       </ul>
 
       <p>
         <strong>Beispiel 2: Mutter mit 3 Kindern, 4.000 € Brutto</strong>
       </p>
       <ul>
-        <li>Beitragssatz: 2,9% (3,4% - 0,5% Rabatt)</li>
-        <li>Gesamtbeitrag: 4.000 € × 2,9% = 116 €</li>
-        <li>Arbeitgeber: 4.000 € × 1,7% = <strong>68 €</strong></li>
-        <li>Arbeitnehmer: 4.000 € × 1,2% = <strong>48 €</strong></li>
+        <li>Beitragssatz: 3,1% (3,6% - 0,5% Rabatt)</li>
+        <li>Gesamtbeitrag: 4.000 € × 3,1% = 124 €</li>
+        <li>Arbeitgeber: 4.000 € × 1,8% = <strong>72 €</strong></li>
+        <li>Arbeitnehmer: 4.000 € × 1,3% = <strong>52 €</strong></li>
       </ul>
 
       <p>
         <strong>Beispiel 3: In Sachsen, kinderlos, 4.000 € Brutto</strong>
       </p>
       <ul>
-        <li>Beitragssatz: 4,0% (3,4% + 0,6% Zuschlag)</li>
-        <li>Gesamtbeitrag: 4.000 € × 4,0% = 160 €</li>
-        <li>Arbeitgeber: 4.000 € × 1,2% = <strong>48 €</strong></li>
-        <li>Arbeitnehmer: 4.000 € × 2,8% = <strong>112 €</strong></li>
+        <li>Beitragssatz: 4,2% (3,6% + 0,6% Zuschlag)</li>
+        <li>Gesamtbeitrag: 4.000 € × 4,2% = 168 €</li>
+        <li>Arbeitgeber: 4.000 € × 1,3% = <strong>52 €</strong></li>
+        <li>Arbeitnehmer: 4.000 € × 2,9% = <strong>116 €</strong></li>
       </ul>
 
       <h2>Leistungen der Pflegeversicherung</h2>
@@ -126,7 +126,7 @@ export default function PflegeversicherungPage() {
     {
       question: "Warum zahlen Arbeitnehmer in Sachsen mehr?",
       answer:
-        "In Sachsen ist der Buß- und Bettag weiterhin ein gesetzlicher Feiertag. Als Ausgleich für diesen zusätzlichen freien Tag zahlen Arbeitnehmer einen höheren Anteil zur Pflegeversicherung (2,2% statt 1,7%), während Arbeitgeber weniger zahlen (1,2% statt 1,7%).",
+        "In Sachsen ist der Buß- und Bettag weiterhin ein gesetzlicher Feiertag. Als Ausgleich für diesen zusätzlichen freien Tag zahlen Arbeitnehmer einen höheren Anteil zur Pflegeversicherung (2,3% statt 1,8%), während Arbeitgeber weniger zahlen (1,3% statt 1,8%).",
     },
     {
       question: "Gilt der Kinderrabatt auch für Stiefkinder und Pflegekinder?",
@@ -136,7 +136,7 @@ export default function PflegeversicherungPage() {
     {
       question: "Zahlen Rentner auch in die Pflegeversicherung?",
       answer:
-        "Ja, auch Rentner zahlen Beiträge zur Pflegeversicherung. Der Beitrag wird von der Rente berechnet, wobei die Rentenversicherung die Hälfte des allgemeinen Beitragssatzes (1,7%) übernimmt. Zuschläge für Kinderlose müssen Rentner vollständig selbst tragen.",
+        "Ja, auch Rentner zahlen Beiträge zur Pflegeversicherung. Der Beitrag wird von der Rente berechnet, wobei die Rentenversicherung die Hälfte des allgemeinen Beitragssatzes (1,8%) übernimmt. Zuschläge für Kinderlose müssen Rentner vollständig selbst tragen.",
     },
     {
       question: "Was ist der Unterschied zur privaten Pflegeversicherung?",

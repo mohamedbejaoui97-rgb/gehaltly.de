@@ -31,7 +31,7 @@ export default function HomePage() {
     },
     {
       question: "Wie hoch sind die Sozialabgaben 2026?",
-      answer: "2026 betragen die Sozialversicherungsbeiträge in Deutschland: Rentenversicherung 18,6% (Arbeitnehmer zahlt 9,3%), Krankenversicherung 14,6% plus kassenindividueller Zusatzbeitrag von durchschnittlich 1,7% (gesamt ca. 16,3%, Arbeitnehmer zahlt ca. 8,15%), Pflegeversicherung 3,4% (Arbeitnehmer zahlt 1,7%, Kinderlose ab 23 Jahren zahlen einen Zuschlag von 0,6%), und Arbeitslosenversicherung 2,6% (Arbeitnehmer zahlt 1,3%). Die Beitragsbemessungsgrenze liegt 2026 bei 8.050 EUR monatlich (West) bzw. 7.900 EUR (Ost)."
+      answer: "2026 betragen die Sozialversicherungsbeiträge in Deutschland: Rentenversicherung 18,6% (Arbeitnehmer zahlt 9,3%), Krankenversicherung 14,6% plus kassenindividueller Zusatzbeitrag von durchschnittlich 2,9% (gesamt ca. 17,5%, Arbeitnehmer zahlt ca. 8,75%), Pflegeversicherung 3,6% (Arbeitnehmer zahlt 1,8%, Kinderlose ab 23 Jahren zahlen einen Zuschlag von 0,6%), und Arbeitslosenversicherung 2,6% (Arbeitnehmer zahlt 1,3%). Die Beitragsbemessungsgrenze liegt 2026 bei 8.450 EUR monatlich (einheitlich)."
     },
     {
       question: "Was ist der Grundfreibetrag?",
@@ -43,7 +43,7 @@ export default function HomePage() {
     },
     {
       question: "Was ist der Solidaritätszuschlag?",
-      answer: "Der Solidaritätszuschlag (Soli) beträgt 5,5% der Lohnsteuer. Seit 2021 entfällt der Soli für ca. 90% der Steuerzahler durch eine Freigrenze. Diese liegt 2026 bei 18.130 EUR Jahreseinkommen (Steuerklasse 1). Erst wenn Ihre Lohnsteuer die Freigrenze übersteigt, wird Soli fällig. Der Soli wurde 1991 zur Finanzierung der deutschen Wiedervereinigung eingeführt. Für Spitzenverdiener kann der Soli mehrere hundert Euro monatlich betragen."
+      answer: "Der Solidaritätszuschlag (Soli) beträgt 5,5% der Lohnsteuer. Seit 2021 entfällt der Soli für ca. 90% der Steuerzahler durch eine Freigrenze. Diese liegt 2026 bei 20.350 EUR Jahreseinkommen (Steuerklasse 1). Erst wenn Ihre Lohnsteuer die Freigrenze übersteigt, wird Soli fällig. Der Soli wurde 1991 zur Finanzierung der deutschen Wiedervereinigung eingeführt. Für Spitzenverdiener kann der Soli mehrere hundert Euro monatlich betragen."
     },
     {
       question: "Wie ändert sich mein Nettoeinkommen bei einem Jobwechsel?",
@@ -234,11 +234,11 @@ export default function HomePage() {
                 </div>
                 <div className="bg-muted rounded-lg p-3">
                   <h4 className="font-semibold text-sm mb-1">Krankenversicherung</h4>
-                  <p className="text-sm text-muted-foreground">Gesamt: <strong>14,6% + Zusatz</strong> | Ihr Anteil: <strong>~8,15%</strong></p>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>14,6% + Zusatz</strong> | Ihr Anteil: <strong>~8,75%</strong></p>
                 </div>
                 <div className="bg-muted rounded-lg p-3">
                   <h4 className="font-semibold text-sm mb-1">Pflegeversicherung</h4>
-                  <p className="text-sm text-muted-foreground">Gesamt: <strong>3,4%</strong> | Ihr Anteil: <strong>1,7%</strong></p>
+                  <p className="text-sm text-muted-foreground">Gesamt: <strong>3,6%</strong> | Ihr Anteil: <strong>1,8%</strong></p>
                 </div>
                 <div className="bg-muted rounded-lg p-3">
                   <h4 className="font-semibold text-sm mb-1">Arbeitslosenversicherung</h4>
@@ -283,11 +283,11 @@ export default function HomePage() {
             <ContentSection
               heading="Beitragsbemessungsgrenze 2026"
               icon={<TrendingUp className="w-5 h-5" />}
-              body="Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. 2026: 8.050 EUR/Monat (West) bzw. 7.900 EUR/Monat (Ost)."
+              body="Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. 2026: 8.450 EUR/Monat (einheitlich)."
             >
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
                 <p className="text-sm text-amber-900 dark:text-amber-100">
-                  <strong>Was bedeutet das?</strong> Einkommen über der Grenze ist beitragsfrei. Für die Krankenversicherung gilt eine separate Grenze (2026: 5.175 EUR/Monat).
+                  <strong>Was bedeutet das?</strong> Einkommen über der Grenze ist beitragsfrei. Für die Krankenversicherung gilt eine separate Grenze (2026: 5.812,50 EUR/Monat).
                 </p>
               </div>
             </ContentSection>

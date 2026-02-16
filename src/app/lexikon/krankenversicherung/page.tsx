@@ -33,8 +33,8 @@ export default function KrankenversicherungPage() {
       </p>
       <ul>
         <li><strong>14,6%</strong> allgemeiner Beitragssatz (wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt)</li>
-        <li><strong>+ durchschnittlich 1,7%</strong> kassenindividueller Zusatzbeitrag (trägt allein der Arbeitnehmer)</li>
-        <li><strong>Gesamt: ca. 16,3%</strong> des Bruttoeinkommens</li>
+        <li><strong>+ durchschnittlich 2,9%</strong> kassenindividueller Zusatzbeitrag (wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt)</li>
+        <li><strong>Gesamt: ca. 17,5%</strong> des Bruttoeinkommens</li>
       </ul>
       <p>
         Der Arbeitgeber zahlt die Hälfte des allgemeinen Beitragssatzes (7,3%) plus die Hälfte des Zusatzbeitrags. Der Arbeitnehmer trägt ebenfalls 7,3% plus die andere Hälfte des Zusatzbeitrags.
@@ -45,9 +45,9 @@ export default function KrankenversicherungPage() {
         Die Beitragsbemessungsgrenze in der Krankenversicherung beträgt 2026:
       </p>
       <ul>
-        <li><strong>66.150 € pro Jahr</strong> (5.512,50 € pro Monat)</li>
+        <li><strong>69.750 € pro Jahr</strong> (5.812,50 € pro Monat)</li>
         <li>Einkommen oberhalb dieser Grenze wird nicht mehr für die Beitragsberechnung herangezogen</li>
-        <li>Der maximale monatliche Beitrag liegt damit bei ca. 898 € (bei 16,3%)</li>
+        <li>Der maximale monatliche Beitrag liegt damit bei ca. 1.017 € (bei 17,5%)</li>
       </ul>
 
       <h2>GKV vs. PKV - Der Unterschied</h2>
@@ -67,19 +67,19 @@ export default function KrankenversicherungPage() {
         <li>Beitrag richtet sich nach Alter, Gesundheitszustand und gewählten Leistungen</li>
         <li>Jedes Familienmitglied muss separat versichert werden</li>
         <li>Individuell wählbarer Leistungsumfang</li>
-        <li>Möglich ab einem Bruttoeinkommen von 69.300 € (2026)</li>
+        <li>Möglich ab einem Bruttoeinkommen von 77.400 € (2026)</li>
       </ul>
 
       <h2>Beispielrechnung Krankenversicherungsbeitrag</h2>
       <p>
-        Bei einem monatlichen Bruttogehalt von 4.000 € und einem Zusatzbeitrag von 1,7%:
+        Bei einem monatlichen Bruttogehalt von 4.000 € und einem Zusatzbeitrag von 2,9%:
       </p>
       <ul>
         <li>Allgemeiner Beitragssatz: 4.000 € × 14,6% = 584 €</li>
-        <li>Zusatzbeitrag: 4.000 € × 1,7% = 68 €</li>
-        <li><strong>Gesamt: 652 €</strong></li>
-        <li>Arbeitgeberanteil: 292 € (7,3%) + 34 € (0,85%) = <strong>326 €</strong></li>
-        <li>Arbeitnehmeranteil: 292 € (7,3%) + 34 € (0,85%) = <strong>326 €</strong></li>
+        <li>Zusatzbeitrag: 4.000 € × 2,9% = 116 €</li>
+        <li><strong>Gesamt: 700 €</strong></li>
+        <li>Arbeitgeberanteil: 292 € (7,3%) + 58 € (1,45%) = <strong>350 €</strong></li>
+        <li>Arbeitnehmeranteil: 292 € (7,3%) + 58 € (1,45%) = <strong>350 €</strong></li>
       </ul>
 
       <h2>Besonderheiten und Ausnahmen</h2>
@@ -99,7 +99,7 @@ export default function KrankenversicherungPage() {
     {
       question: "Wer zahlt die Krankenversicherung - Arbeitgeber oder Arbeitnehmer?",
       answer:
-        "Beide zahlen. Der allgemeine Beitragssatz von 14,6% wird hälftig geteilt (je 7,3%). Den kassenindividuellen Zusatzbeitrag (durchschnittlich 1,7%) tragen Arbeitgeber und Arbeitnehmer ebenfalls jeweils zur Hälfte.",
+        "Beide zahlen. Der allgemeine Beitragssatz von 14,6% wird hälftig geteilt (je 7,3%). Den kassenindividuellen Zusatzbeitrag (durchschnittlich 2,9%) tragen Arbeitgeber und Arbeitnehmer ebenfalls jeweils zur Hälfte.",
     },
     {
       question: "Kann ich zwischen verschiedenen Krankenkassen wechseln?",
@@ -109,12 +109,12 @@ export default function KrankenversicherungPage() {
     {
       question: "Was passiert, wenn ich über der Beitragsbemessungsgrenze verdiene?",
       answer:
-        "Einkommen oberhalb der Beitragsbemessungsgrenze (66.150 € in 2026) wird nicht mehr für die Beitragsberechnung herangezogen. Sie zahlen also maximal den Beitrag, der sich aus der Beitragsbemessungsgrenze ergibt.",
+        "Einkommen oberhalb der Beitragsbemessungsgrenze (69.750 € in 2026) wird nicht mehr für die Beitragsberechnung herangezogen. Sie zahlen also maximal den Beitrag, der sich aus der Beitragsbemessungsgrenze ergibt.",
     },
     {
       question: "Wann kann ich in die private Krankenversicherung wechseln?",
       answer:
-        "Ein Wechsel in die PKV ist möglich, wenn Sie als Angestellter die Jahresarbeitsentgeltgrenze von 69.300 € (2026) überschreiten oder wenn Sie selbstständig sind. Auch Beamte und Studenten können sich privat versichern.",
+        "Ein Wechsel in die PKV ist möglich, wenn Sie als Angestellter die Jahresarbeitsentgeltgrenze von 77.400 € (2026) überschreiten oder wenn Sie selbstständig sind. Auch Beamte und Studenten können sich privat versichern.",
     },
     {
       question: "Ist die Familienversicherung in der GKV wirklich kostenlos?",
@@ -124,7 +124,7 @@ export default function KrankenversicherungPage() {
     {
       question: "Was ist der Unterschied zwischen allgemeinem Beitragssatz und Zusatzbeitrag?",
       answer:
-        "Der allgemeine Beitragssatz (14,6%) ist für alle Krankenkassen gleich und wird hälftig geteilt. Der Zusatzbeitrag (durchschnittlich 1,7%) wird von jeder Kasse individuell festgelegt und ebenfalls hälftig zwischen Arbeitgeber und Arbeitnehmer aufgeteilt.",
+        "Der allgemeine Beitragssatz (14,6%) ist für alle Krankenkassen gleich und wird hälftig geteilt. Der Zusatzbeitrag (durchschnittlich 2,9%) wird von jeder Kasse individuell festgelegt und ebenfalls hälftig zwischen Arbeitgeber und Arbeitnehmer aufgeteilt.",
     },
   ];
 

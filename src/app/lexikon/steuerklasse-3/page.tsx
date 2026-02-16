@@ -60,7 +60,7 @@ export default function Steuerklasse3Page() {
         <li><strong>Rentenversicherung (9,3%):</strong> -418,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -58,50 €</li>
         <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -373,50 €</li>
-        <li><strong>Pflegeversicherung (1,7%):</strong> -76,50 €</li>
+        <li><strong>Pflegeversicherung (1,8%):</strong> -81,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -490,00 €</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 €</li>
         <li><strong>Nettogehalt:</strong> ca. 3.083,00 €</li>

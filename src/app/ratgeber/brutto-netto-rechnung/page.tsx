@@ -29,7 +29,7 @@ export default function BruttoNettoRechnungPage() {
     },
     {
       question: 'Welche Formel gilt für die Brutto-Netto-Berechnung?',
-      answer: 'Die Grundformel lautet: Netto = Brutto - Sozialversicherungsbeiträge - Lohnsteuer - Solidaritätszuschlag - Kirchensteuer. Dabei betragen die Sozialversicherungsbeiträge etwa 20% des Bruttos (RV 9,3% + KV 8,15% + PV 1,7% + ALV 1,3%). Die Lohnsteuer ist progressiv und hängt von Einkommen und Steuerklasse ab. Der Soli beträgt 5,5% der Lohnsteuer, die Kirchensteuer 8% oder 9% der Lohnsteuer.',
+      answer: 'Die Grundformel lautet: Netto = Brutto - Sozialversicherungsbeiträge - Lohnsteuer - Solidaritätszuschlag - Kirchensteuer. Dabei betragen die Sozialversicherungsbeiträge etwa 20% des Bruttos (RV 9,3% + KV 8,75% + PV 1,8% + ALV 1,3%). Die Lohnsteuer ist progressiv und hängt von Einkommen und Steuerklasse ab. Der Soli beträgt 5,5% der Lohnsteuer, die Kirchensteuer 8% oder 9% der Lohnsteuer.',
     },
     {
       question: 'Wie genau ist eine Brutto-Netto-Berechnung?',
@@ -113,8 +113,8 @@ export default function BruttoNettoRechnungPage() {
               <div className="space-y-2">
                 <div>Netto = Brutto</div>
                 <div className="ml-8">- Rentenversicherung (9,3%)</div>
-                <div className="ml-8">- Krankenversicherung (~8,15%)</div>
-                <div className="ml-8">- Pflegeversicherung (1,7% / 2,3%)</div>
+                <div className="ml-8">- Krankenversicherung (~8,75%)</div>
+                <div className="ml-8">- Pflegeversicherung (1,8% / 2,4%)</div>
                 <div className="ml-8">- Arbeitslosenversicherung (1,3%)</div>
                 <div className="ml-8">- Lohnsteuer</div>
                 <div className="ml-8">- Solidaritätszuschlag (5,5% der LSt)</div>
@@ -155,7 +155,7 @@ export default function BruttoNettoRechnungPage() {
                   <div className="text-xs text-muted-foreground">Inkl. durchschn. Zusatzbeitrag</div>
                 </div>
                 <div className="text-right">
-                  <div className="font-bold">~8,15%</div>
+                  <div className="font-bold">~8,75%</div>
                 </div>
               </div>
               <div className="flex justify-between items-center pb-2 border-b">
@@ -164,7 +164,7 @@ export default function BruttoNettoRechnungPage() {
                   <div className="text-xs text-muted-foreground">Mit Kind / kinderlos ab 23</div>
                 </div>
                 <div className="text-right">
-                  <div className="font-bold">1,7% / 2,3%</div>
+                  <div className="font-bold">1,8% / 2,4%</div>
                 </div>
               </div>
               <div className="flex justify-between items-center pb-2 border-b">
@@ -178,11 +178,11 @@ export default function BruttoNettoRechnungPage() {
               </div>
               <div className="flex justify-between items-center pt-2">
                 <div className="font-bold">Gesamt (mit Kind):</div>
-                <div className="font-bold text-lg">20,45%</div>
+                <div className="font-bold text-lg">21,35%</div>
               </div>
               <div className="flex justify-between items-center">
                 <div className="font-bold">Gesamt (kinderlos):</div>
-                <div className="font-bold text-lg">21,05%</div>
+                <div className="font-bold text-lg">21,95%</div>
               </div>
             </div>
           </div>
@@ -195,12 +195,12 @@ export default function BruttoNettoRechnungPage() {
                 <strong>279,00 EUR</strong>
               </div>
               <div className="flex justify-between">
-                <span>Krankenversicherung (8,15%):</span>
-                <strong>244,50 EUR</strong>
+                <span>Krankenversicherung (8,75%):</span>
+                <strong>262,50 EUR</strong>
               </div>
               <div className="flex justify-between">
-                <span>Pflegeversicherung (1,7%):</span>
-                <strong>51,00 EUR</strong>
+                <span>Pflegeversicherung (1,8%):</span>
+                <strong>54,00 EUR</strong>
               </div>
               <div className="flex justify-between">
                 <span>Arbeitslosenversicherung (1,3%):</span>
@@ -208,7 +208,7 @@ export default function BruttoNettoRechnungPage() {
               </div>
               <div className="flex justify-between pt-2 border-t border-blue-300 font-bold">
                 <span>Gesamt Sozialabgaben:</span>
-                <strong>613,50 EUR</strong>
+                <strong>634,50 EUR</strong>
               </div>
             </div>
           </div>
@@ -230,15 +230,15 @@ export default function BruttoNettoRechnungPage() {
               </div>
               <div className="flex justify-between">
                 <span>- Sozialversicherungsbeiträge:</span>
-                <strong>-613,50 EUR</strong>
+                <strong>-634,50 EUR</strong>
               </div>
               <div className="flex justify-between border-t pt-2 mt-2">
                 <span>Zu versteuerndes Einkommen (Monat):</span>
-                <strong>2.386,50 EUR</strong>
+                <strong>2.365,50 EUR</strong>
               </div>
               <div className="flex justify-between">
                 <span>Pro Jahr:</span>
-                <strong>28.638,00 EUR</strong>
+                <strong>28.386,00 EUR</strong>
               </div>
             </div>
           </div>
@@ -273,7 +273,7 @@ export default function BruttoNettoRechnungPage() {
             <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Berechnung für unser Beispiel (Steuerklasse 1):</h4>
             <div className="space-y-2 text-sm text-blue-900 dark:text-blue-100">
               <p>
-                Bei einem zu versteuernden Jahreseinkommen von 28.638 EUR liegt das Einkommen über dem Grundfreibetrag (12.348 EUR). Auf die ersten 12.348 EUR fällt keine Steuer an. Auf die verbleibenden 16.290 EUR wird progressiv besteuert.
+                Bei einem zu versteuernden Jahreseinkommen von 28.386 EUR liegt das Einkommen über dem Grundfreibetrag (12.348 EUR). Auf die ersten 12.348 EUR fällt keine Steuer an. Auf die verbleibenden 16.038 EUR wird progressiv besteuert.
               </p>
               <div className="bg-white dark:bg-gray-900 rounded p-3 mt-2">
                 <div className="flex justify-between font-bold">
@@ -376,12 +376,12 @@ export default function BruttoNettoRechnungPage() {
                   <span>-279,00 EUR</span>
                 </div>
                 <div className="flex justify-between text-red-700 dark:text-red-400">
-                  <span>- Krankenversicherung (8,15%)</span>
-                  <span>-244,50 EUR</span>
+                  <span>- Krankenversicherung (8,75%)</span>
+                  <span>-262,50 EUR</span>
                 </div>
                 <div className="flex justify-between text-red-700 dark:text-red-400">
-                  <span>- Pflegeversicherung (1,7%)</span>
-                  <span>-51,00 EUR</span>
+                  <span>- Pflegeversicherung (1,8%)</span>
+                  <span>-54,00 EUR</span>
                 </div>
                 <div className="flex justify-between text-red-700 dark:text-red-400">
                   <span>- Arbeitslosenversicherung (1,3%)</span>
@@ -389,7 +389,7 @@ export default function BruttoNettoRechnungPage() {
                 </div>
                 <div className="flex justify-between font-medium pt-2 border-t">
                   <span>Summe Sozialabgaben</span>
-                  <span>-613,50 EUR</span>
+                  <span>-634,50 EUR</span>
                 </div>
               </div>
 
@@ -414,7 +414,7 @@ export default function BruttoNettoRechnungPage() {
 
               <div className="flex justify-between items-center text-xl font-bold pt-4 border-t-2 border-green-600 dark:border-green-400">
                 <span>Nettogehalt</span>
-                <span className="text-green-600 dark:text-green-400">2.043,15 EUR</span>
+                <span className="text-green-600 dark:text-green-400">2.022,15 EUR</span>
               </div>
             </div>
           </div>
@@ -422,8 +422,8 @@ export default function BruttoNettoRechnungPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4 text-center">
               <div className="text-sm text-blue-900 dark:text-blue-100 mb-1">Sozialabgaben</div>
-              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">20,45%</div>
-              <div className="text-sm text-blue-900 dark:text-blue-100 mt-1">613,50 EUR</div>
+              <div className="text-2xl font-bold text-blue-600 dark:text-blue-400">21,15%</div>
+              <div className="text-sm text-blue-900 dark:text-blue-100 mt-1">634,50 EUR</div>
             </div>
             <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4 text-center">
               <div className="text-sm text-purple-900 dark:text-purple-100 mb-1">Steuern</div>
@@ -432,15 +432,15 @@ export default function BruttoNettoRechnungPage() {
             </div>
             <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4 text-center">
               <div className="text-sm text-green-900 dark:text-green-100 mb-1">Netto</div>
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">68,10%</div>
-              <div className="text-sm text-green-900 dark:text-green-100 mt-1">2.043,15 EUR</div>
+              <div className="text-2xl font-bold text-green-600 dark:text-green-400">67,41%</div>
+              <div className="text-sm text-green-900 dark:text-green-100 mt-1">2.022,15 EUR</div>
             </div>
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
             <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Ergebnis:</h4>
             <p className="text-sm text-amber-900 dark:text-amber-100">
-              Von 3.000 EUR Bruttogehalt bleiben in Steuerklasse 1 mit Kirchensteuer etwa 2.043 EUR netto übrig. Das entspricht 68,10% vom Brutto. Die Gesamtabzüge betragen 956,85 EUR oder 31,90%. Ohne Kirchensteuer würden etwa 2.071 EUR netto übrig bleiben (69,05%).
+              Von 3.000 EUR Bruttogehalt bleiben in Steuerklasse 1 mit Kirchensteuer etwa 2.022 EUR netto übrig. Das entspricht 67,41% vom Brutto. Die Gesamtabzüge betragen 977,85 EUR oder 32,60%. Ohne Kirchensteuer würden etwa 2.051 EUR netto übrig bleiben (68,35%).
             </p>
           </div>
         </div>

@@ -25,15 +25,15 @@ export default function SozialabgabenPage() {
   const faqs = [
     {
       question: 'Wie hoch sind die Sozialabgaben 2026?',
-      answer: 'Die Sozialversicherungsbeiträge 2026 betragen insgesamt etwa 40% des Bruttogehalts (Arbeitnehmer- und Arbeitgeberanteil zusammen). Als Arbeitnehmer zahlen Sie etwa 20%: Rentenversicherung 9,3%, Krankenversicherung ca. 8,15%, Pflegeversicherung 1,7% (Kinderlose 2,3%) und Arbeitslosenversicherung 1,3%. Die andere Hälfte trägt Ihr Arbeitgeber.',
+      answer: 'Die Sozialversicherungsbeiträge 2026 betragen insgesamt etwa 40% des Bruttogehalts (Arbeitnehmer- und Arbeitgeberanteil zusammen). Als Arbeitnehmer zahlen Sie etwa 20%: Rentenversicherung 9,3%, Krankenversicherung ca. 8,75%, Pflegeversicherung 1,8% (Kinderlose 2,4%) und Arbeitslosenversicherung 1,3%. Die andere Hälfte trägt Ihr Arbeitgeber.',
     },
     {
       question: 'Was ist die Beitragsbemessungsgrenze?',
-      answer: 'Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. 2026 liegt sie bei 8.050 EUR monatlich (West) bzw. 7.900 EUR (Ost) für Renten-, Arbeitslosen- und Pflegeversicherung. Für die Krankenversicherung gilt eine separate Grenze von 5.175 EUR monatlich. Verdienen Sie mehr, zahlen Sie nur bis zu dieser Grenze Beiträge.',
+      answer: 'Die Beitragsbemessungsgrenze ist das maximale Einkommen, bis zu dem Sozialversicherungsbeiträge berechnet werden. 2026 liegt sie bei 8.450 EUR monatlich (einheitlich) für Renten- und Arbeitslosenversicherung. Für die Kranken- und Pflegeversicherung gilt eine separate Grenze von 5.812,50 EUR monatlich. Verdienen Sie mehr, zahlen Sie nur bis zu dieser Grenze Beiträge.',
     },
     {
       question: 'Wer zahlt die Sozialversicherungsbeiträge?',
-      answer: 'Arbeitnehmer und Arbeitgeber teilen sich die Sozialversicherungsbeiträge grundsätzlich zur Hälfte (Paritätsprinzip). Ausnahmen: Bei der Krankenversicherung tragen Arbeitnehmer den Zusatzbeitrag allein. In Sachsen zahlen Arbeitnehmer bei der Pflegeversicherung mehr (2,2% statt 1,7%). Der Arbeitgeberanteil ist für Sie nicht sichtbar, wird aber zusätzlich zu Ihrem Bruttogehalt gezahlt.',
+      answer: 'Arbeitnehmer und Arbeitgeber teilen sich die Sozialversicherungsbeiträge grundsätzlich zur Hälfte (Paritätsprinzip). Ausnahmen: Bei der Krankenversicherung tragen Arbeitnehmer den Zusatzbeitrag allein. In Sachsen zahlen Arbeitnehmer bei der Pflegeversicherung mehr (2,3% statt 1,8%). Der Arbeitgeberanteil ist für Sie nicht sichtbar, wird aber zusätzlich zu Ihrem Bruttogehalt gezahlt.',
     },
     {
       question: 'Muss ich als Minijobber Sozialabgaben zahlen?',
@@ -121,11 +121,11 @@ export default function SozialabgabenPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Krankenversicherung</h3>
-                    <p className="text-2xl font-bold text-green-600 dark:text-green-400">~8,15%</p>
+                    <p className="text-2xl font-bold text-green-600 dark:text-green-400">~8,75%</p>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Gesamtbeitrag: 14,6% + Zusatzbeitrag (~1,7%)
+                  Gesamtbeitrag: 14,6% + Zusatzbeitrag (~2,9%)
                 </p>
               </div>
 
@@ -136,11 +136,11 @@ export default function SozialabgabenPage() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Pflegeversicherung</h3>
-                    <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">1,7%</p>
+                    <p className="text-2xl font-bold text-purple-600 dark:text-purple-400">1,8%</p>
                   </div>
                 </div>
                 <p className="text-sm text-muted-foreground">
-                  Kinderlose ab 23: 2,3% | Gesamtbeitrag: 3,4%
+                  Kinderlose ab 23: 2,4% | Gesamtbeitrag: 3,6%
                 </p>
               </div>
 
@@ -162,7 +162,7 @@ export default function SozialabgabenPage() {
 
             <div className="mt-6 bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
               <p className="text-sm text-blue-900 dark:text-blue-100">
-                <strong>Gesamt Arbeitnehmeranteil:</strong> Ca. 20,45% (mit Kind) bzw. 21,05% (kinderlos ab 23) des Bruttogehalts. Der Arbeitgeber zahlt einen ähnlich hohen Anteil zusätzlich.
+                <strong>Gesamt Arbeitnehmeranteil:</strong> Ca. 21,35% (mit Kind) bzw. 21,95% (kinderlos ab 23) des Bruttogehalts. Der Arbeitgeber zahlt einen ähnlich hohen Anteil zusätzlich.
               </p>
             </div>
           </div>
@@ -197,12 +197,12 @@ export default function SozialabgabenPage() {
               <h4 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h4>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
-                  <span>West:</span>
-                  <strong>8.050 EUR/Monat</strong>
+                  <span>Einheitlich:</span>
+                  <strong>8.450 EUR/Monat</strong>
                 </div>
                 <div className="flex justify-between">
-                  <span>Ost:</span>
-                  <strong>7.900 EUR/Monat</strong>
+                  <span>Pro Jahr:</span>
+                  <strong>101.400 EUR</strong>
                 </div>
               </div>
             </div>
@@ -242,11 +242,11 @@ export default function SozialabgabenPage() {
                 </div>
                 <div className="flex justify-between">
                   <span>+ Zusatzbeitrag (∅):</span>
-                  <strong>1,7%</strong>
+                  <strong>2,9%</strong>
                 </div>
                 <div className="flex justify-between border-t pt-1 mt-1">
                   <span>Gesamt:</span>
-                  <strong>16,3%</strong>
+                  <strong>17,5%</strong>
                 </div>
               </div>
             </div>
@@ -255,11 +255,11 @@ export default function SozialabgabenPage() {
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Arbeitnehmer:</span>
-                  <strong>~8,15%</strong>
+                  <strong>~8,75%</strong>
                 </div>
                 <div className="flex justify-between">
                   <span>Arbeitgeber:</span>
-                  <strong>~8,15%</strong>
+                  <strong>~8,75%</strong>
                 </div>
                 <div className="text-xs text-muted-foreground mt-2">
                   * AN trägt Zusatzbeitrag allein
@@ -271,7 +271,7 @@ export default function SozialabgabenPage() {
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
             <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtig: Zusatzbeitrag</h4>
             <p className="text-sm text-amber-900 dark:text-amber-100">
-              Der Zusatzbeitrag variiert je nach Krankenkasse (2026: zwischen 0,9% und 3,0%). Der Durchschnitt liegt bei etwa 1,7%. Diesen Zusatzbeitrag tragen Arbeitnehmer allein. Ein Kassenwechsel kann sich lohnen, wenn Ihre Kasse einen hohen Zusatzbeitrag erhebt.
+              Der Zusatzbeitrag variiert je nach Krankenkasse (2026: zwischen 0,9% und 3,0%). Der Durchschnitt liegt bei etwa 2,9%. Diesen Zusatzbeitrag tragen Arbeitnehmer allein. Ein Kassenwechsel kann sich lohnen, wenn Ihre Kasse einen hohen Zusatzbeitrag erhebt.
             </p>
           </div>
 
@@ -291,7 +291,7 @@ export default function SozialabgabenPage() {
           <div className="bg-muted rounded-lg p-4">
             <h4 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h4>
             <p className="text-sm text-muted-foreground mb-2">
-              Die Beitragsbemessungsgrenze für die Krankenversicherung liegt 2026 bei <strong>5.175 EUR monatlich</strong> (62.100 EUR jährlich).
+              Die Beitragsbemessungsgrenze für die Krankenversicherung liegt 2026 bei <strong>5.812,50 EUR monatlich</strong> (69.750 EUR jährlich).
             </p>
             <p className="text-sm text-muted-foreground">
               Verdienen Sie mehr als 5.775 EUR monatlich (Versicherungspflichtgrenze), können Sie in die private Krankenversicherung wechseln.
@@ -312,19 +312,19 @@ export default function SozialabgabenPage() {
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Gesamtbeitrag:</span>
-                  <strong>3,4%</strong>
+                  <strong>3,6%</strong>
                 </div>
                 <div className="flex justify-between">
                   <span>Arbeitnehmer (mit Kind):</span>
-                  <strong>1,7%</strong>
+                  <strong>1,8%</strong>
                 </div>
                 <div className="flex justify-between">
                   <span>Arbeitnehmer (kinderlos):</span>
-                  <strong>2,3%</strong>
+                  <strong>2,4%</strong>
                 </div>
                 <div className="flex justify-between">
                   <span>Arbeitgeber:</span>
-                  <strong>1,7%</strong>
+                  <strong>1,8%</strong>
                 </div>
               </div>
             </div>
@@ -341,7 +341,7 @@ export default function SozialabgabenPage() {
                 </div>
                 <div className="flex justify-between">
                   <span>Gesamt kinderlos:</span>
-                  <strong>2,3%</strong>
+                  <strong>2,4%</strong>
                 </div>
               </div>
             </div>
@@ -350,7 +350,7 @@ export default function SozialabgabenPage() {
           <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4">
             <h4 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">Besonderheit Sachsen</h4>
             <p className="text-sm text-purple-900 dark:text-purple-100">
-              In Sachsen tragen Arbeitnehmer einen höheren Anteil: 2,2% (mit Kind) bzw. 2,8% (kinderlos). Dafür ist der Buß- und Bettag in Sachsen ein gesetzlicher Feiertag.
+              In Sachsen tragen Arbeitnehmer einen höheren Anteil: 2,3% (mit Kind) bzw. 2,9% (kinderlos). Dafür ist der Buß- und Bettag in Sachsen ein gesetzlicher Feiertag.
             </p>
           </div>
 
@@ -367,7 +367,7 @@ export default function SozialabgabenPage() {
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
             <p className="text-sm text-blue-900 dark:text-blue-100">
-              <strong>Beispielrechnung:</strong> Bei 3.500 EUR Brutto zahlen Sie mit Kind monatlich 59,50 EUR, kinderlos 80,50 EUR in die Pflegeversicherung. Die Pflegeversicherung ist eine Teilkaskoversicherung - sie deckt nicht alle Pflegekosten ab.
+              <strong>Beispielrechnung:</strong> Bei 3.500 EUR Brutto zahlen Sie mit Kind monatlich 63,00 EUR, kinderlos 84,00 EUR in die Pflegeversicherung. Die Pflegeversicherung ist eine Teilkaskoversicherung - sie deckt nicht alle Pflegekosten ab.
             </p>
           </div>
         </div>

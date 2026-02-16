@@ -33,7 +33,7 @@ export default function BruttoNettoUnterschiedPage() {
     },
     {
       question: 'Was wird vom Bruttogehalt alles abgezogen?',
-      answer: 'Vom Bruttogehalt werden zwei Kategorien abgezogen: 1) Steuern: Lohnsteuer, Solidaritätszuschlag und ggf. Kirchensteuer. 2) Sozialversicherungsbeiträge: Rentenversicherung (9,3%), Krankenversicherung (ca. 8,15%), Pflegeversicherung (1,7% bzw. 2,3% für Kinderlose) und Arbeitslosenversicherung (1,3%). Zusammen ergeben diese Abzüge die Differenz zwischen Brutto und Netto.',
+      answer: 'Vom Bruttogehalt werden zwei Kategorien abgezogen: 1) Steuern: Lohnsteuer, Solidaritätszuschlag und ggf. Kirchensteuer. 2) Sozialversicherungsbeiträge: Rentenversicherung (9,3%), Krankenversicherung (ca. 8,75%), Pflegeversicherung (1,8% bzw. 2,4% für Kinderlose) und Arbeitslosenversicherung (1,3%). Zusammen ergeben diese Abzüge die Differenz zwischen Brutto und Netto.',
     },
     {
       question: 'Warum ist der Unterschied zwischen Brutto und Netto so groß?',
@@ -137,8 +137,8 @@ export default function BruttoNettoUnterschiedPage() {
                 <strong>Sozialversicherungsbeiträge 2026:</strong>
                 <ul className="list-disc list-inside ml-4 mt-1 space-y-1">
                   <li>Rentenversicherung: 9,3% des Bruttogehalts</li>
-                  <li>Krankenversicherung: ca. 8,15% des Bruttogehalts</li>
-                  <li>Pflegeversicherung: 1,7% (Kinderlose ab 23: 2,3%)</li>
+                  <li>Krankenversicherung: ca. 8,75% des Bruttogehalts</li>
+                  <li>Pflegeversicherung: 1,8% (Kinderlose ab 23: 2,4%)</li>
                   <li>Arbeitslosenversicherung: 1,3% des Bruttogehalts</li>
                 </ul>
               </div>
@@ -166,12 +166,12 @@ export default function BruttoNettoUnterschiedPage() {
                   <span>-325,50 EUR</span>
                 </div>
                 <div className="flex justify-between text-muted-foreground">
-                  <span>- Krankenversicherung (8,15%)</span>
-                  <span>-285,25 EUR</span>
+                  <span>- Krankenversicherung (8,75%)</span>
+                  <span>-306,25 EUR</span>
                 </div>
                 <div className="flex justify-between text-muted-foreground">
-                  <span>- Pflegeversicherung (1,7%)</span>
-                  <span>-59,50 EUR</span>
+                  <span>- Pflegeversicherung (1,8%)</span>
+                  <span>-63,00 EUR</span>
                 </div>
                 <div className="flex justify-between text-muted-foreground">
                   <span>- Arbeitslosenversicherung (1,3%)</span>
@@ -179,7 +179,7 @@ export default function BruttoNettoUnterschiedPage() {
                 </div>
                 <div className="flex justify-between font-medium pt-2 border-t">
                   <span>Sozialversicherung gesamt</span>
-                  <span>-715,75 EUR</span>
+                  <span>-740,25 EUR</span>
                 </div>
               </div>
 
@@ -200,14 +200,14 @@ export default function BruttoNettoUnterschiedPage() {
 
               <div className="flex justify-between items-center pt-4 border-t-2 border-primary">
                 <span className="font-bold text-lg">Nettogehalt</span>
-                <span className="font-bold text-2xl text-primary">2.219,25 EUR</span>
+                <span className="font-bold text-2xl text-primary">2.194,75 EUR</span>
               </div>
             </div>
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
             <p className="text-sm text-amber-900 dark:text-amber-100">
-              <strong>Ergebnis:</strong> Von 3.500 EUR Bruttogehalt bleiben in Steuerklasse 1 etwa 2.219 EUR netto übrig. Das entspricht rund 63% vom Bruttogehalt. Die Abzüge betragen 1.281 EUR oder 37%.
+              <strong>Ergebnis:</strong> Von 3.500 EUR Bruttogehalt bleiben in Steuerklasse 1 etwa 2.195 EUR netto übrig. Das entspricht rund 63% vom Bruttogehalt. Die Abzüge betragen 1.305 EUR oder 37%.
             </p>
           </div>
         </div>
