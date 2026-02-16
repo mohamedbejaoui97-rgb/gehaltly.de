@@ -115,7 +115,7 @@ export default function GrundfreibetragPage() {
       </p>
       <ul>
         <li><strong>Grundfreibetrag:</strong> Gilt automatisch für jeden Steuerpflichtigen, beträgt 2026 12.348 € pro Person</li>
-        <li><strong>Kinderfreibetrag:</strong> Gilt nur für Eltern mit Kindern, beträgt 2026 6.612 € pro Kind und Elternteil (insgesamt 13.224 € pro Kind bei Zusammenveranlagung)</li>
+        <li><strong>Kinderfreibetrag:</strong> Gilt nur für Eltern mit Kindern, beträgt 2026 4.878 € pro Elternteil (insgesamt 9.756 € pro Kind bei Zusammenveranlagung)</li>
         <li><strong>Kindergeld vs. Kinderfreibetrag:</strong> Das Finanzamt prüft automatisch, was günstiger ist (Günstigerprüfung)</li>
       </ul>
       <p>
