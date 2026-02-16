@@ -111,7 +111,7 @@ export default function SteuerklassenrechnerPage() {
     },
     {
       question: "Wie hoch sind die Abzüge in Steuerklasse 1?",
-      answer: "In Steuerklasse 1 werden vom Bruttogehalt Lohnsteuer, Solidaritätszuschlag (meist durch Freibetrag entfallend), ggf. Kirchensteuer und Sozialversicherungsbeiträge abgezogen. Bei 3.000 EUR brutto bleiben etwa 2.050 EUR netto (ca. 68%). Bei 4.000 EUR brutto sind es ca. 2.590 EUR netto (65%). Je höher das Gehalt, desto höher der prozentuale Abzug durch die progressive Besteuerung. Die Grundfreibeträge (11.604 EUR für 2026) werden automatisch berücksichtigt. Zusätzliche Freibeträge können Sie beim Finanzamt eintragen lassen."
+      answer: "In Steuerklasse 1 werden vom Bruttogehalt Lohnsteuer, Solidaritätszuschlag (meist durch Freibetrag entfallend), ggf. Kirchensteuer und Sozialversicherungsbeiträge abgezogen. Bei 3.000 EUR brutto bleiben etwa 2.050 EUR netto (ca. 68%). Bei 4.000 EUR brutto sind es ca. 2.590 EUR netto (65%). Je höher das Gehalt, desto höher der prozentuale Abzug durch die progressive Besteuerung. Die Grundfreibeträge (12.348 EUR für 2026) werden automatisch berücksichtigt. Zusätzliche Freibeträge können Sie beim Finanzamt eintragen lassen."
     },
     {
       question: "Wann sollte ich die Steuerklasse wechseln?",

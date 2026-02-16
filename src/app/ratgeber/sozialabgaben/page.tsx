@@ -39,11 +39,11 @@ export default function SozialabgabenPage() {
     },
     {
       question: 'Wer zahlt die Sozialversicherungsbeiträge?',
-      answer: 'Arbeitnehmer und Arbeitgeber teilen sich die Sozialversicherungsbeiträge grundsätzlich zur Hälfte (Paritätsprinzip). Ausnahmen: Bei der Krankenversicherung tragen Arbeitnehmer den Zusatzbeitrag allein. In Sachsen zahlen Arbeitnehmer bei der Pflegeversicherung mehr (2,3% statt 1,8%). Der Arbeitgeberanteil ist für Sie nicht sichtbar, wird aber zusätzlich zu Ihrem Bruttogehalt gezahlt.',
+      answer: 'Arbeitnehmer und Arbeitgeber teilen sich die Sozialversicherungsbeiträge grundsätzlich zur Hälfte (Paritätsprinzip). Der Zusatzbeitrag wird seit 2019 hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt. In Sachsen zahlen Arbeitnehmer bei der Pflegeversicherung mehr (2,3% statt 1,8%). Der Arbeitgeberanteil ist für Sie nicht sichtbar, wird aber zusätzlich zu Ihrem Bruttogehalt gezahlt.',
     },
     {
       question: 'Muss ich als Minijobber Sozialabgaben zahlen?',
-      answer: 'Bei einem Minijob bis 538 EUR (2026) zahlen Sie als Arbeitnehmer nur Rentenversicherungsbeiträge (3,6%). Von diesen können Sie sich befreien lassen. Kranken-, Pflege- und Arbeitslosenversicherung fallen nicht an. Der Arbeitgeber zahlt pauschale Abgaben. Bei höherem Verdienst (Midijob 538,01-2.000 EUR) zahlen Sie reduzierte Sozialabgaben in der Gleitzone, die mit steigendem Gehalt ansteigen.',
+      answer: 'Bei einem Minijob bis 556 EUR (2026) zahlen Sie als Arbeitnehmer nur Rentenversicherungsbeiträge (3,6%). Von diesen können Sie sich befreien lassen. Kranken-, Pflege- und Arbeitslosenversicherung fallen nicht an. Der Arbeitgeber zahlt pauschale Abgaben. Bei höherem Verdienst (Midijob 556,01-2.000 EUR) zahlen Sie reduzierte Sozialabgaben in der Gleitzone, die mit steigendem Gehalt ansteigen.',
     },
   ];
 
@@ -268,7 +268,7 @@ export default function SozialabgabenPage() {
                   <strong>~8,75%</strong>
                 </div>
                 <div className="text-xs text-muted-foreground mt-2">
-                  * AN trägt Zusatzbeitrag allein
+                  * Zusatzbeitrag seit 2019 hälftig AG/AN geteilt
                 </div>
               </div>
             </div>
@@ -277,7 +277,7 @@ export default function SozialabgabenPage() {
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
             <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtig: Zusatzbeitrag</h4>
             <p className="text-sm text-amber-900 dark:text-amber-100">
-              Der Zusatzbeitrag variiert je nach Krankenkasse (2026: zwischen 0,9% und 3,0%). Der Durchschnitt liegt bei etwa 2,9%. Diesen Zusatzbeitrag tragen Arbeitnehmer allein. Ein Kassenwechsel kann sich lohnen, wenn Ihre Kasse einen hohen Zusatzbeitrag erhebt.
+              Der Zusatzbeitrag variiert je nach Krankenkasse (2026: zwischen 0,9% und 3,0%). Der Durchschnitt liegt bei etwa 2,9%. Der Zusatzbeitrag wird seit 2019 hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt. Ein Kassenwechsel kann sich lohnen, wenn Ihre Kasse einen hohen Zusatzbeitrag erhebt.
             </p>
           </div>
 
@@ -300,7 +300,7 @@ export default function SozialabgabenPage() {
               Die Beitragsbemessungsgrenze für die Krankenversicherung liegt 2026 bei <strong>5.812,50 EUR monatlich</strong> (69.750 EUR jährlich).
             </p>
             <p className="text-sm text-muted-foreground">
-              Verdienen Sie mehr als 5.775 EUR monatlich (Versicherungspflichtgrenze), können Sie in die private Krankenversicherung wechseln.
+              Verdienen Sie mehr als 6.450 EUR monatlich (Versicherungspflichtgrenze: 77.400 EUR jährlich), können Sie in die private Krankenversicherung wechseln.
             </p>
           </div>
         </div>

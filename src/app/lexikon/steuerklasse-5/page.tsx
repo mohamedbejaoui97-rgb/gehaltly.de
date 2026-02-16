@@ -67,11 +67,11 @@ export default function Steuerklasse5Page() {
         <li><strong>Bruttogehalt:</strong> 2.500,00 €</li>
         <li><strong>Rentenversicherung (9,3%):</strong> -232,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -32,50 €</li>
-        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -207,50 €</li>
+        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,45%):</strong> -218,75 €</li>
         <li><strong>Pflegeversicherung (1,8%):</strong> -45,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -650,00 €</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 €</li>
-        <li><strong>Nettogehalt:</strong> ca. 1.335,00 €</li>
+        <li><strong>Nettogehalt:</strong> ca. 1.324,00 €</li>
       </ul>
       <p>
         Zum Vergleich: Das gleiche Bruttogehalt würde ergeben:

@@ -17,15 +17,15 @@ export const TOOLTIP_TEXTS = {
 
   krankenversicherung: "Gesetzlich Versicherte zahlen ca. 14,6% + Zusatzbeitrag. Privat Versicherte zahlen einen individuellen Beitrag.",
 
-  kvZusatzbeitrag: "Der durchschnittliche Zusatzbeitrag zur gesetzlichen Krankenversicherung liegt 2026 bei ca. 1,7%. Jede Krankenkasse setzt ihren eigenen Satz fest.",
+  kvZusatzbeitrag: "Der durchschnittliche Zusatzbeitrag zur gesetzlichen Krankenversicherung liegt 2026 bei ca. 2,9%. Jede Krankenkasse setzt ihren eigenen Satz fest.",
 
   rentenversicherung: "Der Beitragssatz zur gesetzlichen Rentenversicherung beträgt 18,6% (je zur Hälfte von Arbeitgeber und Arbeitnehmer getragen).",
 
   arbeitslosenversicherung: "Der Beitragssatz zur Arbeitslosenversicherung beträgt 2,6% (je zur Hälfte von Arbeitgeber und Arbeitnehmer getragen).",
 
-  pflegeversicherung: "Der Beitragssatz zur Pflegeversicherung beträgt 3,4%. Kinderlose ab 23 Jahren zahlen zusätzlich 0,6% Zuschlag.",
+  pflegeversicherung: "Der Beitragssatz zur Pflegeversicherung beträgt 3,6%. Kinderlose ab 23 Jahren zahlen zusätzlich 0,6% Zuschlag.",
 
-  steuerfreibetrag: "Ihr jährlicher Steuerfreibetrag (z.B. Grundfreibetrag 11.604€ für 2026). Bis zu diesem Betrag zahlen Sie keine Lohnsteuer.",
+  steuerfreibetrag: "Ihr jährlicher Steuerfreibetrag (z.B. Grundfreibetrag 12.348€ für 2026). Bis zu diesem Betrag zahlen Sie keine Lohnsteuer.",
 
   geldwerterVorteil: "Der geldwerte Vorteil (z.B. Firmenwagen) erhöht Ihr zu versteuerndes Einkommen. Berechnet wird meist 1% des Bruttolistenpreises pro Monat.",
 

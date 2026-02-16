@@ -41,7 +41,7 @@ export default function ArbeitslosenversicherungPage() {
         <li><strong>2,6%</strong> des Bruttoeinkommens</li>
         <li>Aufteilung: <strong>1,3%</strong> Arbeitgeber + <strong>1,3%</strong> Arbeitnehmer</li>
         <li>Der Beitrag wird hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt</li>
-        <li>Beitragsbemessungsgrenze: 96.600 € (West) bzw. 94.800 € (Ost) pro Jahr</li>
+        <li>Beitragsbemessungsgrenze: 101.400 € pro Jahr (8.450 € pro Monat) — seit 2025 bundesweit einheitlich</li>
       </ul>
 
       <h2>Beispielrechnung Arbeitslosenversicherung</h2>

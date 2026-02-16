@@ -47,7 +47,7 @@ export default function Steuerklasse1Page() {
         In der Steuerklasse 1 gelten für 2026 folgende Freibeträge:
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> 11.604 € pro Jahr (monatlich 967 €)</li>
+        <li><strong>Grundfreibetrag:</strong> 12.348 € pro Jahr (monatlich 1.029 €)</li>
         <li><strong>Arbeitnehmerpauschbetrag:</strong> 1.230 € pro Jahr</li>
         <li><strong>Sozialausgabenpauschbetrag:</strong> 36 € pro Jahr</li>
         <li><strong>Vorsorgepauschale:</strong> Abhängig vom Bruttoeinkommen</li>
@@ -70,11 +70,11 @@ export default function Steuerklasse1Page() {
         <li><strong>Bruttogehalt:</strong> 3.500,00 €</li>
         <li><strong>Rentenversicherung (9,3%):</strong> -325,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -45,50 €</li>
-        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -290,50 €</li>
+        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,45%):</strong> -306,25 €</li>
         <li><strong>Pflegeversicherung (1,8%):</strong> -63,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -520,00 €</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 € (unter Freigrenze)</li>
-        <li><strong>Nettogehalt:</strong> ca. 2.259,00 €</li>
+        <li><strong>Nettogehalt:</strong> ca. 2.243,00 €</li>
       </ul>
 
       <h2>Vor- und Nachteile der Steuerklasse 1</h2>

@@ -47,7 +47,7 @@ export default function Steuerklasse2Page() {
         In der Steuerklasse 2 gelten für 2026 die gleichen Freibeträge wie in Steuerklasse 1, plus:
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> 11.604 € pro Jahr</li>
+        <li><strong>Grundfreibetrag:</strong> 12.348 € pro Jahr</li>
         <li><strong>Entlastungsbetrag für Alleinerziehende:</strong> 4.260 € für das erste Kind</li>
         <li><strong>Erhöhungsbetrag:</strong> 240 € für jedes weitere Kind</li>
         <li><strong>Arbeitnehmerpauschbetrag:</strong> 1.230 € pro Jahr</li>
@@ -66,11 +66,11 @@ export default function Steuerklasse2Page() {
         <li><strong>Bruttogehalt:</strong> 3.500,00 €</li>
         <li><strong>Rentenversicherung (9,3%):</strong> -325,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -45,50 €</li>
-        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -290,50 €</li>
+        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,45%):</strong> -306,25 €</li>
         <li><strong>Pflegeversicherung (1,8%):</strong> -63,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -450,00 € (ca. 70 € weniger als Steuerklasse 1)</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 €</li>
-        <li><strong>Nettogehalt:</strong> ca. 2.329,00 €</li>
+        <li><strong>Nettogehalt:</strong> ca. 2.313,00 €</li>
       </ul>
       <p>
         Im Vergleich zu Steuerklasse 1 sparen Sie monatlich etwa 60-70 € an Lohnsteuer durch den Entlastungsbetrag.

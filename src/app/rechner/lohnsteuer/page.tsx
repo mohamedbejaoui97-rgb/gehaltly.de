@@ -77,14 +77,14 @@ export default function LohnsteuerPage() {
   const getTaxBracketInfo = () => {
     const jahreseinkommen = jahresbrutto;
 
-    if (jahreseinkommen <= 11604) {
+    if (jahreseinkommen <= 12348) {
       return { bracket: "Grundfreibetrag", rate: "0%", description: "Keine Lohnsteuer" };
-    } else if (jahreseinkommen <= 17005) {
+    } else if (jahreseinkommen <= 17799) {
       return { bracket: "Zone 1", rate: "14-24%", description: "Eingangssteuersatz bis Progressionszone 1" };
-    } else if (jahreseinkommen <= 66760) {
+    } else if (jahreseinkommen <= 69878) {
       return { bracket: "Zone 2", rate: "24-42%", description: "Progressionszone 2" };
     } else if (jahreseinkommen <= 277825) {
-      return { bracket: "Zone 3", rate: "42%", description: "Spitzensteuersatz" };
+      return { bracket: "Spitzensteuersatz", rate: "42%", description: "Spitzensteuersatz" };
     } else {
       return { bracket: "Reichensteuer", rate: "45%", description: "Höchststeuersatz" };
     }
@@ -96,7 +96,7 @@ export default function LohnsteuerPage() {
   const faqs = [
     {
       question: "Wie hoch ist die Lohnsteuer in Deutschland?",
-      answer: "Die Lohnsteuer in Deutschland ist progressiv und steigt mit dem Einkommen. Der Grundfreibetrag liegt 2026 bei 11.604 EUR - bis zu diesem Betrag zahlen Sie keine Lohnsteuer. Danach beginnt der Eingangssteuersatz bei 14% und steigt progressiv bis 42% (Spitzensteuersatz ab ca. 66.760 EUR) bzw. 45% (Reichensteuer ab 277.825 EUR). Die tatsächliche Lohnsteuer hängt von Ihrer Steuerklasse, Freibeträgen und weiteren Faktoren ab. Bei 4.000 EUR monatlich brutto zahlen Sie in Steuerklasse 1 etwa 550-600 EUR Lohnsteuer."
+      answer: "Die Lohnsteuer in Deutschland ist progressiv und steigt mit dem Einkommen. Der Grundfreibetrag liegt 2026 bei 12.348 EUR - bis zu diesem Betrag zahlen Sie keine Lohnsteuer. Danach beginnt der Eingangssteuersatz bei 14% und steigt progressiv bis 42% (Spitzensteuersatz ab ca. 69.878 EUR) bzw. 45% (Reichensteuer ab 277.825 EUR). Die tatsächliche Lohnsteuer hängt von Ihrer Steuerklasse, Freibeträgen und weiteren Faktoren ab. Bei 4.000 EUR monatlich brutto zahlen Sie in Steuerklasse 1 etwa 550-600 EUR Lohnsteuer."
     },
     {
       question: "Was ist der Unterschied zwischen Lohnsteuer und Einkommensteuer?",
@@ -104,7 +104,7 @@ export default function LohnsteuerPage() {
     },
     {
       question: "Wie wird die Lohnsteuer berechnet?",
-      answer: "Die Lohnsteuer wird nach einer komplizierten Formel berechnet, die im Einkommensteuergesetz festgelegt ist. Grundlage ist Ihr Jahresbruttoeinkommen, von dem zunächst der Grundfreibetrag (11.604 EUR) und weitere Freibeträge (je nach Steuerklasse) abgezogen werden. Auf das verbleibende zu versteuernde Einkommen wird dann der progressive Steuertarif angewendet. Die Steuerklasse bestimmt die Höhe der Freibeträge. Zusätzlich zur Lohnsteuer werden Solidaritätszuschlag (5,5% der Lohnsteuer, meist durch Freibetrag entfallend) und ggf. Kirchensteuer (8-9% der Lohnsteuer) berechnet."
+      answer: "Die Lohnsteuer wird nach einer komplizierten Formel berechnet, die im Einkommensteuergesetz festgelegt ist. Grundlage ist Ihr Jahresbruttoeinkommen, von dem zunächst der Grundfreibetrag (12.348 EUR) und weitere Freibeträge (je nach Steuerklasse) abgezogen werden. Auf das verbleibende zu versteuernde Einkommen wird dann der progressive Steuertarif angewendet. Die Steuerklasse bestimmt die Höhe der Freibeträge. Zusätzlich zur Lohnsteuer werden Solidaritätszuschlag (5,5% der Lohnsteuer, meist durch Freibetrag entfallend) und ggf. Kirchensteuer (8-9% der Lohnsteuer) berechnet."
     },
     {
       question: "Kann ich die Lohnsteuer reduzieren?",
@@ -459,11 +459,11 @@ export default function LohnsteuerPage() {
             <ContentSection
               heading="Das progressive Steuersystem"
               icon={<BookOpen className="w-5 h-5" />}
-              body="Deutschland hat ein progressives Steuersystem - je höher Ihr Einkommen, desto höher der Steuersatz. Es gibt einen Grundfreibetrag von 11.604 EUR (2026), bis zu dem keine Lohnsteuer anfällt. Darüber beginnt die Besteuerung mit 14% und steigt kontinuierlich bis auf 42% (Spitzensteuersatz) bzw. 45% (Reichensteuer ab 277.825 EUR). Wichtig: Nur das Einkommen über den jeweiligen Grenzen wird mit dem höheren Satz besteuert, nicht das gesamte Einkommen. Der effektive Steuersatz ist daher immer niedriger als der Grenzsteuersatz."
+              body="Deutschland hat ein progressives Steuersystem - je höher Ihr Einkommen, desto höher der Steuersatz. Es gibt einen Grundfreibetrag von 12.348 EUR (2026), bis zu dem keine Lohnsteuer anfällt. Darüber beginnt die Besteuerung mit 14% und steigt kontinuierlich bis auf 42% (Spitzensteuersatz) bzw. 45% (Reichensteuer ab 277.825 EUR). Wichtig: Nur das Einkommen über den jeweiligen Grenzen wird mit dem höheren Satz besteuert, nicht das gesamte Einkommen. Der effektive Steuersatz ist daher immer niedriger als der Grenzsteuersatz."
             >
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
                 <p className="text-sm text-amber-900 dark:text-amber-100">
-                  <strong>Beispiel:</strong> Bei 48.000 EUR Jahreseinkommen zahlen Sie nicht 42% auf alles, sondern 0% auf die ersten 11.604 EUR, dann progressiv steigend. Ihr effektiver Steuersatz liegt bei etwa 18-20%.
+                  <strong>Beispiel:</strong> Bei 48.000 EUR Jahreseinkommen zahlen Sie nicht 42% auf alles, sondern 0% auf die ersten 12.348 EUR, dann progressiv steigend. Ihr effektiver Steuersatz liegt bei etwa 18-20%.
                 </p>
               </div>
             </ContentSection>

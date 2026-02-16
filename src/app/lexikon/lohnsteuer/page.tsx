@@ -49,10 +49,10 @@ export default function LohnsteuerPage() {
         Deutschland hat ein progressives Steuersystem - je höher das Einkommen, desto höher der Steuersatz:
       </p>
       <ul>
-        <li><strong>0%:</strong> Bis zum Grundfreibetrag von 12.096 € (zvE) keine Steuer</li>
+        <li><strong>0%:</strong> Bis zum Grundfreibetrag von 12.348 € (zvE) keine Steuer</li>
         <li><strong>14% - 42%:</strong> Eingangssteuersatz 14%, steigt progressiv bis 42%</li>
-        <li><strong>42%:</strong> Ab 67.802 € (zvE) für Ledige - sogenannte "Reichensteuer"</li>
-        <li><strong>45%:</strong> Ab 277.826 € (zvE) für Ledige - sogenannte "Spitzensteuersatz"</li>
+        <li><strong>42%:</strong> Ab 67.802 € (zvE) für Ledige - sogenannter "Spitzensteuersatz"</li>
+        <li><strong>45%:</strong> Ab 277.826 € (zvE) für Ledige - sogenannte "Reichensteuer"</li>
       </ul>
       <p>
         <strong>Wichtig:</strong> Diese Steuersätze gelten für das <strong>zu versteuernde Einkommen (zvE)</strong>, nicht für das Bruttogehalt. Das zvE ist das Bruttoeinkommen minus Werbungskosten, Sonderausgaben und Freibeträgen.
@@ -106,8 +106,8 @@ export default function LohnsteuerPage() {
         Die Steuerprogression bedeutet: Nicht das gesamte Einkommen wird mit dem höchsten Steuersatz besteuert, sondern jeder Euro wird schrittweise höher besteuert:
       </p>
       <ul>
-        <li>Erste 12.096 € (Grundfreibetrag): <strong>0% Steuer</strong></li>
-        <li>Nächste 55.706 € (bis 67.802 €): <strong>14% bis 42%</strong> progressiv steigend</li>
+        <li>Erste 12.348 € (Grundfreibetrag): <strong>0% Steuer</strong></li>
+        <li>Nächste 55.454 € (bis 67.802 €): <strong>14% bis 42%</strong> progressiv steigend</li>
         <li>Ab 67.802 €: <strong>42%</strong> auf jeden weiteren Euro</li>
         <li>Ab 277.826 €: <strong>45%</strong> auf jeden weiteren Euro</li>
       </ul>
@@ -115,8 +115,8 @@ export default function LohnsteuerPage() {
         <strong>Beispiel:</strong> Bei 50.000 € zvE zahlen Sie nicht 42% auf alles, sondern:
       </p>
       <ul>
-        <li>0 € Steuer auf die ersten 12.096 €</li>
-        <li>Progressiv steigende Steuer (14% bis ca. 30%) auf die restlichen 37.904 €</li>
+        <li>0 € Steuer auf die ersten 12.348 €</li>
+        <li>Progressiv steigende Steuer (14% bis ca. 30%) auf die restlichen 37.652 €</li>
         <li>Durchschnittssteuersatz: ca. 20% (nicht 42%!)</li>
       </ul>
 
@@ -175,7 +175,7 @@ export default function LohnsteuerPage() {
     {
       question: "Ab welchem Einkommen muss ich Lohnsteuer zahlen?",
       answer:
-        "Lohnsteuer wird erst ab einem zu versteuernden Einkommen über dem Grundfreibetrag von 12.096 € (2026) fällig. Bei einem ledigen Arbeitnehmer ohne weitere Abzüge entspricht dies einem Bruttogehalt von ca. 1.300 € monatlich.",
+        "Lohnsteuer wird erst ab einem zu versteuernden Einkommen über dem Grundfreibetrag von 12.348 € (2026) fällig. Bei einem ledigen Arbeitnehmer ohne weitere Abzüge entspricht dies einem Bruttogehalt von ca. 1.300 € monatlich.",
     },
     {
       question: "Warum zahle ich nicht 42% Steuern, obwohl ich in dieser Stufe bin?",

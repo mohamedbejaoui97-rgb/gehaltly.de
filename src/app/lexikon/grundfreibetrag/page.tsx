@@ -38,11 +38,11 @@ export default function GrundfreibetragPage() {
 
       <h2>Höhe des Grundfreibetrags 2026</h2>
       <p>
-        Für das Jahr 2026 beträgt der Grundfreibetrag <strong>11.784 Euro</strong> pro Person. Das bedeutet:
+        Für das Jahr 2026 beträgt der Grundfreibetrag <strong>12.348 Euro</strong> pro Person. Das bedeutet:
       </p>
       <ul>
-        <li><strong>Ledige Personen:</strong> Bis 11.784 € zu versteuerndes Einkommen zahlen keine Einkommensteuer</li>
-        <li><strong>Verheiratete/Zusammenveranlagte:</strong> Bis 23.568 € zu versteuerndes Einkommen (doppelter Grundfreibetrag) zahlen keine Einkommensteuer</li>
+        <li><strong>Ledige Personen:</strong> Bis 12.348 € zu versteuerndes Einkommen zahlen keine Einkommensteuer</li>
+        <li><strong>Verheiratete/Zusammenveranlagte:</strong> Bis 24.696 € zu versteuerndes Einkommen (doppelter Grundfreibetrag) zahlen keine Einkommensteuer</li>
       </ul>
       <p>
         Der Grundfreibetrag wird jährlich angepasst, um die Inflation und Lebenshaltungskosten zu berücksichtigen. In den vergangenen Jahren hat er sich wie folgt entwickelt:
@@ -50,7 +50,7 @@ export default function GrundfreibetragPage() {
       <ul>
         <li>2024: 11.604 €</li>
         <li>2025: 11.694 €</li>
-        <li>2026: 11.784 €</li>
+        <li>2026: 12.348 €</li>
       </ul>
 
       <h2>Wie funktioniert der Grundfreibetrag?</h2>
@@ -71,7 +71,7 @@ export default function GrundfreibetragPage() {
       </p>
       <ul>
         <li>Zu versteuerndes Einkommen: 10.000 €</li>
-        <li>Grundfreibetrag: 11.784 €</li>
+        <li>Grundfreibetrag: 12.348 €</li>
         <li>Einkommensteuer: <strong>0 €</strong></li>
       </ul>
 
@@ -80,9 +80,9 @@ export default function GrundfreibetragPage() {
       </p>
       <ul>
         <li>Zu versteuerndes Einkommen: 15.000 €</li>
-        <li>Grundfreibetrag: 11.784 €</li>
-        <li>Zu versteuernder Betrag: 3.216 €</li>
-        <li>Einkommensteuer: ca. <strong>450 €</strong> (durchschnittlicher Steuersatz ca. 3%)</li>
+        <li>Grundfreibetrag: 12.348 €</li>
+        <li>Zu versteuernder Betrag: 2.652 €</li>
+        <li>Einkommensteuer: ca. <strong>370 €</strong> (durchschnittlicher Steuersatz ca. 2,5%)</li>
       </ul>
 
       <p>
@@ -90,7 +90,7 @@ export default function GrundfreibetragPage() {
       </p>
       <ul>
         <li>Gemeinsames zu versteuerndes Einkommen: 20.000 €</li>
-        <li>Doppelter Grundfreibetrag: 23.568 €</li>
+        <li>Doppelter Grundfreibetrag: 24.696 €</li>
         <li>Einkommensteuer: <strong>0 €</strong></li>
       </ul>
 
@@ -114,7 +114,7 @@ export default function GrundfreibetragPage() {
         Der Grundfreibetrag wird häufig mit dem Kinderfreibetrag verwechselt. Hier die wichtigsten Unterschiede:
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> Gilt automatisch für jeden Steuerpflichtigen, beträgt 2026 11.784 € pro Person</li>
+        <li><strong>Grundfreibetrag:</strong> Gilt automatisch für jeden Steuerpflichtigen, beträgt 2026 12.348 € pro Person</li>
         <li><strong>Kinderfreibetrag:</strong> Gilt nur für Eltern mit Kindern, beträgt 2026 6.612 € pro Kind und Elternteil (insgesamt 13.224 € pro Kind bei Zusammenveranlagung)</li>
         <li><strong>Kindergeld vs. Kinderfreibetrag:</strong> Das Finanzamt prüft automatisch, was günstiger ist (Günstigerprüfung)</li>
       </ul>
@@ -127,8 +127,8 @@ export default function GrundfreibetragPage() {
         Der Arbeitgeber berücksichtigt den Grundfreibetrag automatisch bei der monatlichen Lohnabrechnung. Wenn Sie nur ein Arbeitsverhältnis haben und keine weiteren Einkünfte beziehen, wird der Grundfreibetrag über das Jahr verteilt:
       </p>
       <ul>
-        <li>Monatlicher Grundfreibetrag: 11.784 € ÷ 12 = ca. 982 € pro Monat</li>
-        <li>Bei einem monatlichen Bruttogehalt unter 982 € fällt in der Regel keine Lohnsteuer an</li>
+        <li>Monatlicher Grundfreibetrag: 12.348 € ÷ 12 = ca. 1.029 € pro Monat</li>
+        <li>Bei einem monatlichen Bruttogehalt unter 1.029 € fällt in der Regel keine Lohnsteuer an</li>
       </ul>
       <p>
         Wichtig: Der Grundfreibetrag bezieht sich auf das zu versteuernde Einkommen, nicht auf das Bruttoeinkommen. Vom Bruttoeinkommen können noch Werbungskosten, Sonderausgaben und andere Freibeträge abgezogen werden.
@@ -154,7 +154,7 @@ export default function GrundfreibetragPage() {
     {
       question: "Wie hoch ist der Grundfreibetrag 2026?",
       answer:
-        "Der Grundfreibetrag beträgt im Jahr 2026 11.784 Euro pro Person. Bei Verheirateten mit Zusammenveranlagung gilt der doppelte Betrag von 23.568 Euro. Bis zu diesem Betrag muss keine Einkommensteuer gezahlt werden.",
+        "Der Grundfreibetrag beträgt im Jahr 2026 12.348 Euro pro Person. Bei Verheirateten mit Zusammenveranlagung gilt der doppelte Betrag von 24.696 Euro. Bis zu diesem Betrag muss keine Einkommensteuer gezahlt werden.",
     },
     {
       question: "Muss ich den Grundfreibetrag beantragen?",
@@ -169,7 +169,7 @@ export default function GrundfreibetragPage() {
     {
       question: "Gilt der Grundfreibetrag auch für Rentner?",
       answer:
-        "Ja, der Grundfreibetrag gilt auch für Rentner. Wenn die steuerpflichtigen Renteneinkünfte unter 11.784 Euro pro Jahr liegen, muss keine Einkommensteuer gezahlt werden. Allerdings ist zu beachten, dass nicht die gesamte Rente steuerpflichtig ist – der Besteuerungsanteil hängt vom Renteneintritsjahr ab.",
+        "Ja, der Grundfreibetrag gilt auch für Rentner. Wenn die steuerpflichtigen Renteneinkünfte unter 12.348 Euro pro Jahr liegen, muss keine Einkommensteuer gezahlt werden. Allerdings ist zu beachten, dass nicht die gesamte Rente steuerpflichtig ist – der Besteuerungsanteil hängt vom Renteneintritsjahr ab.",
     },
     {
       question: "Bekomme ich den Grundfreibetrag ausgezahlt?",
@@ -193,7 +193,7 @@ export default function GrundfreibetragPage() {
   return (
     <LexikonTemplate
       title="Grundfreibetrag"
-      description="Der Grundfreibetrag stellt sicher, dass das Existenzminimum steuerfrei bleibt. 2026 beträgt er 11.784 Euro pro Person."
+      description="Der Grundfreibetrag stellt sicher, dass das Existenzminimum steuerfrei bleibt. 2026 beträgt er 12.348 Euro pro Person."
       content={content}
       faq={faq}
       relatedLinks={relatedLinks}

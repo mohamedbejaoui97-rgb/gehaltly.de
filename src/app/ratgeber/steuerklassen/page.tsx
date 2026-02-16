@@ -277,7 +277,7 @@ export default function SteuerklassenPage() {
             <ul className="text-sm space-y-2 list-disc list-inside">
               <li>Keine Freibeträge (wurden bereits im Hauptjob berücksichtigt)</li>
               <li>Höchste Lohnsteuerabzüge aller Steuerklassen</li>
-              <li>Von 450 EUR Minijob bleiben oft nur etwa 250-280 EUR netto übrig</li>
+              <li>Von 556 EUR Minijob bleiben oft nur etwa 350-400 EUR netto übrig</li>
               <li>Ausgleich erfolgt über die Jahressteuererklärung (oft mit Rückzahlung)</li>
             </ul>
           </div>

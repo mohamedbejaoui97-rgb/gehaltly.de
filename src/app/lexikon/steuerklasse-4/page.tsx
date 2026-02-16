@@ -52,7 +52,7 @@ export default function Steuerklasse4Page() {
         In der Steuerklasse 4 gelten für 2026 folgende Freibeträge (pro Person):
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> 11.604 € pro Jahr</li>
+        <li><strong>Grundfreibetrag:</strong> 12.348 € pro Jahr</li>
         <li><strong>Arbeitnehmerpauschbetrag:</strong> 1.230 € pro Jahr</li>
         <li><strong>Sozialausgabenpauschbetrag:</strong> 36 € pro Jahr</li>
         <li><strong>Vorsorgepauschale:</strong> Abhängig vom Bruttoeinkommen</li>
@@ -76,11 +76,11 @@ export default function Steuerklasse4Page() {
         <li><strong>Bruttogehalt:</strong> 3.500,00 €</li>
         <li><strong>Rentenversicherung (9,3%):</strong> -325,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -45,50 €</li>
-        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -290,50 €</li>
+        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,45%):</strong> -306,25 €</li>
         <li><strong>Pflegeversicherung (1,8%):</strong> -63,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -520,00 €</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 €</li>
-        <li><strong>Nettogehalt:</strong> ca. 2.259,00 €</li>
+        <li><strong>Nettogehalt:</strong> ca. 2.243,00 €</li>
       </ul>
       <p>
         Mit Faktorverfahren (Beispiel: Partner verdient 2.000 €, Faktor 0,89):

@@ -30,10 +30,11 @@ export default function ArbeitgeberPage() {
   };
 
   // Employer contribution rates (2026)
+  const kvZusatzbeitrag = 2.9; // Average Zusatzbeitrag 2026 in percent
   const employerRates = {
     rentenversicherung: 0.093,    // 9.3%
-    krankenversicherung: 0.073,   // 7.3%
-    pflegeversicherung: 0.018,    // 1.8% (base rate, employer pays 0.6% more than employee)
+    krankenversicherung: 0.073 + (kvZusatzbeitrag / 100 / 2),   // 7.3% + half Zusatzbeitrag (1.45%)
+    pflegeversicherung: 0.018,    // 1.8%
     arbeitslosenversicherung: 0.013, // 1.3%
   };
 
@@ -85,15 +86,15 @@ export default function ArbeitgeberPage() {
   const faqs = [
     {
       question: "Was kostet ein Arbeitnehmer den Arbeitgeber wirklich?",
-      answer: "Ein Arbeitnehmer kostet den Arbeitgeber deutlich mehr als nur das Bruttogehalt. Zusätzlich zum Brutto zahlt der Arbeitgeber Sozialversicherungsbeiträge: 9,3% Rentenversicherung, 7,3% Krankenversicherung, 1,8% Pflegeversicherung und 1,3% Arbeitslosenversicherung. Insgesamt kommen etwa 19,7% auf das Bruttogehalt drauf. Bei 4.000 EUR Brutto kostet der Mitarbeiter also etwa 4.788 EUR. Hinzu kommen noch weitere Kosten wie Arbeitsplatzausstattung, Weiterbildung, Urlaubsgeld oder betriebliche Altersvorsorge."
+      answer: "Ein Arbeitnehmer kostet den Arbeitgeber deutlich mehr als nur das Bruttogehalt. Zusätzlich zum Brutto zahlt der Arbeitgeber Sozialversicherungsbeiträge: 9,3% Rentenversicherung, 8,75% Krankenversicherung (7,3% + 1,45% hälftig Zusatzbeitrag), 1,8% Pflegeversicherung und 1,3% Arbeitslosenversicherung. Insgesamt kommen etwa 21,2% auf das Bruttogehalt drauf. Bei 4.000 EUR Brutto kostet der Mitarbeiter also etwa 4.846 EUR. Hinzu kommen noch weitere Kosten wie Arbeitsplatzausstattung, Weiterbildung, Urlaubsgeld oder betriebliche Altersvorsorge."
     },
     {
       question: "Wie hoch sind die Arbeitgeberanteile zur Sozialversicherung?",
-      answer: "Die Arbeitgeberanteile zur Sozialversicherung 2026 betragen: Rentenversicherung 9,3% (gleich wie Arbeitnehmer), Krankenversicherung 7,3% (plus hälftig Zusatzbeitrag, im Schnitt 0,85%), Pflegeversicherung 1,8% (Arbeitgeber zahlt 0,6% mehr als Arbeitnehmer, der nur 1,2% bzw. 1,9% zahlt), Arbeitslosenversicherung 1,3% (gleich wie Arbeitnehmer). Zusammen zahlt der Arbeitgeber etwa 19,7% des Bruttogehalts zusätzlich an Sozialversicherungsbeiträgen. Diese Kosten sind für den Arbeitgeber nicht absetzbar, sondern Teil der Lohnnebenkosten."
+      answer: "Die Arbeitgeberanteile zur Sozialversicherung 2026 betragen: Rentenversicherung 9,3% (gleich wie Arbeitnehmer), Krankenversicherung 7,3% (plus hälftig Zusatzbeitrag, im Schnitt 1,45%), Pflegeversicherung 1,8% (gleich wie Arbeitnehmer; AN zahlt ebenfalls 1,8% bzw. 2,4% ohne Kinder – Ausnahme Sachsen: AG 1,2%, AN 2,4% bzw. 3,0%), Arbeitslosenversicherung 1,3% (gleich wie Arbeitnehmer). Zusammen zahlt der Arbeitgeber etwa 20,85% des Bruttogehalts zusätzlich an Sozialversicherungsbeiträgen. Diese Kosten sind für den Arbeitgeber nicht absetzbar, sondern Teil der Lohnnebenkosten."
     },
     {
       question: "Was ist die Arbeitgeberpauschale bei Minijobs?",
-      answer: "Bei Minijobs (bis 520 EUR) zahlt der Arbeitgeber eine Pauschale von etwa 30%: 15% Rentenversicherung (Arbeitnehmer kann aufstocken auf volle Versicherung), 13% Krankenversicherung, 2% Pauschalsteuer und kleine Umlagen. Der Minijobber selbst zahlt nur einen kleinen Eigenanteil zur Rentenversicherung (3,6%), kann sich aber davon befreien lassen. Bei 520 EUR Minijob kostet der Mitarbeiter den Arbeitgeber also etwa 675 EUR. Vorteil: Für den Minijobber fallen keine Steuern und kaum Sozialabgaben an, sodass er fast das volle Brutto netto erhält."
+      answer: "Bei Minijobs (bis 556 EUR) zahlt der Arbeitgeber eine Pauschale von etwa 30%: 15% Rentenversicherung (Arbeitnehmer kann aufstocken auf volle Versicherung), 13% Krankenversicherung, 2% Pauschalsteuer und kleine Umlagen. Der Minijobber selbst zahlt nur einen kleinen Eigenanteil zur Rentenversicherung (3,6%), kann sich aber davon befreien lassen. Bei 556 EUR Minijob kostet der Mitarbeiter den Arbeitgeber also etwa 723 EUR. Vorteil: Für den Minijobber fallen keine Steuern und kaum Sozialabgaben an, sodass er fast das volle Brutto netto erhält."
     },
     {
       question: "Können Arbeitgeber Lohnnebenkosten senken?",
@@ -101,7 +102,7 @@ export default function ArbeitgeberPage() {
     },
     {
       question: "Was ist der Unterschied zwischen Brutto und Arbeitgeberkosten?",
-      answer: "Das Bruttogehalt ist das, was im Arbeitsvertrag steht und was der Arbeitnehmer vor Abzügen erhält. Die Arbeitgeberkosten sind deutlich höher: Brutto plus Arbeitgeberanteile zur Sozialversicherung (ca. 19,7%), plus eventuelle weitere Leistungen (betriebliche Altersvorsorge, Zuschüsse, Sonderzahlungen). Während der Arbeitnehmer bei 4.000 EUR Brutto etwa 2.590 EUR netto erhält, zahlt der Arbeitgeber insgesamt ca. 4.788 EUR. Die Differenz zwischen Arbeitgeberkosten (4.788 EUR) und Arbeitnehmernetto (2.590 EUR) fließt in Steuern und Sozialversicherung."
+      answer: "Das Bruttogehalt ist das, was im Arbeitsvertrag steht und was der Arbeitnehmer vor Abzügen erhält. Die Arbeitgeberkosten sind deutlich höher: Brutto plus Arbeitgeberanteile zur Sozialversicherung (ca. 21,2%), plus eventuelle weitere Leistungen (betriebliche Altersvorsorge, Zuschüsse, Sonderzahlungen). Während der Arbeitnehmer bei 4.000 EUR Brutto etwa 2.590 EUR netto erhält, zahlt der Arbeitgeber insgesamt ca. 4.846 EUR. Die Differenz zwischen Arbeitgeberkosten (4.846 EUR) und Arbeitnehmernetto (2.590 EUR) fließt in Steuern und Sozialversicherung."
     }
   ];
 
@@ -212,7 +213,7 @@ export default function ArbeitgeberPage() {
                       <div className="flex justify-between items-center">
                         <div>
                           <p className="font-medium">Krankenversicherung</p>
-                          <p className="text-xs text-muted-foreground">7,3% + ½ Zusatzbeitrag</p>
+                          <p className="text-xs text-muted-foreground">7,3% + ½ Zusatzbeitrag (8,75%)</p>
                         </div>
                         <span className="font-semibold text-primary">
                           {formatCurrency(employerContributions.krankenversicherung)} €
@@ -383,7 +384,7 @@ export default function ArbeitgeberPage() {
             <ContentSection
               heading="Lohnnebenkosten in Deutschland"
               icon={<BookOpen className="w-5 h-5" />}
-              body="Die Lohnnebenkosten umfassen alle Arbeitgeberanteile zur Sozialversicherung. Diese betragen 2026 insgesamt etwa 19,7% des Bruttogehalts: Rentenversicherung 9,3%, Krankenversicherung 7,3% (plus hälftig Zusatzbeitrag), Pflegeversicherung 1,8% und Arbeitslosenversicherung 1,3%. Bei einem Bruttogehalt von 4.000 EUR zahlt der Arbeitgeber zusätzlich etwa 788 EUR an Sozialversicherungsbeiträgen. Diese Kosten sind gesetzlich vorgeschrieben und gelten für alle sozialversicherungspflichtigen Beschäftigungsverhältnisse."
+              body="Die Lohnnebenkosten umfassen alle Arbeitgeberanteile zur Sozialversicherung. Diese betragen 2026 insgesamt etwa 21,2% des Bruttogehalts: Rentenversicherung 9,3%, Krankenversicherung 8,75% (7,3% + hälftig Zusatzbeitrag von durchschnittlich 2,9%), Pflegeversicherung 1,8% und Arbeitslosenversicherung 1,3%. Bei einem Bruttogehalt von 4.000 EUR zahlt der Arbeitgeber zusätzlich etwa 846 EUR an Sozialversicherungsbeiträgen. Diese Kosten sind gesetzlich vorgeschrieben und gelten für alle sozialversicherungspflichtigen Beschäftigungsverhältnisse."
             >
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
                 <p className="text-sm text-amber-900 dark:text-amber-100">
@@ -407,7 +408,7 @@ export default function ArbeitgeberPage() {
             <ContentSection
               heading="Optimierung der Personalkosten"
               icon={<Info className="w-5 h-5" />}
-              body="Personalkosten können durch kluge Gestaltung optimiert werden: Steuerfreie Zuwendungen wie Jobticket (bis 50 EUR/Monat), Sachbezüge (bis 50 EUR/Monat), Kindergartenzuschuss (bis 600 EUR/Monat) erhöhen das Netto des Mitarbeiters, ohne zusätzliche Sozialabgaben auszulösen. Betriebliche Altersvorsorge kann teilweise steuer- und sozialversicherungsfrei gestaltet werden. Bei geringfügiger Beschäftigung (Minijob bis 520 EUR) fallen nur Pauschalbeiträge an. Werkstudenten sind sozialversicherungsfrei. Professionelle Steuerberatung lohnt sich."
+              body="Personalkosten können durch kluge Gestaltung optimiert werden: Steuerfreie Zuwendungen wie Jobticket (bis 50 EUR/Monat), Sachbezüge (bis 50 EUR/Monat), Kindergartenzuschuss (bis 600 EUR/Monat) erhöhen das Netto des Mitarbeiters, ohne zusätzliche Sozialabgaben auszulösen. Betriebliche Altersvorsorge kann teilweise steuer- und sozialversicherungsfrei gestaltet werden. Bei geringfügiger Beschäftigung (Minijob bis 556 EUR) fallen nur Pauschalbeiträge an. Werkstudenten sind sozialversicherungsfrei. Professionelle Steuerberatung lohnt sich."
             >
               <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
                 <p className="text-sm text-blue-900 dark:text-blue-100">

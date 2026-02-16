@@ -47,7 +47,7 @@ export default function Steuerklasse3Page() {
         In der Steuerklasse 3 werden für 2026 die höchsten Freibeträge aller Steuerklassen gewährt:
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> 23.208 € pro Jahr (doppelter Grundfreibetrag beider Partner)</li>
+        <li><strong>Grundfreibetrag:</strong> 24.696 € pro Jahr (doppelter Grundfreibetrag beider Partner)</li>
         <li><strong>Arbeitnehmerpauschbetrag:</strong> 2.460 € pro Jahr (doppelt)</li>
         <li><strong>Sozialausgabenpauschbetrag:</strong> 72 € pro Jahr (doppelt)</li>
         <li><strong>Vorsorgepauschale:</strong> Höherer Betrag durch doppelte Berücksichtigung</li>
@@ -65,11 +65,11 @@ export default function Steuerklasse3Page() {
         <li><strong>Bruttogehalt:</strong> 4.500,00 €</li>
         <li><strong>Rentenversicherung (9,3%):</strong> -418,50 €</li>
         <li><strong>Arbeitslosenversicherung (1,3%):</strong> -58,50 €</li>
-        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,0%):</strong> -373,50 €</li>
+        <li><strong>Krankenversicherung (7,3% + Zusatzbeitrag ~1,45%):</strong> -393,75 €</li>
         <li><strong>Pflegeversicherung (1,8%):</strong> -81,00 €</li>
         <li><strong>Lohnsteuer:</strong> ca. -490,00 €</li>
         <li><strong>Solidaritätszuschlag:</strong> ca. -0,00 €</li>
-        <li><strong>Nettogehalt:</strong> ca. 3.083,00 €</li>
+        <li><strong>Nettogehalt:</strong> ca. 3.063,00 €</li>
       </ul>
       <p>
         Zum Vergleich: Das gleiche Bruttogehalt in Steuerklasse 1 würde etwa 150-200 € mehr Lohnsteuer bedeuten. In Steuerklasse 4 läge die Lohnsteuer etwa 100-150 € höher.

@@ -43,7 +43,7 @@ export default function SteuerfreibetragPage() {
 
       <h3>Automatische Freibeträge</h3>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> 11.784 € (2026) – stellt das Existenzminimum steuerfrei, gilt für alle</li>
+        <li><strong>Grundfreibetrag:</strong> 12.348 € (2026) – stellt das Existenzminimum steuerfrei, gilt für alle</li>
         <li><strong>Sparerpauschbetrag:</strong> 1.000 € für Ledige, 2.000 € für Verheiratete – für Kapitalerträge</li>
         <li><strong>Arbeitnehmerpauschbetrag:</strong> 1.230 € – für Werbungskosten bei Arbeitnehmern</li>
         <li><strong>Sonderausgabenpauschbetrag:</strong> 36 € – für Sonderausgaben</li>
@@ -88,9 +88,9 @@ export default function SteuerfreibetragPage() {
         <li>Minus Arbeitnehmerpauschbetrag: -1.230 €</li>
         <li>Minus Sonderausgabenpauschbetrag: -36 €</li>
         <li>Einkommen: 48.734 €</li>
-        <li>Minus Grundfreibetrag: -11.784 €</li>
+        <li>Minus Grundfreibetrag: -12.348 €</li>
         <li>Minus Kinderfreibetrag (halber): -6.612 €</li>
-        <li>Zu versteuerndes Einkommen: <strong>30.338 €</strong></li>
+        <li>Zu versteuerndes Einkommen: <strong>29.774 €</strong></li>
       </ul>
       <p>
         Bei einem durchschnittlichen Steuersatz von ca. 20% auf dieses Einkommen spart der Kinderfreibetrag allein etwa 1.322 € Steuern.
@@ -186,7 +186,7 @@ export default function SteuerfreibetragPage() {
     {
       question: "Welche Freibeträge gelten automatisch?",
       answer:
-        "Automatisch gelten der Grundfreibetrag (11.784 € in 2026), der Arbeitnehmerpauschbetrag (1.230 €), der Sonderausgabenpauschbetrag (36 €) und der Sparerpauschbetrag (1.000 € bzw. 2.000 € für Verheiratete). Diese müssen nicht beantragt werden und werden bei der Lohnsteuer bzw. Steuererklärung automatisch berücksichtigt.",
+        "Automatisch gelten der Grundfreibetrag (12.348 € in 2026), der Arbeitnehmerpauschbetrag (1.230 €), der Sonderausgabenpauschbetrag (36 €) und der Sparerpauschbetrag (1.000 € bzw. 2.000 € für Verheiratete). Diese müssen nicht beantragt werden und werden bei der Lohnsteuer bzw. Steuererklärung automatisch berücksichtigt.",
     },
     {
       question: "Was ist das ELStAM-System?",

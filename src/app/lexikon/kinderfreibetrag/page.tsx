@@ -42,24 +42,24 @@ export default function KinderfreibetragPage() {
 
       <h2>Höhe des Kinderfreibetrags 2026</h2>
       <p>
-        Für das Jahr 2026 beträgt der Kinderfreibetrag insgesamt <strong>6.612 Euro</strong> pro Kind und Elternteil. Bei Zusammenveranlagung von Ehepaaren verdoppelt sich dieser Betrag auf 13.224 Euro pro Kind.
+        Für das Jahr 2026 beträgt der Kinderfreibetrag insgesamt <strong>9.756 Euro</strong> pro Kind (für beide Elternteile zusammen). Pro Elternteil sind das 4.878 Euro.
       </p>
       <p>
         Die Aufteilung im Detail:
       </p>
       <ul>
-        <li><strong>Kinderfreibetrag:</strong> 3.306 € pro Elternteil (6.612 € bei Zusammenveranlagung)</li>
-        <li><strong>BEA-Freibetrag:</strong> 1.464 € pro Elternteil (2.928 € bei Zusammenveranlagung)</li>
-        <li><strong>Gesamt pro Elternteil:</strong> 6.612 €</li>
-        <li><strong>Gesamt bei Zusammenveranlagung:</strong> 13.224 € pro Kind</li>
+        <li><strong>Sächlicher Kinderfreibetrag:</strong> 3.414 € pro Elternteil (6.828 € zusammen)</li>
+        <li><strong>BEA-Freibetrag:</strong> 1.464 € pro Elternteil (2.928 € zusammen)</li>
+        <li><strong>Gesamt pro Elternteil:</strong> 4.878 €</li>
+        <li><strong>Gesamt pro Kind (beide Elternteile):</strong> 9.756 €</li>
       </ul>
       <p>
-        Entwicklung der vergangenen Jahre:
+        Entwicklung der vergangenen Jahre (Gesamt pro Kind, beide Elternteile):
       </p>
       <ul>
-        <li>2024: 6.384 € pro Elternteil (12.768 € zusammen)</li>
-        <li>2025: 6.498 € pro Elternteil (12.996 € zusammen)</li>
-        <li>2026: 6.612 € pro Elternteil (13.224 € zusammen)</li>
+        <li>2024: 9.540 € (4.770 € pro Elternteil)</li>
+        <li>2025: 9.600 € (4.800 € pro Elternteil)</li>
+        <li>2026: 9.756 € (4.878 € pro Elternteil)</li>
       </ul>
 
       <h2>Kindergeld oder Kinderfreibetrag - Was ist besser?</h2>
@@ -68,7 +68,7 @@ export default function KinderfreibetragPage() {
       </p>
       <ul>
         <li><strong>Kindergeld 2026:</strong> 250 € pro Monat und Kind (3.000 € pro Jahr)</li>
-        <li><strong>Kinderfreibetrag 2026:</strong> 13.224 € pro Jahr (bei Zusammenveranlagung)</li>
+        <li><strong>Kinderfreibetrag 2026:</strong> 9.756 € pro Jahr und Kind (beide Elternteile)</li>
       </ul>
       <p>
         Die Günstigerprüfung funktioniert so:
@@ -97,7 +97,7 @@ export default function KinderfreibetragPage() {
       <ul>
         <li>Zu versteuerndes Einkommen: 40.000 €</li>
         <li>Grenzsteuersatz: ca. 25%</li>
-        <li>Steuerersparnis durch Kinderfreibetrag: 13.224 € × 25% = ca. 3.306 €</li>
+        <li>Steuerersparnis durch Kinderfreibetrag: 9.756 € × 25% = ca. 2.439 €</li>
         <li>Kindergeld: 3.000 €</li>
         <li><strong>Ergebnis:</strong> Kindergeld ist günstiger (keine zusätzliche Erstattung)</li>
       </ul>
@@ -108,9 +108,9 @@ export default function KinderfreibetragPage() {
       <ul>
         <li>Zu versteuerndes Einkommen: 75.000 €</li>
         <li>Grenzsteuersatz: ca. 35%</li>
-        <li>Steuerersparnis durch Kinderfreibetrag: 13.224 € × 35% = ca. 4.628 €</li>
+        <li>Steuerersparnis durch Kinderfreibetrag: 9.756 € × 35% = ca. 3.415 €</li>
         <li>Kindergeld: 3.000 €</li>
-        <li><strong>Ergebnis:</strong> Kinderfreibetrag ist günstiger (zusätzliche Erstattung ca. 1.628 €)</li>
+        <li><strong>Ergebnis:</strong> Kinderfreibetrag ist günstiger (zusätzliche Erstattung ca. 415 €)</li>
       </ul>
 
       <p>
@@ -119,9 +119,9 @@ export default function KinderfreibetragPage() {
       <ul>
         <li>Zu versteuerndes Einkommen: 120.000 €</li>
         <li>Grenzsteuersatz: 42%</li>
-        <li>Steuerersparnis durch Kinderfreibetrag: 13.224 € × 42% = ca. 5.554 €</li>
+        <li>Steuerersparnis durch Kinderfreibetrag: 9.756 € × 42% = ca. 4.098 €</li>
         <li>Kindergeld: 3.000 €</li>
-        <li><strong>Ergebnis:</strong> Kinderfreibetrag ist deutlich günstiger (zusätzliche Erstattung ca. 2.554 €)</li>
+        <li><strong>Ergebnis:</strong> Kinderfreibetrag ist deutlich günstiger (zusätzliche Erstattung ca. 1.098 €)</li>
       </ul>
 
       <h2>Wer hat Anspruch auf den Kinderfreibetrag?</h2>
@@ -148,7 +148,7 @@ export default function KinderfreibetragPage() {
         Bei getrennt lebenden oder geschiedenen Eltern wird der Kinderfreibetrag grundsätzlich hälftig aufgeteilt:
       </p>
       <ul>
-        <li>Jeder Elternteil erhält 6.612 € Kinderfreibetrag</li>
+        <li>Jeder Elternteil erhält 4.878 € Kinderfreibetrag</li>
         <li>Auf Antrag kann der Freibetrag komplett auf einen Elternteil übertragen werden</li>
         <li>Voraussetzung: Der andere Elternteil zahlt weniger als 75% des Unterhalts oder die Unterhaltspflicht wird nicht erfüllt</li>
         <li>Bei alleinigem Sorgerecht kann der volle Freibetrag beantragt werden</li>
@@ -173,7 +173,7 @@ export default function KinderfreibetragPage() {
         Der Kinderfreibetrag kann zusätzlich zu anderen Freibeträgen genutzt werden:
       </p>
       <ul>
-        <li><strong>Grundfreibetrag:</strong> Gilt zusätzlich für die eigene Person (11.784 € in 2026)</li>
+        <li><strong>Grundfreibetrag:</strong> Gilt zusätzlich für die eigene Person (12.348 € in 2026)</li>
         <li><strong>Ausbildungsfreibetrag:</strong> 1.200 € für volljährige Kinder in Ausbildung, die auswärts wohnen</li>
         <li><strong>Behinderten-Pauschbetrag:</strong> Bei Kindern mit Behinderung zusätzlich möglich</li>
       </ul>
@@ -184,7 +184,7 @@ export default function KinderfreibetragPage() {
     {
       question: "Wie hoch ist der Kinderfreibetrag 2026?",
       answer:
-        "Der Kinderfreibetrag beträgt 2026 insgesamt 6.612 Euro pro Elternteil und Kind. Bei Zusammenveranlagung von Ehepaaren verdoppelt sich der Betrag auf 13.224 Euro pro Kind. Dieser setzt sich zusammen aus dem Kinderfreibetrag (6.612 €) und dem BEA-Freibetrag für Betreuung und Erziehung (2.928 €).",
+        "Der Kinderfreibetrag beträgt 2026 insgesamt 9.756 Euro pro Kind (beide Elternteile zusammen) bzw. 4.878 Euro pro Elternteil. Er setzt sich zusammen aus dem sächlichen Kinderfreibetrag (6.828 €) und dem BEA-Freibetrag für Betreuung und Erziehung (2.928 €).",
     },
     {
       question: "Was ist besser - Kindergeld oder Kinderfreibetrag?",
@@ -199,7 +199,7 @@ export default function KinderfreibetragPage() {
     {
       question: "Wie wird der Kinderfreibetrag bei getrennten Eltern aufgeteilt?",
       answer:
-        "Bei getrennten Eltern wird der Kinderfreibetrag grundsätzlich hälftig aufgeteilt - jeder Elternteil erhält 6.612 Euro. Auf Antrag kann der Freibetrag komplett auf einen Elternteil übertragen werden, wenn der andere Elternteil weniger als 75% des Unterhalts zahlt oder die Unterhaltspflicht nicht erfüllt.",
+        "Bei getrennten Eltern wird der Kinderfreibetrag grundsätzlich hälftig aufgeteilt - jeder Elternteil erhält 4.878 Euro. Auf Antrag kann der Freibetrag komplett auf einen Elternteil übertragen werden, wenn der andere Elternteil weniger als 75% des Unterhalts zahlt oder die Unterhaltspflicht nicht erfüllt.",
     },
     {
       question: "Bis zu welchem Alter gilt der Kinderfreibetrag?",
@@ -223,7 +223,7 @@ export default function KinderfreibetragPage() {
   return (
     <LexikonTemplate
       title="Kinderfreibetrag"
-      description="Der Kinderfreibetrag stellt das Existenzminimum eines Kindes steuerfrei. 2026 beträgt er 13.224 Euro pro Kind bei Zusammenveranlagung."
+      description="Der Kinderfreibetrag stellt das Existenzminimum eines Kindes steuerfrei. 2026 beträgt er 9.756 Euro pro Kind (beide Elternteile zusammen)."
       content={content}
       faq={faq}
       relatedLinks={relatedLinks}
