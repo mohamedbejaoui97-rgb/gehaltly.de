@@ -106,6 +106,13 @@ The 4 main calculator pages use the same `BruttoNettoForm` component but MUST ha
   - All DSGVO rights (Art. 15-21, 77) including Datenübertragbarkeit
 - **IMPORTANT**: Never add GA4 scripts directly to layout.tsx — always go through CookieConsent component
 
+## Mobile / Responsive
+
+- **Headings**: All h1/h2/h3 use responsive sizing: `text-xl sm:text-2xl md:text-3xl` (or `text-2xl sm:text-3xl md:text-4xl` for main h1)
+- **German compound words**: `globals.css` applies `overflow-wrap: break-word`, `word-break: break-word` to all text elements, and `hyphens: auto` to h1/h2/h3 — prevents long words like "Beitragsbemessungsgrenze" from overflowing on mobile
+- **Flex containers with headings**: Use `min-w-0` on flex children containing text to prevent overflow (see ContentSection.tsx)
+- **When adding new headings**: Always use responsive font sizes, never bare `text-3xl` or `text-4xl` without mobile breakpoint
+
 ## German Tax Values 2026 — Reference
 
 When editing content pages, always use these official 2026 values. **Never hardcode old values.**
@@ -154,3 +161,8 @@ When editing content pages, always use these official 2026 values. **Never hardc
 3. `git push` — triggers Vercel auto-deploy
 4. `sleep 30 && gh api repos/.../commits/main/status --jq '.state'` — wait for deploy
 5. `curl -sL https://gehaltly.de/<page>` — verify changes are live
+
+## Open Items (non-critical)
+
+- **Impressum**: Missing name/address/phone as required by TMG §5 for commercial sites. Owner must add personal details manually.
+- **og:image**: All pages use logo (800x230). Ideally create a dedicated 1200x630 social share image for better social media previews.
