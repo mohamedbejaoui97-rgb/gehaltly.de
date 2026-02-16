@@ -95,7 +95,7 @@ export default function LohnsteuerPage() {
         <li>Steuerklasse 3 (günstigere Verteilung)</li>
         <li>Minus Werbungskosten-Pauschale: -1.230 €</li>
         <li>Minus Sonderausgaben: -7.000 €</li>
-        <li>Kinderfreibetrag: 2 × 6.612 € = 13.224 € (oder Kindergeld, je nachdem was günstiger ist)</li>
+        <li>Kinderfreibetrag: 2 × 4.878 € = 9.756 € (oder Kindergeld, je nachdem was günstiger ist)</li>
         <li>Zu versteuerndes Einkommen (zvE): ca. 48.546 €</li>
         <li>Einkommensteuer nach Tarif: ca. 8.200 €</li>
         <li><strong>Monatliche Lohnsteuer: ca. 683 €</strong></li>

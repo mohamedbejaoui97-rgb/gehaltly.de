@@ -51,8 +51,8 @@ export default function SteuerfreibetragPage() {
 
       <h3>Freibeträge für Familien</h3>
       <ul>
-        <li><strong>Kinderfreibetrag:</strong> 6.612 € pro Elternteil (2026) – für das Existenzminimum des Kindes</li>
-        <li><strong>BEA-Freibetrag:</strong> 2.928 € (in Kinderfreibetrag enthalten) – für Betreuung, Erziehung, Ausbildung</li>
+        <li><strong>Kinderfreibetrag:</strong> 4.878 € pro Elternteil (2026) – bestehend aus 3.414 € sächlichem Kinderfreibetrag + 1.464 € BEA-Freibetrag</li>
+        <li><strong>BEA-Freibetrag:</strong> 2.928 € (1.464 € pro Elternteil, im Kinderfreibetrag enthalten) – für Betreuung, Erziehung, Ausbildung</li>
         <li><strong>Entlastungsbetrag für Alleinerziehende:</strong> 4.260 € plus 240 € für jedes weitere Kind</li>
         <li><strong>Ausbildungsfreibetrag:</strong> 1.200 € – für volljährige Kinder in Ausbildung mit auswärtiger Unterbringung</li>
       </ul>
@@ -89,11 +89,11 @@ export default function SteuerfreibetragPage() {
         <li>Minus Sonderausgabenpauschbetrag: -36 €</li>
         <li>Einkommen: 48.734 €</li>
         <li>Minus Grundfreibetrag: -12.348 €</li>
-        <li>Minus Kinderfreibetrag (halber): -6.612 €</li>
-        <li>Zu versteuerndes Einkommen: <strong>29.774 €</strong></li>
+        <li>Minus Kinderfreibetrag (halber): -4.878 €</li>
+        <li>Zu versteuerndes Einkommen: <strong>31.508 €</strong></li>
       </ul>
       <p>
-        Bei einem durchschnittlichen Steuersatz von ca. 20% auf dieses Einkommen spart der Kinderfreibetrag allein etwa 1.322 € Steuern.
+        Bei einem durchschnittlichen Steuersatz von ca. 20% auf dieses Einkommen spart der Kinderfreibetrag allein etwa 976 € Steuern.
       </p>
 
       <h2>So beantragen Sie Steuerfreibeträge - Das ELStAM-System</h2>

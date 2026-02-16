@@ -213,7 +213,7 @@ export default function HomePage() {
             <ContentSection
               heading="Kinderfreibetrag 2026"
               icon={<Users className="w-5 h-5" />}
-              body="Der Kinderfreibetrag beträgt 2026 insgesamt 9.756 EUR pro Kind (4.878 EUR je Elternteil). Dieser setzt sich aus dem Kinderfreibetrag von 6.612 EUR und dem BEA-Freibetrag von 3.144 EUR zusammen."
+              body="Der Kinderfreibetrag beträgt 2026 insgesamt 9.756 EUR pro Kind (4.878 EUR je Elternteil). Dieser setzt sich aus dem sächlichen Kinderfreibetrag von 6.828 EUR und dem BEA-Freibetrag von 2.928 EUR zusammen."
             >
               <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
                 <p className="text-sm text-green-900 dark:text-green-100">
