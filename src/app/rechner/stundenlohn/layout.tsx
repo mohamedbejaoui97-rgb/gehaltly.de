@@ -10,6 +10,12 @@ export const metadata: Metadata = {
     title: 'Stundenlohnrechner 2026 - Stundenlohn berechnen',
     description: 'Kostenloser Stundenlohnrechner 2026: Berechnen Sie Ihren Stundenlohn aus Monats- oder Jahresgehalt. ✓ Netto-Berechnung ✓ Alle Steuerklassen ✓ Kostenlos',
     url: 'https://gehaltly.de/rechner/stundenlohn/',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

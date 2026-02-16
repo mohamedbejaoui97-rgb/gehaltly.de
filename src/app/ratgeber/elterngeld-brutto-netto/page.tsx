@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     title: 'Elterngeld: Brutto oder Netto? - Berechnung 2026',
     description: 'Verstehen Sie, wie Ihr Elterngeld berechnet wird und welche Rolle Brutto und Netto spielen.',
     type: 'article',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

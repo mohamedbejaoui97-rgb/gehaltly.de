@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     title: 'Brutto Netto Unterschied - Der komplette Guide 2026',
     description: 'Verstehen Sie den Unterschied zwischen Brutto und Netto. Ausführlicher Guide mit Beispielen und Berechnungen.',
     type: 'article',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     title: 'Brutto Netto Rechnung - So berechnen Sie Ihr Nettogehalt',
     description: 'Lernen Sie Schritt für Schritt, wie Sie Ihr Nettogehalt aus dem Bruttogehalt berechnen.',
     type: 'article',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

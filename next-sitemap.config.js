@@ -51,6 +51,9 @@ module.exports = {
     } else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner'].includes(path)) {
       priority = 0.9;
       changefreq = 'weekly';
+    } else if (['/rechner', '/ratgeber', '/lexikon'].includes(path)) {
+      priority = 0.85;
+      changefreq = 'weekly';
     } else if (path.startsWith('/rechner/')) {
       priority = 0.85;
       changefreq = 'weekly';
@@ -59,6 +62,9 @@ module.exports = {
       changefreq = 'monthly';
     } else if (path.startsWith('/ratgeber/')) {
       priority = 0.8;
+      changefreq = 'monthly';
+    } else if (path.startsWith('/lexikon/')) {
+      priority = 0.75;
       changefreq = 'monthly';
     } else if (path.match(/\/(impressum|datenschutz)$/)) {
       priority = 0.3;

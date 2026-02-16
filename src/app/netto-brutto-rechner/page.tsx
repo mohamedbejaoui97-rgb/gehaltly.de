@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     title: "Netto Brutto Rechner 2026 - Wunschnetto berechnen",
     description: "Berechnen Sie Brutto aus Netto mit unserem Netto Brutto Rechner 2026. Mit Wunschnetto-Modus.",
     url: "https://gehaltly.de/netto-brutto-rechner/",
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

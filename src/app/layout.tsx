@@ -5,6 +5,7 @@ import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileNav from "@/components/layout/MobileNav";
+import { CALCULATOR_LINKS, RATGEBER_LINKS } from "@/lib/utils/internal-links";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -30,6 +31,10 @@ export const metadata: Metadata = {
   authors: [{ name: "gehaltly.de" }],
   alternates: {
     canonical: 'https://gehaltly.de',
+    languages: {
+      'de': 'https://gehaltly.de',
+      'x-default': 'https://gehaltly.de',
+    },
   },
   openGraph: {
     title: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos",
@@ -102,6 +107,32 @@ gtag('config', 'G-E1BKJVFXZL');`}
                   "url": "https://gehaltly.de/logo.png"
                 }
               }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "ItemList",
+              "name": "Hauptnavigation",
+              "itemListElement": [
+                ...CALCULATOR_LINKS.slice(0, 5).map((link, i) => ({
+                  "@type": "SiteNavigationElement",
+                  "position": i + 1,
+                  "name": link.title,
+                  "description": link.description,
+                  "url": `https://gehaltly.de${link.href === '/' ? '' : link.href}`
+                })),
+                ...RATGEBER_LINKS.map((link, i) => ({
+                  "@type": "SiteNavigationElement",
+                  "position": 6 + i,
+                  "name": link.title,
+                  "description": link.description,
+                  "url": `https://gehaltly.de${link.href}`
+                })),
+              ]
             })
           }}
         />

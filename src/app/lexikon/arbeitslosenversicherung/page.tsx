@@ -16,6 +16,12 @@ export const metadata: Metadata = {
     url: "https://gehaltly.de/lexikon/arbeitslosenversicherung/",
     siteName: "gehaltly.de",
     type: "article",
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

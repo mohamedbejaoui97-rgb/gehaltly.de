@@ -14,6 +14,12 @@ export const metadata: Metadata = {
     description:
       'Umfassendes Lexikon zu Steuern, Sozialabgaben und Gehalt in Deutschland 2026.',
     type: 'website',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

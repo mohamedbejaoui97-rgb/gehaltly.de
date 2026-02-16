@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     title: 'Steuerklassen in Deutschland - Übersicht 2026',
     description: 'Alle 6 Steuerklassen erklärt mit Beispielen und Empfehlungen für Ihre Situation.',
     type: 'article',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

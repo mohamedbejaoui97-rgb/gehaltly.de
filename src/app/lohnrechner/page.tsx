@@ -11,6 +11,12 @@ export const metadata: Metadata = {
     title: "Lohnrechner 2026 - Stundenlohn & Nettolohn berechnen",
     description: "Lohnrechner 2026: Berechnen Sie Ihren Nettolohn aus Stundenlohn oder Monatslohn. Für Stundenlöhner und Teilzeitkräfte.",
     url: "https://gehaltly.de/lohnrechner/",
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

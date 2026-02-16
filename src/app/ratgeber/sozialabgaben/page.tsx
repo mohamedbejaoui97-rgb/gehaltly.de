@@ -18,6 +18,12 @@ export const metadata: Metadata = {
     title: 'Sozialabgaben 2026 - Alle Beiträge im Überblick',
     description: 'Alle Sozialversicherungsbeiträge 2026 mit aktuellen Beitragssätzen und Beitragsbemessungsgrenzen.',
     type: 'article',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 

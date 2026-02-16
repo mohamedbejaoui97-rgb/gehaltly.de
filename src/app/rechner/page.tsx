@@ -15,6 +15,12 @@ export const metadata: Metadata = {
     description:
       'Alle kostenlosen Online-Rechner 2026 auf gehaltly.de: Brutto-Netto, Stundenlohn, Teilzeit, Firmenwagen, Steuerklassen und mehr.',
     type: 'website',
+    images: [{
+      url: 'https://gehaltly.de/logo.png',
+      width: 800,
+      height: 230,
+      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+    }],
   },
 };
 
