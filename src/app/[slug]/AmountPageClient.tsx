@@ -22,6 +22,7 @@ interface AmountPageClientProps {
     next: AmountPage | null;
   };
   preCalculatedResult: CalculatorResultType;
+  isAnnual?: boolean;
 }
 
 /**
@@ -39,14 +40,18 @@ export default function AmountPageClient({
   amount,
   neighbors,
   preCalculatedResult,
+  isAnnual = false,
 }: AmountPageClientProps) {
   const [result, setResult] = useState<CalculatorResultType>(preCalculatedResult);
+  const periodLabel = isAnnual ? 'Jahresgehalt' : 'Bruttogehalt';
 
   // Generate FAQs specific to this amount
   const faqs = [
     {
       question: `Wie viel sind ${amount} Euro brutto in netto?`,
-      answer: `Bei einem Bruttogehalt von ${amount} Euro bleiben in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto übrig (ohne Kirchensteuer, in Bayern). Das entspricht einer Abzugsquote von etwa ${Math.round((preCalculatedResult.gesamtAbzuege / amount) * 100)}%. Die genaue Nettosumme hängt von Ihrer Steuerklasse, Ihrem Bundesland und weiteren persönlichen Faktoren ab. In Steuerklasse 3 bleibt mehr netto übrig, in Steuerklasse 5 oder 6 deutlich weniger.`,
+      answer: isAnnual
+        ? `Bei einem Jahresgehalt von ${amount.toLocaleString('de-DE')} Euro brutto (ca. ${formatCurrency(Math.round(amount / 12))} pro Monat) bleiben in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto pro Monat übrig (ohne Kirchensteuer, in Bayern). Die genaue Nettosumme hängt von Ihrer Steuerklasse, Ihrem Bundesland und weiteren persönlichen Faktoren ab.`
+        : `Bei einem Bruttogehalt von ${amount} Euro bleiben in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto übrig (ohne Kirchensteuer, in Bayern). Das entspricht einer Abzugsquote von etwa ${Math.round((preCalculatedResult.gesamtAbzuege / amount) * 100)}%. Die genaue Nettosumme hängt von Ihrer Steuerklasse, Ihrem Bundesland und weiteren persönlichen Faktoren ab. In Steuerklasse 3 bleibt mehr netto übrig, in Steuerklasse 5 oder 6 deutlich weniger.`,
     },
     {
       question: `Welche Abzüge habe ich bei ${amount} Euro brutto?`,
@@ -100,8 +105,11 @@ export default function AmountPageClient({
       {/* Hero Section */}
       <PageHero
         title={`${amount} € Brutto in Netto`}
-        subtitle={`Berechnen Sie, was von ${amount} Euro Bruttogehalt übrig bleibt`}
-        description={`Mit ${amount} Euro brutto bleiben Ihnen in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto. Nutzen Sie unseren Rechner für eine präzise Berechnung mit Ihren persönlichen Daten.`}
+        subtitle={`Berechnen Sie, was von ${amount} Euro ${periodLabel} übrig bleibt`}
+        description={isAnnual
+          ? `Mit ${amount} Euro Jahresbrutto bleiben Ihnen in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto pro Monat. Nutzen Sie unseren Rechner für eine präzise Berechnung mit Ihren persönlichen Daten.`
+          : `Mit ${amount} Euro brutto bleiben Ihnen in Steuerklasse 1 etwa ${formatCurrency(preCalculatedResult.netto)} netto. Nutzen Sie unseren Rechner für eine präzise Berechnung mit Ihren persönlichen Daten.`
+        }
       />
 
       {/* Quick Result Preview */}
@@ -115,29 +123,29 @@ export default function AmountPageClient({
                 </div>
                 <div className="flex-1">
                   <h2 className="text-2xl font-bold mb-2">
-                    Schnellübersicht: {amount} € Brutto
+                    Schnellübersicht: {amount} € {isAnnual ? 'Jahresbrutto' : 'Brutto'}
                   </h2>
                   <p className="text-muted-foreground">
-                    Vorberechnung für Steuerklasse 1, Bayern, ohne Kirchensteuer
+                    Vorberechnung für Steuerklasse 1, Bayern, ohne Kirchensteuer{isAnnual ? ' (monatliche Werte)' : ''}
                   </p>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">Bruttogehalt</p>
+                  <p className="text-sm text-muted-foreground mb-1">{isAnnual ? 'Jahresbrutto' : 'Bruttogehalt'}</p>
                   <p className="text-2xl font-bold text-primary">
-                    {formatCurrency(amount)}
+                    {formatCurrency(amount)}{isAnnual ? '/Jahr' : ''}
                   </p>
                 </div>
                 <div className="text-center p-4 bg-muted/50 rounded-lg">
-                  <p className="text-sm text-muted-foreground mb-1">Abzüge gesamt</p>
+                  <p className="text-sm text-muted-foreground mb-1">Abzüge{isAnnual ? '/Monat' : ''}</p>
                   <p className="text-2xl font-bold text-destructive">
                     -{formatCurrency(preCalculatedResult.gesamtAbzuege)}
                   </p>
                 </div>
                 <div className="text-center p-4 bg-green-50 dark:bg-green-950/20 rounded-lg border-2 border-green-200 dark:border-green-800">
-                  <p className="text-sm text-muted-foreground mb-1">Nettogehalt</p>
+                  <p className="text-sm text-muted-foreground mb-1">Netto{isAnnual ? '/Monat' : ''}</p>
                   <p className="text-2xl font-bold text-green-600 dark:text-green-400">
                     {formatCurrency(preCalculatedResult.netto)}
                   </p>
@@ -177,7 +185,10 @@ export default function AmountPageClient({
                 <div className="bg-background rounded-lg border p-6 shadow-sm">
                   <h3 className="text-xl font-bold mb-6">Ihre Eingaben</h3>
                   <BruttoNettoForm
-                    defaultValues={{ bruttoeinkommen: amount }}
+                    defaultValues={{
+                      bruttoeinkommen: amount,
+                      ...(isAnnual ? { abrechnungszeitraum: 'jahr' as const } : {}),
+                    }}
                     onResult={setResult}
                   />
                 </div>
@@ -186,7 +197,7 @@ export default function AmountPageClient({
               {/* Right Column - Result */}
               <div className="space-y-6">
                 {result ? (
-                  <CalculatorResult result={result} isMonthly={true} />
+                  <CalculatorResult result={result} isMonthly={!isAnnual} />
                 ) : (
                   <div className="bg-background rounded-lg border p-6 shadow-sm h-full flex items-center justify-center">
                     <div className="text-center text-muted-foreground">
@@ -260,19 +271,26 @@ export default function AmountPageClient({
             <ContentSection
               heading={`Was bedeutet ein Gehalt von ${amount} Euro?`}
               icon={<TrendingUp className="w-5 h-5" />}
-              body={`Ein Bruttogehalt von ${amount} Euro pro Monat ${
-                amount >= 4500
-                  ? 'liegt deutlich über dem deutschen Durchschnittsgehalt und ermöglicht einen komfortablen Lebensstandard. Mit diesem Gehalt gehören Sie zu den besser verdienenden Arbeitnehmern in Deutschland.'
-                  : amount >= 3000
-                  ? 'bewegt sich im Bereich des deutschen Durchschnittsgehalts. Dieses Gehalt ermöglicht einen soliden Lebensstandard, wobei die Kaufkraft je nach Region unterschiedlich ausfällt.'
-                  : amount >= 2000
-                  ? 'liegt unter dem deutschen Durchschnittsgehalt, kann aber je nach Region und Lebensumständen ausreichend sein. Besonders bei Berufseinsteigern oder Teilzeitbeschäftigung ist dieses Gehalt üblich.'
-                  : 'ist typisch für Teilzeitbeschäftigung, Minijobs oder Berufseinsteiger. Eine genaue Haushaltsplanung ist bei diesem Gehalt besonders wichtig.'
-              } Nach Abzug von Steuern und Sozialversicherungsbeiträgen bleiben Ihnen etwa ${formatCurrency(
-                preCalculatedResult.netto
-              )} netto. Die Kaufkraft variiert stark je nach Region - in München oder Hamburg benötigen Sie etwa ${
-                amount >= 3000 ? '30-40%' : '40-50%'
-              } mehr als in kleineren Städten oder ländlichen Regionen.`}
+              body={isAnnual
+                ? `Ein Jahresgehalt von ${amount.toLocaleString('de-DE')} Euro brutto ${
+                    amount >= 70000
+                      ? 'liegt deutlich über dem deutschen Durchschnittsgehalt von ca. 44.400 Euro und gehört zu den oberen Einkommensgruppen.'
+                      : amount >= 44000
+                      ? 'bewegt sich im Bereich des deutschen Durchschnittsgehalts. Dieses Gehalt ermöglicht einen soliden Lebensstandard.'
+                      : 'liegt unter dem deutschen Durchschnittsgehalt, kann aber je nach Region und Berufserfahrung angemessen sein.'
+                  } Das entspricht einem Monatsbrutto von ca. ${formatCurrency(Math.round(amount / 12))}. Nach Abzug von Steuern und Sozialversicherungsbeiträgen bleiben Ihnen monatlich etwa ${formatCurrency(preCalculatedResult.netto)} netto.`
+                : `Ein Bruttogehalt von ${amount} Euro pro Monat ${
+                    amount >= 4500
+                      ? 'liegt deutlich über dem deutschen Durchschnittsgehalt und ermöglicht einen komfortablen Lebensstandard. Mit diesem Gehalt gehören Sie zu den besser verdienenden Arbeitnehmern in Deutschland.'
+                      : amount >= 3000
+                      ? 'bewegt sich im Bereich des deutschen Durchschnittsgehalts. Dieses Gehalt ermöglicht einen soliden Lebensstandard, wobei die Kaufkraft je nach Region unterschiedlich ausfällt.'
+                      : amount >= 2000
+                      ? 'liegt unter dem deutschen Durchschnittsgehalt, kann aber je nach Region und Lebensumständen ausreichend sein. Besonders bei Berufseinsteigern oder Teilzeitbeschäftigung ist dieses Gehalt üblich.'
+                      : 'ist typisch für Teilzeitbeschäftigung, Minijobs oder Berufseinsteiger. Eine genaue Haushaltsplanung ist bei diesem Gehalt besonders wichtig.'
+                  } Nach Abzug von Steuern und Sozialversicherungsbeiträgen bleiben Ihnen etwa ${formatCurrency(preCalculatedResult.netto)} netto. Die Kaufkraft variiert stark je nach Region - in München oder Hamburg benötigen Sie etwa ${
+                    amount >= 3000 ? '30-40%' : '40-50%'
+                  } mehr als in kleineren Städten oder ländlichen Regionen.`
+              }
             >
               <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
                 <p className="text-sm text-amber-900 dark:text-amber-100">

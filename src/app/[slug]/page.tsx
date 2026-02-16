@@ -37,9 +37,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const amount = parseAmountFromSlug(params.slug);
   if (!amount) return {};
 
+  const isAnnual = isAnnualAmount(amount);
+  const periodLabel = isAnnual ? 'Jahresgehalt' : 'Bruttogehalt';
+
   return {
     title: `${amount} € Brutto in Netto - Gehaltsrechner 2026`,
-    description: `${amount} Euro Brutto sind wieviel Netto? Berechnen Sie kostenlos, was von ${amount} € Bruttogehalt übrig bleibt. ✓ Alle Steuerklassen ✓ Aktuell 2026`,
+    description: `${amount} Euro Brutto sind wieviel Netto? Berechnen Sie kostenlos, was von ${amount} € ${periodLabel} übrig bleibt. ✓ Alle Steuerklassen ✓ Aktuell 2026`,
     alternates: {
       canonical: `https://gehaltly.de/${amount}-brutto-in-netto/`,
     },
@@ -52,12 +55,21 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 }
 
 /**
+ * Amounts >= 15000 are treated as annual salary (Jahresgehalt),
+ * since users searching "50000 brutto in netto" mean annual income.
+ */
+function isAnnualAmount(amount: number): boolean {
+  return amount >= 15000;
+}
+
+/**
  * Pre-calculate result for default settings (Steuerklasse 1, Bayern)
  */
 function getPreCalculatedResult(amount: number) {
   return calculateGermanTax({
     ...DEFAULT_INPUT,
     bruttoeinkommen: amount,
+    abrechnungszeitraum: isAnnualAmount(amount) ? 'jahr' : 'monat',
   });
 }
 
@@ -71,11 +83,14 @@ export default function AmountPage({ params }: Props) {
   const neighbors = getNeighborAmounts(amount);
   const preCalculatedResult = getPreCalculatedResult(amount);
 
+  const isAnnual = isAnnualAmount(amount);
+
   return (
     <AmountPageClient
       amount={amount}
       neighbors={neighbors}
       preCalculatedResult={preCalculatedResult}
+      isAnnual={isAnnual}
     />
   );
 }
