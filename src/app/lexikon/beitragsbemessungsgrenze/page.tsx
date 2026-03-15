@@ -30,7 +30,7 @@ export default function BeitragsbemessungsgrenzePage() {
     <>
       <h2>Was ist die Beitragsbemessungsgrenze?</h2>
       <p>
-        Die Beitragsbemessungsgrenze (BBG) ist die Einkommensgrenze, bis zu der Beiträge zur Sozialversicherung berechnet werden. Einkommen oberhalb dieser Grenze bleibt bei der Beitragsberechnung unberücksichtigt. Es gibt unterschiedliche Beitragsbemessungsgrenzen für verschiedene Versicherungszweige. Seit 2025 gilt für die Renten- und Arbeitslosenversicherung eine einheitliche BBG für ganz Deutschland.
+        Die Beitragsbemessungsgrenze (BBG) ist die Einkommensgrenze, bis zu der Beiträge zur Sozialversicherung berechnet werden. Einkommen oberhalb dieser Grenze bleibt bei der Beitragsberechnung unberücksichtigt. Es gibt unterschiedliche Beitragsbemessungsgrenzen für verschiedene Versicherungszweige. Die aktuellen Werte werden jährlich durch die <a href="https://www.bundesregierung.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesregierung</a> per Verordnung festgelegt. Seit 2025 gilt für die Renten- und Arbeitslosenversicherung eine einheitliche BBG für ganz Deutschland.
       </p>
 
       <h2>Beitragsbemessungsgrenzen 2026 im Überblick</h2>

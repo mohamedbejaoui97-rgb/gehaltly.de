@@ -53,20 +53,23 @@ export default function BruttoNettoUnterschiedPage() {
     '@type': 'Article',
     headline: 'Brutto Netto Unterschied - Der komplette Guide 2026',
     description: 'Verstehen Sie den Unterschied zwischen Brutto und Netto. Ausführlicher Guide mit Beispielen, Berechnungen und allen wichtigen Informationen.',
+    image: 'https://gehaltly.de/logo.png',
     author: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
     },
     publisher: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
       logo: {
         '@type': 'ImageObject',
         url: 'https://gehaltly.de/logo.png',
       },
     },
     datePublished: '2026-01-01',
-    dateModified: '2026-02-13',
+    dateModified: '2026-03-01',
   };
 
   return (
@@ -87,11 +90,19 @@ export default function BruttoNettoUnterschiedPage() {
         description="Verstehen Sie den fundamentalen Unterschied zwischen Brutto- und Nettogehalt. Erfahren Sie, welche Abzüge anfallen und wie Sie Ihr Nettogehalt berechnen können."
       />
 
+      <div className="container mx-auto px-4 mt-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+          <span>|</span>
+          <span>Aktualisiert: 1. März 2026</span>
+        </div>
+      </div>
+
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Der Unterschied zwischen Brutto und Netto ist einer der wichtigsten Aspekte beim Thema Gehalt. Viele Arbeitnehmer sind überrascht, wenn sie ihre erste Gehaltsabrechnung erhalten und feststellen, dass deutlich weniger auf ihrem Konto landet, als im Arbeitsvertrag steht.
+              Der Unterschied zwischen Brutto und Netto ist einer der wichtigsten Aspekte beim Thema Gehalt. Die Berechnung der Einkommensteuer richtet sich nach dem progressiven Steuertarif gemäß <a href="https://www.gesetze-im-internet.de/estg/__32a.html" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§32a EStG</a>. Aktuelle Informationen zu Steuertarifen und Freibeträgen veröffentlicht das <a href="https://www.bundesfinanzministerium.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesfinanzministerium</a>. Viele Arbeitnehmer sind überrascht, wenn sie ihre erste Gehaltsabrechnung erhalten und feststellen, dass deutlich weniger auf ihrem Konto landet, als im Arbeitsvertrag steht.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In diesem Guide erklären wir Ihnen ausführlich, was Brutto und Netto bedeutet, welche Abzüge anfallen und wie Sie Ihr Nettogehalt selbst berechnen können.

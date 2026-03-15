@@ -50,6 +50,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: `${amount} € Brutto in Netto - Gehaltsrechner 2026`,
       description: `Berechnen Sie kostenlos, was von ${amount} Euro Bruttogehalt nach Abzügen übrig bleibt.`,
       url: `https://gehaltly.de/${amount}-brutto-in-netto/`,
+      images: [{
+        url: 'https://gehaltly.de/logo.png',
+        width: 800,
+        height: 230,
+        alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+      }],
     },
   };
 }

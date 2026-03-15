@@ -73,7 +73,7 @@ export default function RatgeberHubPage() {
                   href={link.href}
                   className="block border rounded-lg p-5 hover:border-[#DD0000] hover:shadow-md transition-all"
                 >
-                  <h3 className="font-semibold text-lg mb-2">{link.title}</h3>
+                  <h2 className="font-semibold text-lg mb-2">{link.title}</h2>
                   <p className="text-sm text-muted-foreground">
                     {link.description}
                   </p>

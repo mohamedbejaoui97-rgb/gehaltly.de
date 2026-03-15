@@ -52,20 +52,23 @@ export default function SozialabgabenPage() {
     '@type': 'Article',
     headline: 'Sozialabgaben 2026 - Alle Beiträge im Überblick',
     description: 'Alle Sozialversicherungsbeiträge 2026 erklärt: RV, KV, PV, ALV mit aktuellen Beitragssätzen und Berechnungsgrundlagen.',
+    image: 'https://gehaltly.de/logo.png',
     author: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
     },
     publisher: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
       logo: {
         '@type': 'ImageObject',
         url: 'https://gehaltly.de/logo.png',
       },
     },
     datePublished: '2026-01-01',
-    dateModified: '2026-02-13',
+    dateModified: '2026-03-01',
   };
 
   return (
@@ -86,11 +89,19 @@ export default function SozialabgabenPage() {
         description="Verstehen Sie alle Sozialversicherungsbeiträge im Detail: Rentenversicherung, Krankenversicherung, Pflegeversicherung und Arbeitslosenversicherung mit allen aktuellen Beitragssätzen für 2026."
       />
 
+      <div className="container mx-auto px-4 mt-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+          <span>|</span>
+          <span>Aktualisiert: 1. März 2026</span>
+        </div>
+      </div>
+
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Sozialabgaben sind ein wesentlicher Bestandteil Ihrer Gehaltsabrechnung. Sie finanzieren das deutsche Sozialversicherungssystem und sichern Sie gegen wichtige Lebensrisiken ab: Krankheit, Pflegebedürftigkeit, Arbeitslosigkeit und im Alter.
+              Sozialabgaben sind ein wesentlicher Bestandteil Ihrer Gehaltsabrechnung. Sie finanzieren das deutsche Sozialversicherungssystem, das in den Sozialgesetzbüchern geregelt ist -- unter anderem im <a href="https://www.gesetze-im-internet.de/sgb_5/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">SGB V (Krankenversicherung)</a>, <a href="https://www.gesetze-im-internet.de/sgb_6/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">SGB VI (Rentenversicherung)</a>, <a href="https://www.gesetze-im-internet.de/sgb_3/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">SGB III (Arbeitslosenversicherung)</a> und <a href="https://www.gesetze-im-internet.de/sgb_11/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">SGB XI (Pflegeversicherung)</a>. Sie sichern Sie gegen wichtige Lebensrisiken ab: Krankheit, Pflegebedürftigkeit, Arbeitslosigkeit und im Alter.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In diesem Guide erklären wir Ihnen alle vier Säulen der Sozialversicherung, die aktuellen Beitragssätze 2026 und wer welchen Anteil zahlt.
@@ -183,7 +194,7 @@ export default function SozialabgabenPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Beitragssatz 2026</h4>
+              <h3 className="font-semibold mb-2">Beitragssatz 2026</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Gesamtbeitrag:</span>
@@ -200,7 +211,7 @@ export default function SozialabgabenPage() {
               </div>
             </div>
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h4>
+              <h3 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Einheitlich:</span>
@@ -215,7 +226,7 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="border-l-4 border-blue-500 pl-4 py-2">
-            <h4 className="font-semibold mb-2">Leistungen der Rentenversicherung:</h4>
+            <h3 className="font-semibold mb-2">Leistungen der Rentenversicherung:</h3>
             <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
               <li>Altersrente (Regelaltersgrenze 67 Jahre)</li>
               <li>Erwerbsminderungsrente bei dauerhafter Arbeitsunfähigkeit</li>
@@ -240,7 +251,7 @@ export default function SozialabgabenPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Beitragssatz 2026</h4>
+              <h3 className="font-semibold mb-2">Beitragssatz 2026</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Allgemeiner Beitragssatz:</span>
@@ -257,7 +268,7 @@ export default function SozialabgabenPage() {
               </div>
             </div>
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Aufteilung</h4>
+              <h3 className="font-semibold mb-2">Aufteilung</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Arbeitnehmer:</span>
@@ -275,14 +286,14 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtig: Zusatzbeitrag</h4>
+            <h3 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtig: Zusatzbeitrag</h3>
             <p className="text-sm text-amber-900 dark:text-amber-100">
               Der Zusatzbeitrag variiert je nach Krankenkasse (2026: zwischen 0,9% und 3,0%). Der Durchschnitt liegt bei etwa 2,9%. Der Zusatzbeitrag wird seit 2019 hälftig zwischen Arbeitgeber und Arbeitnehmer geteilt. Ein Kassenwechsel kann sich lohnen, wenn Ihre Kasse einen hohen Zusatzbeitrag erhebt.
             </p>
           </div>
 
           <div className="border-l-4 border-green-500 pl-4 py-2">
-            <h4 className="font-semibold mb-2">Versicherungsschutz umfasst:</h4>
+            <h3 className="font-semibold mb-2">Versicherungsschutz umfasst:</h3>
             <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
               <li>Arztbesuche und medizinische Behandlungen</li>
               <li>Medikamente und Heilmittel</li>
@@ -295,7 +306,7 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h4>
+            <h3 className="font-semibold mb-2">Beitragsbemessungsgrenze 2026</h3>
             <p className="text-sm text-muted-foreground mb-2">
               Die Beitragsbemessungsgrenze für die Krankenversicherung liegt 2026 bei <strong>5.812,50 EUR monatlich</strong> (69.750 EUR jährlich).
             </p>
@@ -314,7 +325,7 @@ export default function SozialabgabenPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Beitragssatz 2026</h4>
+              <h3 className="font-semibold mb-2">Beitragssatz 2026</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Gesamtbeitrag:</span>
@@ -335,7 +346,7 @@ export default function SozialabgabenPage() {
               </div>
             </div>
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Zuschlag für Kinderlose</h4>
+              <h3 className="font-semibold mb-2">Zuschlag für Kinderlose</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Zuschlag:</span>
@@ -354,14 +365,14 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">Besonderheit Sachsen</h4>
+            <h3 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">Besonderheit Sachsen</h3>
             <p className="text-sm text-purple-900 dark:text-purple-100">
               In Sachsen tragen Arbeitnehmer einen höheren Anteil: 2,3% (mit Kind) bzw. 2,9% (kinderlos). Dafür ist der Buß- und Bettag in Sachsen ein gesetzlicher Feiertag.
             </p>
           </div>
 
           <div className="border-l-4 border-purple-500 pl-4 py-2">
-            <h4 className="font-semibold mb-2">Leistungen der Pflegeversicherung:</h4>
+            <h3 className="font-semibold mb-2">Leistungen der Pflegeversicherung:</h3>
             <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
               <li>Pflegegeld bei häuslicher Pflege (bis 901 EUR/Monat je nach Pflegegrad)</li>
               <li>Pflegesachleistungen durch ambulante Pflegedienste (bis 2.095 EUR/Monat)</li>
@@ -387,7 +398,7 @@ export default function SozialabgabenPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Beitragssatz 2026</h4>
+              <h3 className="font-semibold mb-2">Beitragssatz 2026</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Gesamtbeitrag:</span>
@@ -404,7 +415,7 @@ export default function SozialabgabenPage() {
               </div>
             </div>
             <div className="bg-muted rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Arbeitslosengeld (ALG I)</h4>
+              <h3 className="font-semibold mb-2">Arbeitslosengeld (ALG I)</h3>
               <div className="space-y-1 text-sm">
                 <div className="flex justify-between">
                   <span>Ohne Kinder:</span>
@@ -423,7 +434,7 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="border-l-4 border-orange-500 pl-4 py-2">
-            <h4 className="font-semibold mb-2">Leistungen der Arbeitslosenversicherung:</h4>
+            <h3 className="font-semibold mb-2">Leistungen der Arbeitslosenversicherung:</h3>
             <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
               <li>Arbeitslosengeld I bei Verlust des Arbeitsplatzes</li>
               <li>Förderung von Weiterbildung und Umschulung</li>
@@ -434,7 +445,7 @@ export default function SozialabgabenPage() {
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Anspruch auf Arbeitslosengeld</h4>
+            <h3 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Anspruch auf Arbeitslosengeld</h3>
             <p className="text-sm text-amber-900 dark:text-amber-100 mb-2">
               Sie haben Anspruch auf ALG I, wenn Sie:
             </p>

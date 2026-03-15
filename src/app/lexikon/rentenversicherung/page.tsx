@@ -30,7 +30,7 @@ export default function RentenversicherungPage() {
     <>
       <h2>Was ist die Rentenversicherung?</h2>
       <p>
-        Die gesetzliche Rentenversicherung ist eine Pflichtversicherung für Arbeitnehmer in Deutschland. Sie wird von der Deutschen Rentenversicherung verwaltet und dient der Alterssicherung. Aus den eingezahlten Beiträgen werden die Renten der heutigen Rentner finanziert (Umlageverfahren).
+        Die gesetzliche Rentenversicherung ist eine Pflichtversicherung für Arbeitnehmer in Deutschland, geregelt im <a href="https://www.gesetze-im-internet.de/sgb_6/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Sechsten Buch Sozialgesetzbuch (SGB VI)</a>. Sie wird von der <a href="https://www.deutsche-rentenversicherung.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Deutschen Rentenversicherung</a> verwaltet und dient der Alterssicherung. Aus den eingezahlten Beiträgen werden die Renten der heutigen Rentner finanziert (Umlageverfahren).
       </p>
 
       <h2>Beitragssatz zur Rentenversicherung 2026</h2>

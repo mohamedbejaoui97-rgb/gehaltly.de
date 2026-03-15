@@ -30,7 +30,7 @@ export default function GrundfreibetragPage() {
     <>
       <h2>Was ist der Grundfreibetrag?</h2>
       <p>
-        Der Grundfreibetrag (auch steuerlicher Grundfreibetrag oder Existenzminimum genannt) ist der Einkommensbetrag, bis zu dem keine Einkommensteuer gezahlt werden muss. Er stellt sicher, dass das für die Existenzsicherung notwendige Einkommen steuerfrei bleibt und schützt das verfassungsrechtlich garantierte Existenzminimum.
+        Der Grundfreibetrag (auch steuerlicher Grundfreibetrag oder Existenzminimum genannt) ist der Einkommensbetrag, bis zu dem keine Einkommensteuer gezahlt werden muss. Er ist in <a href="https://www.gesetze-im-internet.de/estg/__32a.html" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§32a EStG</a> als Nullzone des Einkommensteuertarifs verankert. Er stellt sicher, dass das für die Existenzsicherung notwendige Einkommen steuerfrei bleibt und schützt das verfassungsrechtlich garantierte Existenzminimum.
       </p>
       <p>
         Der Grundfreibetrag wird jährlich angepasst und gilt automatisch für alle Steuerpflichtigen in Deutschland. Sie müssen ihn nicht beantragen – er wird bei der Berechnung der Einkommensteuer automatisch berücksichtigt.

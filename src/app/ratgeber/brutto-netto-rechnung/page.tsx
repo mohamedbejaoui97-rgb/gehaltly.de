@@ -52,6 +52,23 @@ export default function BruttoNettoRechnungPage() {
     '@type': 'HowTo',
     name: 'Brutto Netto Rechnung - So berechnen Sie Ihr Nettogehalt',
     description: 'Schritt-für-Schritt Anleitung zur Berechnung Ihres Nettogehalts aus dem Bruttogehalt.',
+    image: 'https://gehaltly.de/logo.png',
+    author: {
+      '@type': 'Organization',
+      name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
+      logo: {
+        '@type': 'ImageObject',
+        url: 'https://gehaltly.de/logo.png',
+      },
+    },
+    datePublished: '2026-01-01',
+    dateModified: '2026-03-01',
     step: [
       {
         '@type': 'HowToStep',
@@ -94,11 +111,19 @@ export default function BruttoNettoRechnungPage() {
         description="Verstehen Sie Schritt für Schritt, wie Ihr Nettogehalt berechnet wird. Mit detaillierter Formel, Beispielrechnung und allen wichtigen Informationen für 2026."
       />
 
+      <div className="container mx-auto px-4 mt-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+          <span>|</span>
+          <span>Aktualisiert: 1. März 2026</span>
+        </div>
+      </div>
+
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Die Brutto-Netto-Rechnung zeigt, wie viel von Ihrem Bruttogehalt nach Abzug aller Steuern und Sozialabgaben übrig bleibt. Dieser Prozess mag auf den ersten Blick komplex erscheinen, folgt aber klaren Regeln und Formeln.
+              Die Brutto-Netto-Rechnung zeigt, wie viel von Ihrem Bruttogehalt nach Abzug aller Steuern und Sozialabgaben übrig bleibt. Die Berechnung der Einkommensteuer basiert auf dem Tarif nach <a href="https://www.gesetze-im-internet.de/estg/__32a.html" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§32a EStG</a>. Dieser Prozess mag auf den ersten Blick komplex erscheinen, folgt aber klaren Regeln und Formeln.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In diesem Guide führen wir Sie Schritt für Schritt durch die Berechnung und zeigen Ihnen an einem konkreten Beispiel, wie Sie Ihr Nettogehalt selbst ermitteln können.
@@ -144,7 +169,7 @@ export default function BruttoNettoRechnungPage() {
       >
         <div className="space-y-4">
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-3">Sozialversicherungsbeiträge 2026 (Arbeitnehmeranteil):</h4>
+            <h3 className="font-semibold mb-3">Sozialversicherungsbeiträge 2026 (Arbeitnehmeranteil):</h3>
             <div className="space-y-3">
               <div className="flex justify-between items-center pb-2 border-b">
                 <div>
@@ -194,7 +219,7 @@ export default function BruttoNettoRechnungPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Beispiel bei 3.000 EUR Brutto (mit Kind):</h4>
+            <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Beispiel bei 3.000 EUR Brutto (mit Kind):</h3>
             <div className="space-y-1 text-sm text-blue-900 dark:text-blue-100">
               <div className="flex justify-between">
                 <span>Rentenversicherung (9,3%):</span>
@@ -228,7 +253,7 @@ export default function BruttoNettoRechnungPage() {
       >
         <div className="space-y-4">
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-3">Berechnungsgrundlage:</h4>
+            <h3 className="font-semibold mb-3">Berechnungsgrundlage:</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>Bruttogehalt:</span>
@@ -250,7 +275,7 @@ export default function BruttoNettoRechnungPage() {
           </div>
 
           <div className="bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-950/20 dark:to-purple-900/20 border border-purple-300 dark:border-purple-700 rounded-lg p-4">
-            <h4 className="font-semibold mb-3">Einkommensteuertabelle 2026 (vereinfacht):</h4>
+            <h3 className="font-semibold mb-3">Einkommensteuertabelle 2026 (vereinfacht):</h3>
             <div className="space-y-2 text-sm">
               <div className="grid grid-cols-2 gap-2 font-semibold pb-2 border-b">
                 <span>Jahreseinkommen</span>
@@ -276,7 +301,7 @@ export default function BruttoNettoRechnungPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Berechnung für unser Beispiel (Steuerklasse 1):</h4>
+            <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Berechnung für unser Beispiel (Steuerklasse 1):</h3>
             <div className="space-y-2 text-sm text-blue-900 dark:text-blue-100">
               <p>
                 Bei einem zu versteuernden Jahreseinkommen von 28.386 EUR liegt das Einkommen über dem Grundfreibetrag (12.348 EUR). Auf die ersten 12.348 EUR fällt keine Steuer an. Auf die verbleibenden 16.038 EUR wird progressiv besteuert.
@@ -310,7 +335,7 @@ export default function BruttoNettoRechnungPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-3">Solidaritätszuschlag</h4>
+              <h3 className="font-semibold mb-3">Solidaritätszuschlag</h3>
               <div className="space-y-2 text-sm">
                 <p className="text-muted-foreground">
                   Der Soli beträgt 5,5% der Lohnsteuer. Seit 2021 entfällt er für die meisten Steuerzahler durch eine Freigrenze.
@@ -332,7 +357,7 @@ export default function BruttoNettoRechnungPage() {
             </div>
 
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-3">Kirchensteuer</h4>
+              <h3 className="font-semibold mb-3">Kirchensteuer</h3>
               <div className="space-y-2 text-sm">
                 <p className="text-muted-foreground">
                   Die Kirchensteuer beträgt 8% (BY, BW) oder 9% (andere Bundesländer) der Lohnsteuer. Nur für Kirchenmitglieder.
@@ -444,7 +469,7 @@ export default function BruttoNettoRechnungPage() {
           </div>
 
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Ergebnis:</h4>
+            <h3 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Ergebnis:</h3>
             <p className="text-sm text-amber-900 dark:text-amber-100">
               Von 3.000 EUR Bruttogehalt bleiben in Steuerklasse 1 mit Kirchensteuer etwa 2.022 EUR netto übrig. Das entspricht 67,41% vom Brutto. Die Gesamtabzüge betragen 977,85 EUR oder 32,60%. Ohne Kirchensteuer würden etwa 2.051 EUR netto übrig bleiben (68,35%).
             </p>

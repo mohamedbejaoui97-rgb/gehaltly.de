@@ -52,20 +52,23 @@ export default function ElterngeldBruttoNettoPage() {
     '@type': 'Article',
     headline: 'Elterngeld: Brutto oder Netto? - Berechnung 2026',
     description: 'Ausführlicher Guide zur Elterngeld-Berechnung: Wie Brutto und Netto eine Rolle spielen und wie Sie Ihr Elterngeld optimieren können.',
+    image: 'https://gehaltly.de/logo.png',
     author: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
     },
     publisher: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
       logo: {
         '@type': 'ImageObject',
         url: 'https://gehaltly.de/logo.png',
       },
     },
     datePublished: '2026-01-01',
-    dateModified: '2026-02-13',
+    dateModified: '2026-03-01',
   };
 
   return (
@@ -86,11 +89,19 @@ export default function ElterngeldBruttoNettoPage() {
         description="Verstehen Sie, wie Ihr Elterngeld berechnet wird. Erfahren Sie, welche Rolle Brutto- und Nettogehalt spielen und wie Sie Ihr Elterngeld optimal gestalten können."
       />
 
+      <div className="container mx-auto px-4 mt-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+          <span>|</span>
+          <span>Aktualisiert: 1. März 2026</span>
+        </div>
+      </div>
+
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Eine der häufigsten Fragen werdender Eltern ist: Wird Elterngeld vom Brutto oder vom Netto berechnet? Die Antwort ist nicht ganz einfach, denn das Elterngeld orientiert sich an einem speziell berechneten &quot;Elterngeld-Netto&quot;, das sich vom tatsächlichen Nettoeinkommen auf Ihrer Gehaltsabrechnung unterscheidet.
+              Eine der häufigsten Fragen werdender Eltern ist: Wird Elterngeld vom Brutto oder vom Netto berechnet? Die Antwort ist nicht ganz einfach, denn das Elterngeld orientiert sich an einem speziell berechneten &quot;Elterngeld-Netto&quot;, das sich vom tatsächlichen Nettoeinkommen auf Ihrer Gehaltsabrechnung unterscheidet. Detaillierte Informationen zum Elterngeld bietet das <a href="https://www.bmfsfj.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesministerium für Familie, Senioren, Frauen und Jugend (BMFSFJ)</a>.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               In diesem Guide erklären wir Ihnen ausführlich, wie das Elterngeld 2026 berechnet wird, welche Faktoren eine Rolle spielen und wie Sie Ihr Elterngeld optimieren können.
@@ -144,7 +155,7 @@ export default function ElterngeldBruttoNettoPage() {
       >
         <div className="space-y-6">
           <div className="bg-muted rounded-lg p-6">
-            <h4 className="font-semibold mb-4">Schritt 1: Elterngeld-Netto ermitteln</h4>
+            <h3 className="font-semibold mb-4">Schritt 1: Elterngeld-Netto ermitteln</h3>
             <div className="space-y-3">
               <div className="flex justify-between items-center pb-2 border-b">
                 <span>Durchschnittliches Bruttogehalt</span>
@@ -174,7 +185,7 @@ export default function ElterngeldBruttoNettoPage() {
           </div>
 
           <div className="bg-muted rounded-lg p-6">
-            <h4 className="font-semibold mb-4">Schritt 2: Elterngeld berechnen</h4>
+            <h3 className="font-semibold mb-4">Schritt 2: Elterngeld berechnen</h3>
             <div className="space-y-3">
               <div className="flex justify-between items-center pb-2 border-b">
                 <span>Elterngeld-Netto</span>
@@ -193,19 +204,19 @@ export default function ElterngeldBruttoNettoPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-              <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Basiselterngeld (12 Monate)</h4>
+              <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Basiselterngeld (12 Monate)</h3>
               <div className="text-2xl font-bold text-blue-600 dark:text-blue-400 mb-1">15.807,84 EUR</div>
               <p className="text-xs text-blue-800 dark:text-blue-200">1.317,32 EUR × 12 Monate</p>
             </div>
             <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4">
-              <h4 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">ElterngeldPlus (24 Monate)</h4>
+              <h3 className="font-semibold mb-2 text-purple-900 dark:text-purple-100">ElterngeldPlus (24 Monate)</h3>
               <div className="text-2xl font-bold text-purple-600 dark:text-purple-400 mb-1">15.807,84 EUR</div>
               <p className="text-xs text-purple-800 dark:text-purple-200">658,66 EUR × 24 Monate</p>
             </div>
           </div>
 
           <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-green-900 dark:text-green-100">Vergleich: Elterngeld nach Steuerklasse</h4>
+            <h3 className="font-semibold mb-2 text-green-900 dark:text-green-100">Vergleich: Elterngeld nach Steuerklasse</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>Steuerklasse 1 (ledig):</span>
@@ -234,7 +245,7 @@ export default function ElterngeldBruttoNettoPage() {
       >
         <div className="space-y-4">
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-3">Ersatzraten-Staffelung 2026:</h4>
+            <h3 className="font-semibold mb-3">Ersatzraten-Staffelung 2026:</h3>
             <div className="space-y-3">
               <div className="border-l-4 border-blue-500 pl-4 py-2">
                 <div className="font-medium">67% Ersatzrate</div>
@@ -259,7 +270,7 @@ export default function ElterngeldBruttoNettoPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Geschwisterbonus (+10%)</h4>
+              <h3 className="font-semibold mb-2">Geschwisterbonus (+10%)</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Sie erhalten 10% mehr Elterngeld (mindestens 75 EUR) wenn:
               </p>
@@ -269,7 +280,7 @@ export default function ElterngeldBruttoNettoPage() {
               </ul>
             </div>
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Mehrlingszuschlag (+300 EUR)</h4>
+              <h3 className="font-semibold mb-2">Mehrlingszuschlag (+300 EUR)</h3>
               <p className="text-sm text-muted-foreground mb-2">
                 Bei Mehrlingsgeburten erhalten Sie:
               </p>
@@ -281,7 +292,7 @@ export default function ElterngeldBruttoNettoPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Beispiel mit Geschwisterbonus:</h4>
+            <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Beispiel mit Geschwisterbonus:</h3>
             <div className="space-y-2 text-sm text-blue-900 dark:text-blue-100">
               <div className="flex justify-between">
                 <span>Basis-Elterngeld:</span>
@@ -307,7 +318,7 @@ export default function ElterngeldBruttoNettoPage() {
       >
         <div className="space-y-4">
           <div className="bg-amber-50 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtige Fristen:</h4>
+            <h3 className="font-semibold mb-2 text-amber-900 dark:text-amber-100">Wichtige Fristen:</h3>
             <ul className="text-sm space-y-2 list-disc list-inside text-amber-900 dark:text-amber-100">
               <li>Der Steuerklassenwechsel muss spätestens <strong>7 Monate vor Beginn des Mutterschutzes</strong> erfolgen</li>
               <li>Bei errechneter Geburt am 15. August beginnt der Mutterschutz am 4. Juli</li>
@@ -318,7 +329,7 @@ export default function ElterngeldBruttoNettoPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-green-50 dark:bg-green-950/20 border-2 border-green-300 dark:border-green-700 rounded-lg p-4">
-              <h4 className="font-semibold mb-3 text-green-900 dark:text-green-100">Empfehlung für werdende Mütter:</h4>
+              <h3 className="font-semibold mb-3 text-green-900 dark:text-green-100">Empfehlung für werdende Mütter:</h3>
               <div className="space-y-2 text-sm text-green-900 dark:text-green-100">
                 <p className="font-medium">✓ Wechseln Sie in Steuerklasse 3</p>
                 <p>Wenn Sie verheiratet sind und in Elternzeit gehen, profitieren Sie von den niedrigeren Steuerabzügen in Klasse 3.</p>
@@ -329,7 +340,7 @@ export default function ElterngeldBruttoNettoPage() {
             </div>
 
             <div className="bg-blue-50 dark:bg-blue-950/20 border-2 border-blue-300 dark:border-blue-700 rounded-lg p-4">
-              <h4 className="font-semibold mb-3 text-blue-900 dark:text-blue-100">Nach der Elternzeit:</h4>
+              <h3 className="font-semibold mb-3 text-blue-900 dark:text-blue-100">Nach der Elternzeit:</h3>
               <div className="space-y-2 text-sm text-blue-900 dark:text-blue-100">
                 <p className="font-medium">✓ Zurückwechseln nicht vergessen</p>
                 <p>Nach Ende der Elternzeit sollten Sie wieder in eine für Ihre Situation passende Steuerklasse wechseln (meist 4/4).</p>
@@ -341,7 +352,7 @@ export default function ElterngeldBruttoNettoPage() {
           </div>
 
           <div className="bg-purple-50 dark:bg-purple-950/20 border border-purple-200 dark:border-purple-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-3 text-purple-900 dark:text-purple-100">Rechenbeispiel: Auswirkung Steuerklassenwechsel</h4>
+            <h3 className="font-semibold mb-3 text-purple-900 dark:text-purple-100">Rechenbeispiel: Auswirkung Steuerklassenwechsel</h3>
             <div className="space-y-3 text-sm">
               <div className="bg-white dark:bg-gray-900 rounded p-3">
                 <div className="font-medium mb-2">Situation: 3.000 EUR Brutto, 12 Monate vor Geburt</div>
@@ -377,12 +388,12 @@ export default function ElterngeldBruttoNettoPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border-2 border-blue-300 dark:border-blue-700 rounded-lg p-4">
-              <h4 className="font-semibold mb-3 flex items-center gap-2">
+              <h3 className="font-semibold mb-3 flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center text-blue-600 dark:text-blue-300 text-sm font-bold">
                   B
                 </div>
                 Basiselterngeld
-              </h4>
+              </h3>
               <div className="space-y-3 text-sm">
                 <div>
                   <strong>Dauer:</strong> 12 Monate (14 mit Partnermonate)
@@ -403,12 +414,12 @@ export default function ElterngeldBruttoNettoPage() {
             </div>
 
             <div className="border-2 border-purple-300 dark:border-purple-700 rounded-lg p-4">
-              <h4 className="font-semibold mb-3 flex items-center gap-2">
+              <h3 className="font-semibold mb-3 flex items-center gap-2">
                 <div className="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center text-purple-600 dark:text-purple-300 text-sm font-bold">
                   P
                 </div>
                 ElterngeldPlus
-              </h4>
+              </h3>
               <div className="space-y-3 text-sm">
                 <div>
                   <strong>Dauer:</strong> 24 Monate (28 mit Partnerschaftsbonus)
@@ -430,7 +441,7 @@ export default function ElterngeldBruttoNettoPage() {
           </div>
 
           <div className="bg-green-50 dark:bg-green-950/20 border border-green-200 dark:border-green-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-green-900 dark:text-green-100">Partnerschaftsbonus (+4 Monate)</h4>
+            <h3 className="font-semibold mb-2 text-green-900 dark:text-green-100">Partnerschaftsbonus (+4 Monate)</h3>
             <p className="text-sm text-green-900 dark:text-green-100 mb-2">
               Arbeiten beide Eltern gleichzeitig 25-32 Stunden/Woche für mindestens 4 Monate, gibt es 4 zusätzliche ElterngeldPlus-Monate für beide Elternteile.
             </p>
@@ -440,7 +451,7 @@ export default function ElterngeldBruttoNettoPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Kombination möglich:</h4>
+            <h3 className="font-semibold mb-2 text-blue-900 dark:text-blue-100">Kombination möglich:</h3>
             <p className="text-sm text-blue-900 dark:text-blue-100">
               Sie können Basiselterngeld und ElterngeldPlus kombinieren. Beispiel: 6 Monate Basiselterngeld + 12 Monate ElterngeldPlus. Ein Basismonat = zwei ElterngeldPlus-Monate.
             </p>

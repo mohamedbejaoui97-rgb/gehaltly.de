@@ -30,7 +30,7 @@ export default function Steuerklasse3Page() {
     <>
       <h2>Wer gehört in Steuerklasse 3?</h2>
       <p>
-        Die Steuerklasse 3 ist ausschließlich für verheiratete oder verpartnerte Arbeitnehmer vorgesehen und wird immer in Kombination mit Steuerklasse 5 gewählt. Sie gilt für:
+        Die Steuerklasse 3 ist ausschließlich für verheiratete oder verpartnerte Arbeitnehmer vorgesehen, geregelt in <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b EStG</a>, und wird immer in Kombination mit Steuerklasse 5 gewählt. Sie gilt für:
       </p>
       <ul>
         <li><strong>Verheiratete Paare:</strong> Ein Ehepartner wählt Steuerklasse 3, der andere Steuerklasse 5</li>

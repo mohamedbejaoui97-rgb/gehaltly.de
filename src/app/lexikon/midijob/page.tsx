@@ -30,7 +30,7 @@ export default function MidijobPage() {
     <>
       <h2>Was ist ein Midijob?</h2>
       <p>
-        Ein Midijob ist eine sozialversicherungspflichtige Beschäftigung im sogenannten Übergangsbereich (früher Gleitzone genannt), bei der das monatliche Arbeitsentgelt zwischen 556,01 € und 2.000 € liegt. Im Midijob zahlen Arbeitnehmer reduzierte Sozialversicherungsbeiträge, während der Arbeitgeber die vollen Beiträge trägt.
+        Ein Midijob ist eine sozialversicherungspflichtige Beschäftigung im sogenannten Übergangsbereich (früher Gleitzone genannt), bei der das monatliche Arbeitsentgelt zwischen 556,01 € und 2.000 € liegt. Detaillierte Informationen zum Übergangsbereich finden Sie bei der <a href="https://www.minijob-zentrale.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Minijob-Zentrale</a> sowie bei der <a href="https://www.arbeitsagentur.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesagentur für Arbeit</a>. Im Midijob zahlen Arbeitnehmer reduzierte Sozialversicherungsbeiträge, während der Arbeitgeber die vollen Beiträge trägt.
       </p>
 
       <h2>Verdienstbereich Midijob 2026</h2>

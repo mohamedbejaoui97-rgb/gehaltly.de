@@ -84,7 +84,7 @@ function FieldTooltip({ field }: { field: string }) {
   return (
     <Tooltip>
       <TooltipTrigger asChild>
-        <button type="button" className="inline-flex ml-1.5 text-gray-400 hover:text-gray-600 transition-colors">
+        <button type="button" className="inline-flex ml-1.5 text-gray-400 hover:text-gray-600 transition-colors" aria-label={`Hilfe zu ${field}`}>
           <Info className="h-3.5 w-3.5" />
         </button>
       </TooltipTrigger>

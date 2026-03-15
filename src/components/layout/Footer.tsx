@@ -113,6 +113,11 @@ export default function Footer() {
                   Kontakt
                 </Link>
               </li>
+              <li>
+                <Link href="/ueber-uns" className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors">
+                  Über uns
+                </Link>
+              </li>
             </ul>
           </div>
         </div>

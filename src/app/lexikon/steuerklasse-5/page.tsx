@@ -183,6 +183,7 @@ export default function Steuerklasse5Page() {
   const relatedLinks = [
     { href: "/lexikon/steuerklasse-3", title: "Steuerklasse 3" },
     { href: "/lexikon/steuerklasse-4", title: "Steuerklasse 4" },
+    { href: "/lexikon/steuerklasse-6", title: "Steuerklasse 6" },
     { href: "/lexikon/grundfreibetrag", title: "Grundfreibetrag" },
     { href: "/gehaltsrechner", title: "Brutto-Netto-Rechner" },
   ];

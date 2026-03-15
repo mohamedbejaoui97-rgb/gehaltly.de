@@ -30,7 +30,7 @@ export default function LohnsteuerPage() {
     <>
       <h2>Was ist die Lohnsteuer?</h2>
       <p>
-        Die Lohnsteuer ist eine besondere Erhebungsform der Einkommensteuer für Arbeitnehmer. Sie wird direkt vom Bruttogehalt einbehalten und vom Arbeitgeber an das Finanzamt abgeführt. Die Lohnsteuer ist eine Vorauszahlung auf die Jahreseinkommensteuer - erst mit der Steuererklärung erfolgt die endgültige Steuerberechnung.
+        Die Lohnsteuer ist eine besondere Erhebungsform der Einkommensteuer für Arbeitnehmer, geregelt in den §§38 ff. des <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Einkommensteuergesetzes (EStG)</a>. Sie wird direkt vom Bruttogehalt einbehalten und vom Arbeitgeber an das Finanzamt abgeführt. Die Lohnsteuer ist eine Vorauszahlung auf die Jahreseinkommensteuer - erst mit der Steuererklärung erfolgt die endgültige Steuerberechnung.
       </p>
 
       <h2>Unterschied zwischen Lohnsteuer und Einkommensteuer</h2>
@@ -198,6 +198,7 @@ export default function LohnsteuerPage() {
     { href: "/lexikon/kirchensteuer", title: "Kirchensteuer" },
     { href: "/lexikon/solidaritaetszuschlag", title: "Solidaritätszuschlag" },
     { href: "/lexikon/grundfreibetrag", title: "Grundfreibetrag" },
+    { href: "/lexikon/geldwerter-vorteil", title: "Geldwerter Vorteil" },
     { href: "/gehaltsrechner", title: "Brutto-Netto-Rechner" },
   ];
 

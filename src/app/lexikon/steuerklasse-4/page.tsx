@@ -30,7 +30,7 @@ export default function Steuerklasse4Page() {
     <>
       <h2>Wer gehört in Steuerklasse 4?</h2>
       <p>
-        Die Steuerklasse 4 ist die Standard-Steuerklasse für verheiratete Arbeitnehmer und wird automatisch nach der Hochzeit eingetragen. Sie gilt für:
+        Die Steuerklasse 4 ist die Standard-Steuerklasse für verheiratete Arbeitnehmer gemäß <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b EStG</a> und wird automatisch nach der Hochzeit eingetragen. Sie gilt für:
       </p>
       <ul>
         <li><strong>Frisch verheiratete Paare:</strong> Nach der Hochzeit automatisch für beide Partner</li>

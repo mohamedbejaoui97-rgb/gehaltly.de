@@ -30,7 +30,7 @@ export default function Steuerklasse6Page() {
     <>
       <h2>Wer gehört in Steuerklasse 6?</h2>
       <p>
-        Die Steuerklasse 6 gilt ausschließlich für zusätzliche Beschäftigungsverhältnisse und wird automatisch zugeordnet:
+        Die Steuerklasse 6 gilt gemäß <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b Abs. 2 Nr. 6 EStG</a> ausschließlich für zusätzliche Beschäftigungsverhältnisse und wird automatisch zugeordnet:
       </p>
       <ul>
         <li><strong>Zweitjob:</strong> Wenn Sie neben Ihrer Hauptbeschäftigung einen weiteren Job ausüben</li>

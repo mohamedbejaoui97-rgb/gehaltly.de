@@ -30,7 +30,7 @@ export default function KrankenversicherungPage() {
     <>
       <h2>Was ist die Krankenversicherung?</h2>
       <p>
-        Die Krankenversicherung ist eine Pflichtversicherung in Deutschland, die im Krankheitsfall die Kosten für medizinische Behandlungen übernimmt. Arbeitnehmer können zwischen der gesetzlichen Krankenversicherung (GKV) und der privaten Krankenversicherung (PKV) wählen, sofern sie die Versicherungspflichtgrenze überschreiten.
+        Die Krankenversicherung ist eine Pflichtversicherung in Deutschland, die im Krankheitsfall die Kosten für medizinische Behandlungen übernimmt. Die gesetzliche Grundlage bildet das <a href="https://www.gesetze-im-internet.de/sgb_5/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Fünfte Buch Sozialgesetzbuch (SGB V)</a>. Arbeitnehmer können zwischen der gesetzlichen Krankenversicherung (GKV) und der privaten Krankenversicherung (PKV) wählen, sofern sie die Versicherungspflichtgrenze überschreiten.
       </p>
 
       <h2>Beitragssatz zur Krankenversicherung 2026</h2>

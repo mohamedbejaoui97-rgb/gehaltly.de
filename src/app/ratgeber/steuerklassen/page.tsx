@@ -56,20 +56,23 @@ export default function SteuerklassenPage() {
     '@type': 'Article',
     headline: 'Steuerklassen in Deutschland - Übersicht 2026',
     description: 'Alle 6 Steuerklassen erklärt: Unterschiede, Wechselmöglichkeiten und welche Steuerklasse für Sie optimal ist.',
+    image: 'https://gehaltly.de/logo.png',
     author: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
     },
     publisher: {
       '@type': 'Organization',
       name: 'gehaltly.de',
+      url: 'https://gehaltly.de',
       logo: {
         '@type': 'ImageObject',
         url: 'https://gehaltly.de/logo.png',
       },
     },
     datePublished: '2026-01-01',
-    dateModified: '2026-02-13',
+    dateModified: '2026-03-01',
   };
 
   return (
@@ -90,11 +93,19 @@ export default function SteuerklassenPage() {
         description="Alle 6 Steuerklassen im Detail erklärt. Erfahren Sie, welche Steuerklasse für Sie gilt, wie sich die Klassen unterscheiden und wann ein Wechsel sinnvoll ist."
       />
 
+      <div className="container mx-auto px-4 mt-4">
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground">
+          <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+          <span>|</span>
+          <span>Aktualisiert: 1. März 2026</span>
+        </div>
+      </div>
+
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-muted-foreground leading-relaxed mb-4">
-              Die Steuerklasse bestimmt, wie viel Lohnsteuer monatlich von Ihrem Gehalt abgezogen wird. In Deutschland gibt es sechs verschiedene Steuerklassen, die sich nach Familienstand und Anzahl der Arbeitsverhältnisse richten.
+              Die Steuerklasse bestimmt, wie viel Lohnsteuer monatlich von Ihrem Gehalt abgezogen wird. Die Zuordnung zu den sechs Steuerklassen ist in <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b EStG</a> geregelt. In Deutschland gibt es sechs verschiedene Steuerklassen, die sich nach Familienstand und Anzahl der Arbeitsverhältnisse richten.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
               Die Wahl der richtigen Steuerklasse kann erheblichen Einfluss auf Ihr monatliches Nettoeinkommen haben. Wir erklären Ihnen alle Steuerklassen im Detail und zeigen, welche für Ihre Situation optimal ist.
@@ -119,7 +130,7 @@ export default function SteuerklassenPage() {
             </ul>
           </div>
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-2">Freibeträge in Steuerklasse 1 (2026):</h4>
+            <h3 className="font-semibold mb-2">Freibeträge in Steuerklasse 1 (2026):</h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 text-sm">
               <div>
                 <strong>Grundfreibetrag:</strong> 12.348 EUR/Jahr
@@ -157,7 +168,7 @@ export default function SteuerklassenPage() {
             </ul>
           </div>
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-2">Zusätzliche Freibeträge:</h4>
+            <h3 className="font-semibold mb-2">Zusätzliche Freibeträge:</h3>
             <div className="space-y-2 text-sm">
               <div className="flex justify-between">
                 <span>Entlastungsbetrag für 1. Kind:</span>
@@ -229,7 +240,7 @@ export default function SteuerklassenPage() {
           </div>
 
           <div className="bg-blue-50 dark:bg-blue-950/20 border border-blue-200 dark:border-blue-800 rounded-lg p-4">
-            <h4 className="font-semibold mb-3">Welche Kombination ist besser: 3/5 oder 4/4?</h4>
+            <h3 className="font-semibold mb-3">Welche Kombination ist besser: 3/5 oder 4/4?</h3>
             <div className="space-y-3 text-sm">
               <div>
                 <strong className="text-blue-900 dark:text-blue-100">Wählen Sie 4/4 wenn:</strong>
@@ -273,7 +284,7 @@ export default function SteuerklassenPage() {
             </ul>
           </div>
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-2">Besonderheiten Steuerklasse 6:</h4>
+            <h3 className="font-semibold mb-2">Besonderheiten Steuerklasse 6:</h3>
             <ul className="text-sm space-y-2 list-disc list-inside">
               <li>Keine Freibeträge (wurden bereits im Hauptjob berücksichtigt)</li>
               <li>Höchste Lohnsteuerabzüge aller Steuerklassen</li>
@@ -297,7 +308,7 @@ export default function SteuerklassenPage() {
         <div className="space-y-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Automatischer Wechsel bei:</h4>
+              <h3 className="font-semibold mb-2">Automatischer Wechsel bei:</h3>
               <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
                 <li>Heirat (automatisch zu 4/4)</li>
                 <li>Scheidung oder Trennung</li>
@@ -306,7 +317,7 @@ export default function SteuerklassenPage() {
               </ul>
             </div>
             <div className="border rounded-lg p-4">
-              <h4 className="font-semibold mb-2">Wechsel auf Antrag:</h4>
+              <h3 className="font-semibold mb-2">Wechsel auf Antrag:</h3>
               <ul className="text-sm space-y-1 list-disc list-inside text-muted-foreground">
                 <li>Verheiratete: einmal jährlich zwischen 3/5 und 4/4</li>
                 <li>Nachweis Alleinerziehend für Klasse 2</li>
@@ -316,7 +327,7 @@ export default function SteuerklassenPage() {
           </div>
 
           <div className="bg-muted rounded-lg p-4">
-            <h4 className="font-semibold mb-3">So beantragen Sie einen Steuerklassenwechsel:</h4>
+            <h3 className="font-semibold mb-3">So beantragen Sie einen Steuerklassenwechsel:</h3>
             <ol className="text-sm space-y-2 list-decimal list-inside">
               <li>Formular &quot;Antrag auf Steuerklassenwechsel bei Ehegatten/Lebenspartnern&quot; beim Finanzamt holen oder online ausfüllen</li>
               <li>Beide Partner müssen den Antrag unterschreiben</li>

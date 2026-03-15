@@ -6,7 +6,9 @@ export default function Logo() {
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         src="/logo.png"
-        alt="gehaltly.de"
+        alt="gehaltly.de - Brutto Netto Rechner"
+        width={800}
+        height={446}
         className="h-[60px] md:h-[80px] w-auto"
       />
     </Link>

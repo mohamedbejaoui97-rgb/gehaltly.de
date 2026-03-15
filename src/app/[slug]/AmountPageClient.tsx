@@ -36,6 +36,51 @@ function formatCurrency(value: number): string {
   }).format(value);
 }
 
+function getSalaryContext(amount: number, isAnnual: boolean): { heading: string; content: string } {
+  const monthlyAmount = isAnnual ? Math.round(amount / 12) : amount;
+
+  if (monthlyAmount <= 556) {
+    return {
+      heading: 'Minijob-Bereich',
+      content: `Ein Einkommen von ${monthlyAmount} Euro liegt im Minijob-Bereich (bis 556 Euro/Monat). Minijobs sind in der Regel steuer- und sozialversicherungsfrei für den Arbeitnehmer. Der Arbeitgeber zahlt pauschale Abgaben. Typische Minijobs: Aushilfen im Einzelhandel, Gastronomie, Nachhilfe oder Zeitungszustellung.`
+    };
+  }
+  if (monthlyAmount <= 2000) {
+    return {
+      heading: 'Übergangsbereich (Midijob)',
+      content: `Mit ${monthlyAmount} Euro brutto befinden Sie sich im sogenannten Übergangsbereich (556,01 - 2.000 Euro). Hier profitieren Sie von reduzierten Sozialversicherungsbeiträgen. Dieses Gehalt ist typisch für Teilzeitbeschäftigungen, Berufseinsteiger oder Tätigkeiten im Dienstleistungssektor. Der Arbeitnehmeranteil an den Sozialversicherungsbeiträgen steigt gleitend an.`
+    };
+  }
+  if (monthlyAmount <= 3000) {
+    return {
+      heading: 'Unterdurchschnittliches Gehalt',
+      content: `${monthlyAmount} Euro brutto liegt unter dem deutschen Durchschnittsgehalt von ca. 3.700 Euro (Vollzeit, 2026). Dieses Gehaltsniveau findet sich häufig bei Berufseinsteigern, in sozialen Berufen (Pflege, Erziehung), im Handwerk oder in Ostdeutschland. Steuerlich profitieren Sie vom Grundfreibetrag von 12.348 Euro (2026), der Ihr zu versteuerndes Einkommen deutlich senkt.`
+    };
+  }
+  if (monthlyAmount <= 4500) {
+    return {
+      heading: 'Durchschnittliches Gehalt',
+      content: `Mit ${monthlyAmount} Euro brutto bewegen Sie sich im Bereich des deutschen Durchschnittsgehalts. Dieses Gehalt ist typisch für Fachkräfte, erfahrene Handwerker, kaufmännische Angestellte und mittlere Positionen im öffentlichen Dienst (TVöD E9-E11). Regional gibt es erhebliche Unterschiede: In München oder Stuttgart benötigen Sie ca. 30% mehr als in Leipzig oder Dresden für den gleichen Lebensstandard.`
+    };
+  }
+  if (monthlyAmount <= 6000) {
+    return {
+      heading: 'Überdurchschnittliches Gehalt',
+      content: `${monthlyAmount} Euro brutto liegt deutlich über dem Durchschnitt. Typische Berufe in dieser Gehaltsklasse: IT-Fachkräfte, Ingenieure, Betriebswirte mit Berufserfahrung, Teamleiter oder Fachärzte in Anstellung. Ab der Beitragsbemessungsgrenze der Krankenversicherung (5.512,50 Euro/Monat) steigen die KV-Beiträge nicht mehr weiter an – ein Vorteil für Gutverdiener.`
+    };
+  }
+  if (monthlyAmount <= 8500) {
+    return {
+      heading: 'Gehobenes Gehalt',
+      content: `Mit ${monthlyAmount} Euro brutto gehören Sie zu den oberen 20% der Einkommensbezieher in Deutschland. Dieses Gehalt erreichen häufig Abteilungsleiter, Senior-Entwickler, Unternehmensberater oder Ärzte. Der Spitzensteuersatz von 42% greift ab einem zu versteuernden Einkommen von ca. 69.878 Euro/Jahr. Prüfen Sie, ob eine Gehaltsumwandlung (z.B. betriebliche Altersvorsorge) steuerlich sinnvoll ist.`
+    };
+  }
+  return {
+    heading: 'Spitzengehalt',
+    content: `Ein Einkommen von ${monthlyAmount} Euro brutto ${isAnnual ? `(${amount.toLocaleString('de-DE')} Euro/Jahr)` : ''} gehört zu den höchsten Gehaltsklassen in Deutschland. In dieser Einkommensklasse greifen der Spitzensteuersatz (42%) und bei einem zu versteuernden Einkommen ab 277.825 Euro die Reichensteuer (45%). Die Beitragsbemessungsgrenze der Rentenversicherung liegt bei 8.450 Euro/Monat – Einkommen darüber ist beitragsfrei. Steueroptimierung durch Freibeträge, betriebliche Altersvorsorge und Werbungskosten ist in dieser Gehaltsklasse besonders lohnend.`
+  };
+}
+
 export default function AmountPageClient({
   amount,
   neighbors,
@@ -268,6 +313,13 @@ export default function AmountPageClient({
       <section className="py-8 md:py-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto space-y-8">
+            {/* Salary Bracket Context */}
+            <ContentSection
+              heading={getSalaryContext(amount, isAnnual).heading}
+              icon={<Info className="w-5 h-5" />}
+              body={getSalaryContext(amount, isAnnual).content}
+            />
+
             <ContentSection
               heading={`Was bedeutet ein Gehalt von ${amount} Euro?`}
               icon={<TrendingUp className="w-5 h-5" />}
@@ -299,6 +351,12 @@ export default function AmountPageClient({
                   Nutzen Sie Gehaltsverhandlungen, um Ihr Einkommen zu optimieren.
                 </p>
               </div>
+              <p className="text-sm mt-4">
+                <strong>Quelle:</strong>{' '}
+                <a href="https://www.destatis.de/DE/Themen/Arbeit/Verdienste/Verdienste-Verdienstunterschiede/_inhalt.html" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">
+                  Statistisches Bundesamt - Verdienststatistik
+                </a>
+              </p>
             </ContentSection>
           </div>
         </div>

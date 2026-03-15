@@ -102,6 +102,17 @@ export const RATGEBER_LINKS: InternalLink[] = [
 ];
 
 /**
+ * Informational / company pages
+ */
+export const INFO_LINKS: InternalLink[] = [
+  {
+    title: 'Über uns',
+    href: '/ueber-uns',
+    description: 'Erfahren Sie mehr über gehaltly.de, unsere Mission und Expertise',
+  },
+];
+
+/**
  * Get related calculator links for internal linking
  * Excludes the current page from results
  */

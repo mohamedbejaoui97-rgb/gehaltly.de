@@ -30,7 +30,7 @@ export default function KirchensteuerPage() {
     <>
       <h2>Was ist die Kirchensteuer?</h2>
       <p>
-        Die Kirchensteuer ist eine Steuer, die Mitglieder einer steuererhebenden Religionsgemeinschaft in Deutschland zahlen. Sie wird vom Staat im Auftrag der Kirchen eingezogen und direkt an diese weitergeleitet.
+        Die Kirchensteuer ist eine Steuer, die Mitglieder einer steuererhebenden Religionsgemeinschaft in Deutschland zahlen. Sie wird vom Staat im Auftrag der Kirchen eingezogen und direkt an diese weitergeleitet. Weitere Informationen zur steuerlichen Behandlung finden Sie beim <a href="https://www.bundesfinanzministerium.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesfinanzministerium</a>.
       </p>
 
       <h2>Wer muss Kirchensteuer zahlen?</h2>

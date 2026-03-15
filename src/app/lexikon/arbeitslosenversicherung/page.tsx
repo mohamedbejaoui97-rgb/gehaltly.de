@@ -30,7 +30,7 @@ export default function ArbeitslosenversicherungPage() {
     <>
       <h2>Was ist die Arbeitslosenversicherung?</h2>
       <p>
-        Die Arbeitslosenversicherung ist eine Pflichtversicherung für die meisten Arbeitnehmer in Deutschland. Sie wird von der Bundesagentur für Arbeit verwaltet und sichert Arbeitnehmer im Fall der Arbeitslosigkeit finanziell ab. Bei Verlust des Arbeitsplatzes haben Versicherte Anspruch auf Arbeitslosengeld I.
+        Die Arbeitslosenversicherung ist eine Pflichtversicherung für die meisten Arbeitnehmer in Deutschland, geregelt im <a href="https://www.gesetze-im-internet.de/sgb_3/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Dritten Buch Sozialgesetzbuch (SGB III)</a>. Sie wird von der <a href="https://www.arbeitsagentur.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesagentur für Arbeit</a> verwaltet und sichert Arbeitnehmer im Fall der Arbeitslosigkeit finanziell ab. Bei Verlust des Arbeitsplatzes haben Versicherte Anspruch auf Arbeitslosengeld I.
       </p>
 
       <h2>Beitragssatz zur Arbeitslosenversicherung 2026</h2>

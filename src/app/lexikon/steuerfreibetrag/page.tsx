@@ -30,7 +30,7 @@ export default function SteuerfreibetragPage() {
     <>
       <h2>Was ist ein Steuerfreibetrag?</h2>
       <p>
-        Ein Steuerfreibetrag ist ein Betrag, bis zu dem Einkommen oder bestimmte Einnahmen steuerfrei bleiben. Freibeträge reduzieren das zu versteuernde Einkommen und damit die Höhe der zu zahlenden Steuern. Sie dienen dazu, das Existenzminimum zu sichern, besondere Lebensumstände zu berücksichtigen oder bestimmte Aufwendungen steuerlich zu entlasten.
+        Ein Steuerfreibetrag ist ein Betrag, bis zu dem Einkommen oder bestimmte Einnahmen steuerfrei bleiben. Die verschiedenen Freibeträge sind im <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Einkommensteuergesetz (EStG)</a> geregelt. Freibeträge reduzieren das zu versteuernde Einkommen und damit die Höhe der zu zahlenden Steuern. Sie dienen dazu, das Existenzminimum zu sichern, besondere Lebensumstände zu berücksichtigen oder bestimmte Aufwendungen steuerlich zu entlasten.
       </p>
       <p>
         Im Gegensatz zu Pauschbeträgen, die automatisch gewährt werden, müssen viele Freibeträge beantragt oder nachgewiesen werden. Einige Freibeträge gelten jedoch automatisch für alle Steuerpflichtigen.
@@ -209,6 +209,7 @@ export default function SteuerfreibetragPage() {
     { href: "/lexikon/grundfreibetrag", title: "Grundfreibetrag" },
     { href: "/lexikon/kinderfreibetrag", title: "Kinderfreibetrag" },
     { href: "/lexikon/lohnsteuer", title: "Lohnsteuer" },
+    { href: "/lexikon/geldwerter-vorteil", title: "Geldwerter Vorteil" },
     { href: "/gehaltsrechner", title: "Brutto-Netto-Rechner" },
   ];
 

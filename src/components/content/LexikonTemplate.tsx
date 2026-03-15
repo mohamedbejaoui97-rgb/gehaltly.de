@@ -13,6 +13,8 @@ interface LexikonTemplateProps {
   content: React.ReactNode;
   faq?: FAQ[];
   relatedLinks?: { href: string; title: string }[];
+  datePublished?: string;
+  dateModified?: string;
 }
 
 export default function LexikonTemplate({
@@ -21,6 +23,8 @@ export default function LexikonTemplate({
   content,
   faq,
   relatedLinks,
+  datePublished = '2026-01-15',
+  dateModified = '2026-03-01',
 }: LexikonTemplateProps) {
   return (
     <>
@@ -32,13 +36,18 @@ export default function LexikonTemplate({
             "@type": "Article",
             headline: title,
             description: description,
+            image: "https://gehaltly.de/logo.png",
+            datePublished: datePublished,
+            dateModified: dateModified,
             author: {
               "@type": "Organization",
               name: "gehaltly.de",
+              url: "https://gehaltly.de",
             },
             publisher: {
               "@type": "Organization",
               name: "gehaltly.de",
+              url: "https://gehaltly.de",
               logo: {
                 "@type": "ImageObject",
                 url: "https://gehaltly.de/logo.png",
@@ -55,7 +64,12 @@ export default function LexikonTemplate({
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto">
             <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">{title}</h1>
-            <p className="text-lg text-muted-foreground mb-8">{description}</p>
+            <p className="text-lg text-muted-foreground mb-4">{description}</p>
+            <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm text-muted-foreground mb-8">
+              <span>Von <strong>gehaltly.de</strong> Redaktion</span>
+              <span>|</span>
+              <span>Aktualisiert: {new Date(dateModified).toLocaleDateString('de-DE', { day: '2-digit', month: 'long', year: 'numeric' })}</span>
+            </div>
 
             <div className="prose prose-gray dark:prose-invert max-w-none">
               {content}

@@ -30,7 +30,7 @@ export default function PflegeversicherungPage() {
     <>
       <h2>Was ist die Pflegeversicherung?</h2>
       <p>
-        Die Pflegeversicherung ist eine Pflichtversicherung in Deutschland, die als fünfte Säule der Sozialversicherung im Jahr 1995 eingeführt wurde. Sie sichert das Risiko der Pflegebedürftigkeit ab und übernimmt einen Teil der Kosten, die bei häuslicher oder stationärer Pflege entstehen.
+        Die Pflegeversicherung ist eine Pflichtversicherung in Deutschland, die als fünfte Säule der Sozialversicherung im Jahr 1995 eingeführt wurde. Die gesetzliche Grundlage bildet das <a href="https://www.gesetze-im-internet.de/sgb_11/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Elfte Buch Sozialgesetzbuch (SGB XI)</a>. Sie sichert das Risiko der Pflegebedürftigkeit ab und übernimmt einen Teil der Kosten, die bei häuslicher oder stationärer Pflege entstehen.
       </p>
 
       <h2>Beitragssatz zur Pflegeversicherung 2026</h2>

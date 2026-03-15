@@ -30,7 +30,7 @@ export default function Steuerklasse1Page() {
     <>
       <h2>Wer gehört in Steuerklasse 1?</h2>
       <p>
-        Die Steuerklasse 1 ist die häufigste Lohnsteuerklasse in Deutschland und gilt für folgende Personengruppen:
+        Die Steuerklasse 1 ist die häufigste Lohnsteuerklasse in Deutschland. Die Zuordnung der Steuerklassen ist in <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b EStG</a> geregelt. Sie gilt für folgende Personengruppen:
       </p>
       <ul>
         <li><strong>Ledige Arbeitnehmer</strong> ohne Kinder</li>
@@ -151,6 +151,7 @@ export default function Steuerklasse1Page() {
   const relatedLinks = [
     { href: "/lexikon/steuerklasse-2", title: "Steuerklasse 2" },
     { href: "/lexikon/steuerklasse-4", title: "Steuerklasse 4" },
+    { href: "/lexikon/steuerklasse-6", title: "Steuerklasse 6" },
     { href: "/lexikon/grundfreibetrag", title: "Grundfreibetrag" },
     { href: "/gehaltsrechner", title: "Brutto-Netto-Rechner" },
   ];

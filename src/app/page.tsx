@@ -229,19 +229,19 @@ export default function HomePage() {
             >
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 <div className="bg-muted rounded-lg p-3">
-                  <h4 className="font-semibold text-sm mb-1">Rentenversicherung</h4>
+                  <h3 className="font-semibold text-sm mb-1">Rentenversicherung</h3>
                   <p className="text-sm text-muted-foreground">Gesamt: <strong>18,6%</strong> | Ihr Anteil: <strong>9,3%</strong></p>
                 </div>
                 <div className="bg-muted rounded-lg p-3">
-                  <h4 className="font-semibold text-sm mb-1">Krankenversicherung</h4>
+                  <h3 className="font-semibold text-sm mb-1">Krankenversicherung</h3>
                   <p className="text-sm text-muted-foreground">Gesamt: <strong>14,6% + Zusatz</strong> | Ihr Anteil: <strong>~8,75%</strong></p>
                 </div>
                 <div className="bg-muted rounded-lg p-3">
-                  <h4 className="font-semibold text-sm mb-1">Pflegeversicherung</h4>
+                  <h3 className="font-semibold text-sm mb-1">Pflegeversicherung</h3>
                   <p className="text-sm text-muted-foreground">Gesamt: <strong>3,6%</strong> | Ihr Anteil: <strong>1,8%</strong></p>
                 </div>
                 <div className="bg-muted rounded-lg p-3">
-                  <h4 className="font-semibold text-sm mb-1">Arbeitslosenversicherung</h4>
+                  <h3 className="font-semibold text-sm mb-1">Arbeitslosenversicherung</h3>
                   <p className="text-sm text-muted-foreground">Gesamt: <strong>2,6%</strong> | Ihr Anteil: <strong>1,3%</strong></p>
                 </div>
               </div>
@@ -254,27 +254,27 @@ export default function HomePage() {
             >
               <div className="space-y-2">
                 <div className="border-l-4 border-blue-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 1</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 1</h3>
                   <p className="text-xs text-muted-foreground">Ledige, geschiedene oder verwitwete Arbeitnehmer</p>
                 </div>
                 <div className="border-l-4 border-green-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 2</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 2</h3>
                   <p className="text-xs text-muted-foreground">Alleinerziehende mit Entlastungsbetrag</p>
                 </div>
                 <div className="border-l-4 border-purple-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 3</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 3</h3>
                   <p className="text-xs text-muted-foreground">Verheiratete, wenn Partner Steuerklasse 5 hat</p>
                 </div>
                 <div className="border-l-4 border-orange-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 4</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 4</h3>
                   <p className="text-xs text-muted-foreground">Verheiratete mit ähnlichem Einkommen</p>
                 </div>
                 <div className="border-l-4 border-red-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 5</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 5</h3>
                   <p className="text-xs text-muted-foreground">Verheiratete, wenn Partner Steuerklasse 3 hat</p>
                 </div>
                 <div className="border-l-4 border-gray-500 pl-3 py-1">
-                  <h4 className="font-semibold text-sm">Steuerklasse 6</h4>
+                  <h3 className="font-semibold text-sm">Steuerklasse 6</h3>
                   <p className="text-xs text-muted-foreground">Zweites oder weiteres Arbeitsverhältnis</p>
                 </div>
               </div>

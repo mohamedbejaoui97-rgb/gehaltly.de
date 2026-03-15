@@ -90,6 +90,7 @@ export function SliderInput({
           onChange={handleInputChange}
           onBlur={handleInputBlur}
           className="h-9 w-32 text-right"
+          aria-label={`${label} eingeben`}
         />
       </div>
       <Slider
@@ -100,6 +101,7 @@ export function SliderInput({
         value={[value]}
         onValueChange={handleSliderChange}
         className="w-full"
+        aria-label={label}
       />
       <div className="flex justify-between text-xs text-muted-foreground">
         <span>{formatValue ? formatValue(min) : min}</span>

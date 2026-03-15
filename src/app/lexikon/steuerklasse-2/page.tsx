@@ -30,7 +30,7 @@ export default function Steuerklasse2Page() {
     <>
       <h2>Wer gehört in Steuerklasse 2?</h2>
       <p>
-        Die Steuerklasse 2 ist speziell für alleinerziehende Arbeitnehmer vorgesehen und bietet einen zusätzlichen Steuervorteil. Folgende Voraussetzungen müssen erfüllt sein:
+        Die Steuerklasse 2 ist speziell für alleinerziehende Arbeitnehmer vorgesehen und bietet einen zusätzlichen Steuervorteil gemäß <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b Abs. 2 Nr. 2 EStG</a>. Folgende Voraussetzungen müssen erfüllt sein:
       </p>
       <ul>
         <li><strong>Alleinerziehend:</strong> Sie sind nicht verheiratet, geschieden, dauernd getrennt lebend oder verwitwet</li>

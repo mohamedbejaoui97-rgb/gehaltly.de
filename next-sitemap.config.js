@@ -66,6 +66,9 @@ module.exports = {
     } else if (path.startsWith('/lexikon/')) {
       priority = 0.75;
       changefreq = 'monthly';
+    } else if (path === '/ueber-uns') {
+      priority = 0.7;
+      changefreq = 'monthly';
     } else if (path.match(/\/(impressum|datenschutz)$/)) {
       priority = 0.3;
       changefreq = 'yearly';

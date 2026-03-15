@@ -30,7 +30,7 @@ export default function GeldwerterVorteilPage() {
     <>
       <h2>Was ist ein geldwerter Vorteil?</h2>
       <p>
-        Ein geldwerter Vorteil (auch Sachbezug genannt) ist eine Leistung des Arbeitgebers an den Arbeitnehmer, die nicht in Geld ausgezahlt wird, aber einen wirtschaftlichen Wert darstellt. Geldwerte Vorteile müssen versteuert werden und erhöhen das zu versteuernde Einkommen. Die bekanntesten Beispiele sind Firmenwagen, Dienstwohnungen und Essenszuschüsse.
+        Ein geldwerter Vorteil (auch Sachbezug genannt) ist eine Leistung des Arbeitgebers an den Arbeitnehmer, die nicht in Geld ausgezahlt wird, aber einen wirtschaftlichen Wert darstellt. Die steuerliche Behandlung ist in <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§8 EStG</a> geregelt. Geldwerte Vorteile müssen versteuert werden und erhöhen das zu versteuernde Einkommen. Die bekanntesten Beispiele sind Firmenwagen, Dienstwohnungen und Essenszuschüsse.
       </p>
 
       <h2>Die häufigsten geldwerten Vorteile</h2>

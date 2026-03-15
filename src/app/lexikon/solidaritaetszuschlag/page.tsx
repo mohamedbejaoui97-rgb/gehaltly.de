@@ -30,7 +30,7 @@ export default function SolidaritaetszuschlagPage() {
     <>
       <h2>Was ist der Solidaritätszuschlag?</h2>
       <p>
-        Der Solidaritätszuschlag (umgangssprachlich "Soli") ist eine Ergänzungsabgabe zur Einkommensteuer und Körperschaftsteuer in Deutschland. Er wurde 1991 zur Finanzierung der deutschen Wiedervereinigung eingeführt und beträgt 5,5% der festgesetzten Einkommensteuer.
+        Der Solidaritätszuschlag (umgangssprachlich "Soli") ist eine Ergänzungsabgabe zur Einkommensteuer und Körperschaftsteuer in Deutschland, geregelt im <a href="https://www.gesetze-im-internet.de/solzg_1995/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Solidaritätszuschlaggesetz (SolZG)</a>. Er wurde 1991 zur Finanzierung der deutschen Wiedervereinigung eingeführt und beträgt 5,5% der festgesetzten Einkommensteuer.
       </p>
       <p>
         Seit 2021 wurde der Solidaritätszuschlag für etwa 90% der Steuerzahler abgeschafft. Nur noch Besserverdienende mit hohen Einkommen müssen den Soli entrichten.

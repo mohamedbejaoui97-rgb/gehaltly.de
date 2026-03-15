@@ -30,7 +30,7 @@ export default function KinderfreibetragPage() {
     <>
       <h2>Was ist der Kinderfreibetrag?</h2>
       <p>
-        Der Kinderfreibetrag ist ein steuerlicher Freibetrag, der das Existenzminimum eines Kindes von der Einkommensteuer freistellt. Er wird bei der Berechnung der Einkommensteuer vom zu versteuernden Einkommen abgezogen und reduziert somit die Steuerlast der Eltern.
+        Der Kinderfreibetrag ist ein steuerlicher Freibetrag, der das Existenzminimum eines Kindes von der Einkommensteuer freistellt. Die gesetzliche Grundlage bildet <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§32 Abs. 6 EStG</a>. Weitere Informationen zu familienbezogenen Leistungen finden Sie beim <a href="https://www.bmfsfj.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Bundesministerium für Familie, Senioren, Frauen und Jugend</a>. Er wird bei der Berechnung der Einkommensteuer vom zu versteuernden Einkommen abgezogen und reduziert somit die Steuerlast der Eltern.
       </p>
       <p>
         Der Kinderfreibetrag besteht aus zwei Komponenten:

@@ -30,7 +30,7 @@ export default function MinijobPage() {
     <>
       <h2>Was ist ein Minijob?</h2>
       <p>
-        Ein Minijob (auch geringfügige Beschäftigung genannt) ist eine Beschäftigungsform, bei der das monatliche Arbeitsentgelt regelmäßig 556 € nicht übersteigt. Minijobs sind für Arbeitnehmer steuer- und sozialabgabenfrei (mit Ausnahme der Rentenversicherung), während der Arbeitgeber Pauschalbeiträge zahlt.
+        Ein Minijob (auch geringfügige Beschäftigung genannt) ist eine Beschäftigungsform, bei der das monatliche Arbeitsentgelt regelmäßig 556 € nicht übersteigt. Ausführliche Informationen zu Rechten und Pflichten bietet die <a href="https://www.minijob-zentrale.de" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">Minijob-Zentrale</a>. Minijobs sind für Arbeitnehmer steuer- und sozialabgabenfrei (mit Ausnahme der Rentenversicherung), während der Arbeitgeber Pauschalbeiträge zahlt.
       </p>
 
       <h2>Verdienstgrenze beim Minijob 2026</h2>

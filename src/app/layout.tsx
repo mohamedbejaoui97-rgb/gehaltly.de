@@ -5,7 +5,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import MobileNav from "@/components/layout/MobileNav";
 import CookieConsent from "@/components/layout/CookieConsent";
-import { CALCULATOR_LINKS, RATGEBER_LINKS } from "@/lib/utils/internal-links";
+import { CALCULATOR_LINKS, RATGEBER_LINKS, INFO_LINKS } from "@/lib/utils/internal-links";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -122,6 +122,13 @@ export default function RootLayout({
                 ...RATGEBER_LINKS.map((link, i) => ({
                   "@type": "SiteNavigationElement",
                   "position": 6 + i,
+                  "name": link.title,
+                  "description": link.description,
+                  "url": `https://gehaltly.de${link.href}`
+                })),
+                ...INFO_LINKS.map((link, i) => ({
+                  "@type": "SiteNavigationElement",
+                  "position": 6 + RATGEBER_LINKS.length + i,
                   "name": link.title,
                   "description": link.description,
                   "url": `https://gehaltly.de${link.href}`
