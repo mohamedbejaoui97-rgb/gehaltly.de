@@ -51,15 +51,24 @@ module.exports = {
     } else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner', '/brutto-netto-tabelle'].includes(path)) {
       priority = 0.9;
       changefreq = 'weekly';
-    } else if (['/rechner', '/ratgeber', '/lexikon'].includes(path)) {
+    } else if (['/rechner', '/ratgeber', '/lexikon', '/berufe'].includes(path)) {
       priority = 0.85;
       changefreq = 'weekly';
+    } else if (path.startsWith('/berufe/')) {
+      priority = 0.8;
+      changefreq = 'monthly';
     } else if (path.startsWith('/rechner/')) {
       priority = 0.85;
       changefreq = 'weekly';
     } else if (path.match(/^\/\d+-brutto-in-netto/)) {
       priority = 0.8;
       changefreq = 'monthly';
+    } else if (path === '/blog') {
+      priority = 0.85;
+      changefreq = 'daily';
+    } else if (path.startsWith('/blog/')) {
+      priority = 0.8;
+      changefreq = 'weekly';
     } else if (path.startsWith('/ratgeber/')) {
       priority = 0.8;
       changefreq = 'monthly';

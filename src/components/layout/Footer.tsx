@@ -75,6 +75,14 @@ export default function Footer() {
             <ul className="space-y-1.5">
               <li>
                 <Link
+                  href="/blog"
+                  className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors"
+                >
+                  Blog
+                </Link>
+              </li>
+              <li>
+                <Link
                   href="/lexikon"
                   className="text-sm text-gray-400 hover:text-[#DD0000] transition-colors"
                 >
