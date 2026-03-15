@@ -78,6 +78,26 @@ export const CALCULATOR_LINKS: InternalLink[] = [
     href: '/rechner/gehaltserhoehung',
     description: 'Berechnen Sie den Netto-Effekt Ihrer Gehaltserhöhung',
   },
+  {
+    title: 'Arbeitslosengeld-Rechner',
+    href: '/rechner/arbeitslosengeld',
+    description: 'Berechnen Sie Ihren Anspruch auf Arbeitslosengeld I',
+  },
+  {
+    title: 'Pendlerpauschale-Rechner',
+    href: '/rechner/pendlerpauschale',
+    description: 'Berechnen Sie Ihre Pendlerpauschale und Steuerersparnis',
+  },
+  {
+    title: 'Mindestlohnrechner',
+    href: '/rechner/mindestlohn',
+    description: 'Berechnen Sie Ihr Gehalt auf Basis des Mindestlohns 2026',
+  },
+  {
+    title: 'Arbeitstagerechner',
+    href: '/rechner/arbeitstage',
+    description: 'Arbeitstage 2026 nach Bundesland berechnen',
+  },
 ];
 
 /**
