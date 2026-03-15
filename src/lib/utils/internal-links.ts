@@ -108,6 +108,16 @@ export const CALCULATOR_LINKS: InternalLink[] = [
     href: '/rechner/elterngeld',
     description: 'Elterngeld und ElterngeldPlus berechnen',
   },
+  {
+    title: 'Kurzarbeitergeld-Rechner',
+    href: '/rechner/kurzarbeitergeld',
+    description: 'Kurzarbeitergeld (KUG) bei reduzierter Arbeitszeit berechnen',
+  },
+  {
+    title: 'Rentenrechner',
+    href: '/rechner/rente',
+    description: 'Gesetzliche Rente und Rentenlücke berechnen',
+  },
 ];
 
 /**
@@ -143,6 +153,62 @@ export const RATGEBER_LINKS: InternalLink[] = [
     title: 'Mehr Netto vom Brutto',
     href: '/ratgeber/mehr-netto-vom-brutto',
     description: '10 bewährte Strategien für mehr Netto in 2026',
+  },
+  {
+    title: 'Gehaltsverhandlung',
+    href: '/ratgeber/gehaltsverhandlung',
+    description: '7 bewährte Tipps für eine erfolgreiche Gehaltsverhandlung',
+  },
+  {
+    title: 'Steuerklasse wechseln',
+    href: '/ratgeber/steuerklasse-wechseln',
+    description: 'Wann lohnt sich ein Steuerklassenwechsel?',
+  },
+  {
+    title: 'Steuererklärung Tipps',
+    href: '/ratgeber/steuererklarung-tipps',
+    description: 'Die besten Tipps für Ihre Steuererklärung 2026',
+  },
+  {
+    title: 'Abfindung versteuern',
+    href: '/ratgeber/abfindung-versteuern',
+    description: 'Fünftelregelung und Steueroptimierung bei Abfindungen',
+  },
+  {
+    title: 'Minijob & Midijob',
+    href: '/ratgeber/minijob-midijob',
+    description: 'Regeln, Grenzen und Abgaben für Minijob & Midijob 2026',
+  },
+];
+
+/**
+ * Berufe (profession salary) pages
+ */
+export const BERUFE_LINKS: InternalLink[] = [
+  {
+    title: 'Gehalt Ingenieur',
+    href: '/berufe/ingenieur',
+    description: 'Durchschnittsgehalt und Brutto-Netto für Ingenieure',
+  },
+  {
+    title: 'Gehalt Softwareentwickler',
+    href: '/berufe/softwareentwickler',
+    description: 'IT-Gehalt und Brutto-Netto für Softwareentwickler',
+  },
+  {
+    title: 'Gehalt Lehrer',
+    href: '/berufe/lehrer',
+    description: 'Lehrergehalt nach Schulform, Besoldung und Bundesland',
+  },
+  {
+    title: 'Gehalt Krankenschwester',
+    href: '/berufe/krankenschwester',
+    description: 'Pflegegehalt und Brutto-Netto für Pflegefachkräfte',
+  },
+  {
+    title: 'Gehalt Kaufmann/Kauffrau',
+    href: '/berufe/kaufmann',
+    description: 'Gehalt und Brutto-Netto für kaufmännische Berufe',
   },
 ];
 
