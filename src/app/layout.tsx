@@ -44,17 +44,17 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
     images: [{
-      url: 'https://gehaltly.de/logo.png',
-      width: 800,
-      height: 230,
-      alt: 'gehaltly.de - Gehaltsrechner für Deutschland',
+      url: 'https://gehaltly.de/og-image.png',
+      width: 1200,
+      height: 630,
+      alt: 'gehaltly.de - Brutto-Netto-Rechner 2026',
     }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Brutto Netto Rechner 2026 - Gehaltsrechner kostenlos",
     description: "Berechnen Sie kostenlos Ihr Nettogehalt. Alle Steuerklassen, alle Bundesländer.",
-    images: ['https://gehaltly.de/logo.png'],
+    images: ['https://gehaltly.de/og-image.png'],
   },
   robots: {
     index: true,

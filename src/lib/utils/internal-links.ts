@@ -98,6 +98,16 @@ export const CALCULATOR_LINKS: InternalLink[] = [
     href: '/rechner/arbeitstage',
     description: 'Arbeitstage 2026 nach Bundesland berechnen',
   },
+  {
+    title: 'Abfindungsrechner',
+    href: '/rechner/abfindung',
+    description: 'Abfindung versteuern mit Fünftelregelung berechnen',
+  },
+  {
+    title: 'Elterngeldrechner',
+    href: '/rechner/elterngeld',
+    description: 'Elterngeld und ElterngeldPlus berechnen',
+  },
 ];
 
 /**

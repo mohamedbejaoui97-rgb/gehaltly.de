@@ -44,6 +44,18 @@ const LEXIKON_ENTRIES = [
   { slug: 'minijob', title: 'Minijob', category: 'Beschäftigungsarten' },
   { slug: 'midijob', title: 'Midijob', category: 'Beschäftigungsarten' },
   { slug: 'geldwerter-vorteil', title: 'Geldwerter Vorteil', category: 'Sonstiges' },
+  { slug: 'abfindung', title: 'Abfindung', category: 'Steuern' },
+  { slug: 'progressionsvorbehalt', title: 'Progressionsvorbehalt', category: 'Steuern' },
+  { slug: 'ehegattensplitting', title: 'Ehegattensplitting', category: 'Steuern' },
+  { slug: 'werbungskosten', title: 'Werbungskosten', category: 'Steuern' },
+  { slug: 'sonderausgaben', title: 'Sonderausgaben', category: 'Steuern' },
+  { slug: 'pendlerpauschale', title: 'Pendlerpauschale', category: 'Steuern' },
+  { slug: 'sachbezuege', title: 'Sachbezüge', category: 'Sonstiges' },
+  { slug: 'betriebliche-altersvorsorge', title: 'Betriebliche Altersvorsorge', category: 'Sonstiges' },
+  { slug: 'buergergeld', title: 'Bürgergeld', category: 'Sozialleistungen' },
+  { slug: 'wohngeld', title: 'Wohngeld', category: 'Sozialleistungen' },
+  { slug: 'elterngeld', title: 'Elterngeld', category: 'Sozialleistungen' },
+  { slug: 'kurzarbeitergeld', title: 'Kurzarbeitergeld', category: 'Sozialleistungen' },
 ];
 
 const categories = Array.from(new Set(LEXIKON_ENTRIES.map(e => e.category)));
