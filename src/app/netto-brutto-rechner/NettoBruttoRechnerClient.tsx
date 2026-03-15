@@ -256,7 +256,7 @@ export default function NettoBruttoRechnerClient() {
                             value={wunschSteuerklasse.toString()}
                             onValueChange={(value) => setWunschSteuerklasse(parseInt(value) as Steuerklasse)}
                           >
-                            <SelectTrigger id="wunsch-steuerklasse" className="mt-1.5">
+                            <SelectTrigger id="wunsch-steuerklasse" className="mt-1.5" aria-label="Steuerklasse">
                               <SelectValue />
                             </SelectTrigger>
                             <SelectContent>
@@ -276,7 +276,7 @@ export default function NettoBruttoRechnerClient() {
                             value={wunschBundesland}
                             onValueChange={(value) => setWunschBundesland(value as Bundesland)}
                           >
-                            <SelectTrigger id="wunsch-bundesland" className="mt-1.5">
+                            <SelectTrigger id="wunsch-bundesland" className="mt-1.5" aria-label="Bundesland">
                               <SelectValue />
                             </SelectTrigger>
                             <SelectContent>

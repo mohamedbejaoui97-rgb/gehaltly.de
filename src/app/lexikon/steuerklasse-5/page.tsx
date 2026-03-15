@@ -30,7 +30,7 @@ export default function Steuerklasse5Page() {
     <>
       <h2>Wer gehört in Steuerklasse 5?</h2>
       <p>
-        Die Steuerklasse 5 kann nur in Kombination mit Steuerklasse 3 gewählt werden und ist ausschließlich für verheiratete oder verpartnerte Arbeitnehmer vorgesehen:
+        Die Steuerklasse 5 kann nur in Kombination mit Steuerklasse 3 gewählt werden und ist ausschließlich für verheiratete oder verpartnerte Arbeitnehmer vorgesehen (gemäß <a href="https://www.gesetze-im-internet.de/estg/" target="_blank" rel="noopener noreferrer" className="text-[#DD0000] hover:underline">§38b EStG</a>):
       </p>
       <ul>
         <li><strong>Der Geringverdiener</strong> in einer Ehe/Partnerschaft, wenn die Kombination 3/5 gewählt wird</li>

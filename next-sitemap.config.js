@@ -48,7 +48,7 @@ module.exports = {
     if (path === '/') {
       priority = 1.0;
       changefreq = 'daily';
-    } else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner'].includes(path)) {
+    } else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner', '/brutto-netto-tabelle'].includes(path)) {
       priority = 0.9;
       changefreq = 'weekly';
     } else if (['/rechner', '/ratgeber', '/lexikon'].includes(path)) {

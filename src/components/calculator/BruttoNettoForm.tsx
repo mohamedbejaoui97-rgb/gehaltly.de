@@ -236,7 +236,7 @@ export function BruttoNettoForm({
                 updateField("abrechnungszeitraum", value as Abrechnungszeitraum)
               }
             >
-              <SelectTrigger id="abrechnungszeitraum">
+              <SelectTrigger id="abrechnungszeitraum" aria-label="Abrechnungszeitraum">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -257,7 +257,7 @@ export function BruttoNettoForm({
                 updateField("steuerklasse", parseInt(value) as Steuerklasse)
               }
             >
-              <SelectTrigger id="steuerklasse">
+              <SelectTrigger id="steuerklasse" aria-label="Steuerklasse">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -282,7 +282,7 @@ export function BruttoNettoForm({
                 updateField("bundesland", value as Bundesland)
               }
             >
-              <SelectTrigger id="bundesland">
+              <SelectTrigger id="bundesland" aria-label="Bundesland">
                 <SelectValue />
               </SelectTrigger>
               <SelectContent>
@@ -369,7 +369,7 @@ export function BruttoNettoForm({
                   updateField("krankenversicherung", value as KrankenversicherungTyp)
                 }
               >
-                <SelectTrigger id="krankenversicherung">
+                <SelectTrigger id="krankenversicherung" aria-label="Krankenversicherung">
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>

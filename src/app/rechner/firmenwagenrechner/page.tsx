@@ -265,7 +265,7 @@ export default function FirmenwagenrechnerPage() {
                           calculateWithCompanyCar();
                         }}
                       >
-                        <SelectTrigger id="methode">
+                        <SelectTrigger id="methode" aria-label="Berechnungsmethode">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>

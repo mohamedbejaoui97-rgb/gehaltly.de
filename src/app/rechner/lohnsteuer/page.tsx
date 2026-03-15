@@ -208,7 +208,7 @@ export default function LohnsteuerPage() {
                           calculateTax();
                         }}
                       >
-                        <SelectTrigger id="steuerklasse">
+                        <SelectTrigger id="steuerklasse" aria-label="Steuerklasse">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>

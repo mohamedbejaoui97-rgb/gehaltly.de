@@ -68,6 +68,16 @@ export const CALCULATOR_LINKS: InternalLink[] = [
     href: '/rechner/lohnsteuer',
     description: 'Berechnen Sie Ihre monatliche Lohnsteuer',
   },
+  {
+    title: 'Brutto-Netto-Tabelle',
+    href: '/brutto-netto-tabelle',
+    description: 'Nettolohn für alle 6 Steuerklassen auf einen Blick',
+  },
+  {
+    title: 'Gehaltserhöhungsrechner',
+    href: '/rechner/gehaltserhoehung',
+    description: 'Berechnen Sie den Netto-Effekt Ihrer Gehaltserhöhung',
+  },
 ];
 
 /**
@@ -98,6 +108,11 @@ export const RATGEBER_LINKS: InternalLink[] = [
     title: 'Elterngeld',
     href: '/ratgeber/elterngeld-brutto-netto',
     description: 'Elterngeld und Brutto-Netto erklärt',
+  },
+  {
+    title: 'Mehr Netto vom Brutto',
+    href: '/ratgeber/mehr-netto-vom-brutto',
+    description: '10 bewährte Strategien für mehr Netto in 2026',
   },
 ];
 

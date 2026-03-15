@@ -202,7 +202,7 @@ export default function TeilzeitPage() {
                           calculateResults();
                         }}
                       >
-                        <SelectTrigger id="teilzeitFaktor">
+                        <SelectTrigger id="teilzeitFaktor" aria-label="Teilzeitfaktor">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>

@@ -204,7 +204,7 @@ export default function StundenlohnPage() {
                         value={calculationMode}
                         onValueChange={(value: "hourly-to-monthly" | "monthly-to-hourly") => setCalculationMode(value)}
                       >
-                        <SelectTrigger id="mode">
+                        <SelectTrigger id="mode" aria-label="Berechnungsmodus">
                           <SelectValue />
                         </SelectTrigger>
                         <SelectContent>

@@ -6,7 +6,7 @@ import { Shield, BookOpen, RefreshCw, Calculator, Mail, ExternalLink } from 'luc
 export const metadata: Metadata = {
   title: 'Über uns – Wer steckt hinter gehaltly.de?',
   description:
-    'Erfahren Sie mehr über gehaltly.de: Unsere Mission, Expertise im deutschen Steuerrecht und unser Engagement für präzise Gehaltsberechnungen mit aktuellen Werten für 2026.',
+    'gehaltly.de: Mission, Expertise im deutschen Steuerrecht und präzise Gehaltsberechnungen mit aktuellen Werten für 2026.',
   alternates: {
     canonical: 'https://gehaltly.de/ueber-uns/',
   },
@@ -42,12 +42,7 @@ export default function UeberUnsPage() {
     '@type': 'Organization',
     name: 'gehaltly.de',
     url: 'https://gehaltly.de',
-    logo: {
-      '@type': 'ImageObject',
-      url: 'https://gehaltly.de/logo.png',
-      width: 800,
-      height: 230,
-    },
+    logo: 'https://gehaltly.de/logo.png',
     description:
       'Kostenlose Gehaltsrechner für Deutschland – präzise Brutto-Netto-Berechnungen basierend auf aktuellen Steuerwerten.',
     foundingDate: '2025',
@@ -310,7 +305,7 @@ export default function UeberUnsPage() {
                     <span className="text-[#DD0000] font-bold mt-0.5">•</span>
                     <span>
                       <a
-                        href="https://www.sozialversicherung.de"
+                        href="https://www.deutsche-rentenversicherung.de"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-[#DD0000] hover:underline inline-flex items-center gap-1"
