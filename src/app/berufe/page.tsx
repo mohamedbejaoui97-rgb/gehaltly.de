@@ -32,6 +32,18 @@ export const metadata: Metadata = {
 
 const professions = [
   {
+    title: 'Arzt',
+    href: '/berufe/arzt',
+    salary: '90.000 - 130.000 €/Jahr',
+    description: 'Assistenzarzt, Facharzt, Oberarzt und Chefarzt im Vergleich',
+  },
+  {
+    title: 'Steuerberater',
+    href: '/berufe/steuerberater',
+    salary: '70.000 - 95.000 €/Jahr',
+    description: 'Kanzlei, Big Four, Selbstständig - Karriere im Steuerwesen',
+  },
+  {
     title: 'Ingenieur',
     href: '/berufe/ingenieur',
     salary: '58.000 - 72.000 €/Jahr',
@@ -44,16 +56,52 @@ const professions = [
     description: 'IT, Webentwicklung, Data Science und Programmierung',
   },
   {
+    title: 'Polizist / Polizeibeamter',
+    href: '/berufe/polizist',
+    salary: '39.000 - 52.000 €/Jahr',
+    description: 'Mittlerer und gehobener Dienst, Bund und Länder, mit Polizeizulage',
+  },
+  {
+    title: 'Soldat (Bundeswehr)',
+    href: '/berufe/soldat-bundeswehr',
+    salary: '38.000 - 55.000 €/Jahr',
+    description: 'Mannschaft, Unteroffizier, Offizier - Besoldung A3-A16',
+  },
+  {
+    title: 'Feuerwehrmann',
+    href: '/berufe/feuerwehrmann',
+    salary: '38.000 - 52.000 €/Jahr',
+    description: 'Berufsfeuerwehr und Werkfeuerwehr - Besoldung A7-A12',
+  },
+  {
     title: 'Lehrer',
     href: '/berufe/lehrer',
     salary: '45.000 - 65.000 €/Jahr',
     description: 'Grundschule, Gymnasium, Berufsschule und Sonderpädagogik',
   },
   {
+    title: 'Erzieher / Erzieherin',
+    href: '/berufe/erzieher',
+    salary: '35.000 - 45.000 €/Jahr',
+    description: 'Kita, Krippe und Jugendhilfe nach TVöD SuE S8a-S15',
+  },
+  {
+    title: 'Mechatroniker',
+    href: '/berufe/mechatroniker',
+    salary: '38.000 - 48.000 €/Jahr',
+    description: 'Maschinenbau, Automobil, Industrie 4.0 - IG Metall Tarif',
+  },
+  {
     title: 'Krankenschwester / Pflegefachkraft',
     href: '/berufe/krankenschwester',
     salary: '36.000 - 42.000 €/Jahr',
     description: 'Krankenhaus, Altenpflege, ambulante Pflege und Intensivmedizin',
+  },
+  {
+    title: 'Altenpfleger',
+    href: '/berufe/altenpfleger',
+    salary: '32.000 - 38.000 €/Jahr',
+    description: 'Altenpflege im Heim und ambulant nach TVöD-P und AVR',
   },
   {
     title: 'Kaufmann / Kauffrau',

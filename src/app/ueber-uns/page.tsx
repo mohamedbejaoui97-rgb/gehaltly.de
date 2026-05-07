@@ -52,7 +52,9 @@ export default function UeberUnsPage() {
       contactType: 'customer support',
       availableLanguage: 'German',
     },
-    sameAs: [],
+    sameAs: [
+      'https://github.com/mohamedbejaoui97-rgb/gehaltly.de',
+    ],
     knowsAbout: [
       'Einkommensteuer Deutschland',
       'Sozialversicherung',
@@ -61,6 +63,12 @@ export default function UeberUnsPage() {
       'Steuerklassen',
       'EStG §32a',
     ],
+    founder: {
+      '@type': 'Person',
+      name: 'Mohamed Bejaoui',
+      url: 'https://gehaltly.de/redaktion',
+      jobTitle: 'Gründer & Verantwortlicher Redakteur',
+    },
   };
 
   return (
@@ -123,9 +131,17 @@ export default function UeberUnsPage() {
                   Unsere Expertise
                 </h2>
                 <p className="text-gray-600 leading-relaxed mb-4">
-                  gehaltly.de wird von einem Team mit fundiertem Wissen im
-                  deutschen Steuerrecht und in der Softwareentwicklung betrieben.
-                  Unsere Berechnungen basieren auf:
+                  gehaltly.de wird von{' '}
+                  <Link
+                    href="/redaktion"
+                    className="text-[#DD0000] hover:underline font-medium"
+                  >
+                    Mohamed Bejaoui
+                  </Link>
+                  , Software-Engineer und Verantwortlichem Redakteur, mit
+                  fundiertem Wissen im deutschen Steuerrecht und in der
+                  Softwareentwicklung betrieben. Unsere Berechnungen basieren
+                  auf:
                 </p>
                 <ul className="space-y-3 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -350,6 +366,12 @@ export default function UeberUnsPage() {
                 </p>
 
                 <div className="flex flex-wrap gap-4">
+                  <Link
+                    href="/redaktion"
+                    className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm text-gray-700 hover:border-[#DD0000] hover:text-[#DD0000] transition-colors"
+                  >
+                    Redaktion
+                  </Link>
                   <Link
                     href="/impressum"
                     className="inline-flex items-center px-4 py-2 border border-gray-300 rounded-lg text-sm text-gray-700 hover:border-[#DD0000] hover:text-[#DD0000] transition-colors"

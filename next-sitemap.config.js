@@ -51,11 +51,17 @@ module.exports = {
     } else if (['/gehaltsrechner', '/lohnrechner', '/netto-brutto-rechner', '/netto-rechner', '/brutto-netto-tabelle'].includes(path)) {
       priority = 0.9;
       changefreq = 'weekly';
-    } else if (['/rechner', '/ratgeber', '/lexikon', '/berufe'].includes(path)) {
+    } else if (['/rechner', '/ratgeber', '/lexikon', '/berufe', '/bundesland'].includes(path)) {
       priority = 0.85;
       changefreq = 'weekly';
     } else if (path.startsWith('/berufe/')) {
       priority = 0.8;
+      changefreq = 'monthly';
+    } else if (path.startsWith('/bundesland/')) {
+      priority = 0.8;
+      changefreq = 'monthly';
+    } else if (path === '/redaktion') {
+      priority = 0.7;
       changefreq = 'monthly';
     } else if (path.startsWith('/rechner/')) {
       priority = 0.85;

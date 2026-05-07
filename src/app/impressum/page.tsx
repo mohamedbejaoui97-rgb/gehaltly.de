@@ -7,7 +7,8 @@ export const metadata: Metadata = {
     canonical: 'https://gehaltly.de/impressum/',
   },
   robots: {
-    index: false,
+    index: true,
+    follow: true,
   },
 };
 
@@ -19,13 +20,53 @@ export default function ImpressumPage() {
 
         <h2 className="text-xl font-semibold mt-8 mb-3">Angaben gemäß § 5 TMG</h2>
         <p className="text-muted-foreground">
-          gehaltly.de<br />
+          Mohamed Bejaoui<br />
+          {/* TODO_USER: Bitte die folgende Adresse durch die echte Postanschrift ersetzen. */}
+          [Straße und Hausnummer]<br />
+          [PLZ] [Stadt]<br />
           Deutschland
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-3">Kontakt</h2>
         <p className="text-muted-foreground">
+          {/* TODO_USER: Bitte echte Telefonnummer einfügen. Pflicht laut TMG §5. */}
+          Telefon: [Telefonnummer einfügen]<br />
           E-Mail: kontakt@gehaltly.de
+        </p>
+
+        <h2 className="text-xl font-semibold mt-8 mb-3">Umsatzsteuer</h2>
+        <p className="text-muted-foreground">
+          Gemäß § 19 UStG wird auf die Erhebung der Umsatzsteuer verzichtet
+          (Kleinunternehmerregelung).
+        </p>
+
+        <h2 className="text-xl font-semibold mt-8 mb-3">
+          Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV
+        </h2>
+        <p className="text-muted-foreground">
+          Mohamed Bejaoui<br />
+          [Anschrift wie oben]
+        </p>
+
+        <h2 className="text-xl font-semibold mt-8 mb-3">
+          Streitschlichtung
+        </h2>
+        <p className="text-muted-foreground">
+          Die Europäische Kommission stellt eine Plattform zur
+          Online-Streitbeilegung (OS) bereit:{' '}
+          <a
+            href="https://ec.europa.eu/consumers/odr/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[#DD0000] hover:underline"
+          >
+            https://ec.europa.eu/consumers/odr/
+          </a>
+          . Unsere E-Mail-Adresse finden Sie oben im Impressum.
+        </p>
+        <p className="text-muted-foreground">
+          Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren
+          vor einer Verbraucherschlichtungsstelle teilzunehmen.
         </p>
 
         <h2 className="text-xl font-semibold mt-8 mb-3">Haftungsausschluss</h2>
@@ -42,6 +83,10 @@ export default function ImpressumPage() {
         <h2 className="text-xl font-semibold mt-8 mb-3">Hinweis zur Gehaltsberechnung</h2>
         <p className="text-muted-foreground">
           Die auf gehaltly.de bereitgestellten Berechnungen dienen ausschließlich zu Informationszwecken und stellen keine steuerliche Beratung dar. Alle Angaben ohne Gewähr. Für rechtsverbindliche Auskünfte wenden Sie sich bitte an einen Steuerberater oder an Ihr zuständiges Finanzamt.
+        </p>
+
+        <p className="text-xs text-gray-400 mt-12 border-t pt-4">
+          Stand: Mai 2026
         </p>
       </div>
     </div>

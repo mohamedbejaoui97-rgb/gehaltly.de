@@ -186,6 +186,16 @@ export const RATGEBER_LINKS: InternalLink[] = [
  */
 export const BERUFE_LINKS: InternalLink[] = [
   {
+    title: 'Gehalt Arzt',
+    href: '/berufe/arzt',
+    description: 'Assistenzarzt, Facharzt, Oberarzt und Chefarzt im Gehaltsvergleich',
+  },
+  {
+    title: 'Gehalt Steuerberater',
+    href: '/berufe/steuerberater',
+    description: 'Steuerberater-Gehalt in Kanzlei, Big Four und selbstständig',
+  },
+  {
     title: 'Gehalt Ingenieur',
     href: '/berufe/ingenieur',
     description: 'Durchschnittsgehalt und Brutto-Netto für Ingenieure',
@@ -196,9 +206,34 @@ export const BERUFE_LINKS: InternalLink[] = [
     description: 'IT-Gehalt und Brutto-Netto für Softwareentwickler',
   },
   {
+    title: 'Gehalt Polizist',
+    href: '/berufe/polizist',
+    description: 'Polizei-Besoldung A7-A13 mit Polizeizulage und Schichtzuschlägen',
+  },
+  {
+    title: 'Bundeswehr Gehalt',
+    href: '/berufe/soldat-bundeswehr',
+    description: 'Soldaten-Besoldung A3-A16 mit Verpflichtungsprämie und AVZ',
+  },
+  {
+    title: 'Gehalt Feuerwehrmann',
+    href: '/berufe/feuerwehrmann',
+    description: 'Berufsfeuerwehr und Werkfeuerwehr - Besoldung und Zulagen',
+  },
+  {
     title: 'Gehalt Lehrer',
     href: '/berufe/lehrer',
     description: 'Lehrergehalt nach Schulform, Besoldung und Bundesland',
+  },
+  {
+    title: 'Gehalt Erzieher',
+    href: '/berufe/erzieher',
+    description: 'Erzieher-Gehalt nach TVöD SuE S8a-S15 mit Stufenaufstieg',
+  },
+  {
+    title: 'Gehalt Mechatroniker',
+    href: '/berufe/mechatroniker',
+    description: 'Mechatroniker-Gehalt nach IG Metall Tarif mit Schichtzulagen',
   },
   {
     title: 'Gehalt Krankenschwester',
@@ -206,9 +241,40 @@ export const BERUFE_LINKS: InternalLink[] = [
     description: 'Pflegegehalt und Brutto-Netto für Pflegefachkräfte',
   },
   {
+    title: 'Gehalt Altenpfleger',
+    href: '/berufe/altenpfleger',
+    description: 'Altenpflege-Gehalt nach TVöD-P und AVR mit Schichtzulagen',
+  },
+  {
     title: 'Gehalt Kaufmann/Kauffrau',
     href: '/berufe/kaufmann',
     description: 'Gehalt und Brutto-Netto für kaufmännische Berufe',
+  },
+];
+
+/**
+ * Bundesland pages
+ */
+export const BUNDESLAND_LINKS: InternalLink[] = [
+  {
+    title: 'Brutto-Netto Bayern',
+    href: '/bundesland/bayern',
+    description: '8 % Kirchensteuer, höchste Durchschnittsgehälter Deutschlands',
+  },
+  {
+    title: 'Brutto-Netto Baden-Württemberg',
+    href: '/bundesland/baden-wuerttemberg',
+    description: '8 % Kirchensteuer, Industriestandort mit Mercedes, Porsche, Bosch',
+  },
+  {
+    title: 'Brutto-Netto NRW',
+    href: '/bundesland/nordrhein-westfalen',
+    description: 'Bevölkerungsreichstes Bundesland mit Ruhrgebiet und Rheinland',
+  },
+  {
+    title: 'Brutto-Netto Berlin',
+    href: '/bundesland/berlin',
+    description: 'Hauptstadt mit Tech-Hub und steigenden Gehältern',
   },
 ];
 
@@ -220,6 +286,11 @@ export const INFO_LINKS: InternalLink[] = [
     title: 'Über uns',
     href: '/ueber-uns',
     description: 'Erfahren Sie mehr über gehaltly.de, unsere Mission und Expertise',
+  },
+  {
+    title: 'Redaktion',
+    href: '/redaktion',
+    description: 'Das Team und der Verantwortliche Redakteur hinter gehaltly.de',
   },
 ];
 
